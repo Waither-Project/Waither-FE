@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF01F29687C2A00703336 /* SF-Pro.ttf */; };
+		D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */; };
 		E756BC1D2965B5B800948296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756BC1C2965B5B800948296 /* AppDelegate.swift */; };
 		E756BC1F2965B5B800948296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756BC1E2965B5B800948296 /* SceneDelegate.swift */; };
 		E756BC212965B5B800948296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756BC202965B5B800948296 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D08DF01F29687C2A00703336 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
 		E756BC192965B5B800948296 /* waither.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waither.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E756BC1C2965B5B800948296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E756BC1E2965B5B800948296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D08DF01E29687B9000703336 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */,
+				D08DF01F29687C2A00703336 /* SF-Pro.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		E756BC102965B5B800948296 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +76,7 @@
 				E756BC252965B5B900948296 /* Assets.xcassets */,
 				E756BC272965B5B900948296 /* LaunchScreen.storyboard */,
 				E756BC2A2965B5B900948296 /* Info.plist */,
+				D08DF01E29687B9000703336 /* font */,
 			);
 			path = waither;
 			sourceTree = "<group>";
@@ -126,8 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E756BC292965B5B900948296 /* LaunchScreen.storyboard in Resources */,
+				D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */,
 				E756BC262965B5B900948296 /* Assets.xcassets in Resources */,
 				E756BC242965B5B800948296 /* Main.storyboard in Resources */,
+				D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
