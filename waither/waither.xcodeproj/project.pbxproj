@@ -13,6 +13,8 @@
 		E756BC242965B5B800948296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E756BC222965B5B800948296 /* Main.storyboard */; };
 		E756BC262965B5B900948296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E756BC252965B5B900948296 /* Assets.xcassets */; };
 		E756BC292965B5B900948296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E756BC272965B5B900948296 /* LaunchScreen.storyboard */; };
+		E7BB78372969A89200AFC2E5 /* LaunchScreen_white.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BB78362969A89200AFC2E5 /* LaunchScreen_white.storyboard */; };
+		E7BB78392969A8DB00AFC2E5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB78382969A8DB00AFC2E5 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E756BC252965B5B900948296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E756BC282965B5B900948296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E756BC2A2965B5B900948296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7BB78362969A89200AFC2E5 /* LaunchScreen_white.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen_white.storyboard; sourceTree = "<group>"; };
+		E7BB78382969A8DB00AFC2E5 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E756BC252965B5B900948296 /* Assets.xcassets */,
 				E756BC272965B5B900948296 /* LaunchScreen.storyboard */,
 				E756BC2A2965B5B900948296 /* Info.plist */,
+				E7BB78362969A89200AFC2E5 /* LaunchScreen_white.storyboard */,
+				E7BB78382969A8DB00AFC2E5 /* SplashViewController.swift */,
 			);
 			path = waither;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				E756BC292965B5B900948296 /* LaunchScreen.storyboard in Resources */,
 				E756BC262965B5B900948296 /* Assets.xcassets in Resources */,
 				E756BC242965B5B800948296 /* Main.storyboard in Resources */,
+				E7BB78372969A89200AFC2E5 /* LaunchScreen_white.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				E756BC212965B5B800948296 /* ViewController.swift in Sources */,
 				E756BC1D2965B5B800948296 /* AppDelegate.swift in Sources */,
 				E756BC1F2965B5B800948296 /* SceneDelegate.swift in Sources */,
+				E7BB78392969A8DB00AFC2E5 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
