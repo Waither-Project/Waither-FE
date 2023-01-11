@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D018E941296E525300862307 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018E940296E525300862307 /* MainPageViewController.swift */; };
+		D018E943296E527C00862307 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D018E942296E527C00862307 /* MainPage.storyboard */; };
 		D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF01F29687C2A00703336 /* SF-Pro.ttf */; };
 		D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */; };
 		E756BC1D2965B5B800948296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756BC1C2965B5B800948296 /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D018E940296E525300862307 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		D018E942296E527C00862307 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		D08DF01F29687C2A00703336 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
 		E756BC192965B5B800948296 /* waither.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waither.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,8 @@
 				E756BC272965B5B900948296 /* LaunchScreen.storyboard */,
 				E756BC2A2965B5B900948296 /* Info.plist */,
 				D08DF01E29687B9000703336 /* font */,
+				D018E940296E525300862307 /* MainPageViewController.swift */,
+				D018E942296E527C00862307 /* MainPage.storyboard */,
 			);
 			path = waither;
 			sourceTree = "<group>";
@@ -139,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D018E943296E527C00862307 /* MainPage.storyboard in Resources */,
 				E756BC292965B5B900948296 /* LaunchScreen.storyboard in Resources */,
 				D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */,
 				E756BC262965B5B900948296 /* Assets.xcassets in Resources */,
@@ -154,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D018E941296E525300862307 /* MainPageViewController.swift in Sources */,
 				E756BC212965B5B800948296 /* ViewController.swift in Sources */,
 				E756BC1D2965B5B800948296 /* AppDelegate.swift in Sources */,
 				E756BC1F2965B5B800948296 /* SceneDelegate.swift in Sources */,
@@ -303,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3SUNDG6XAZ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = waither/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -331,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3SUNDG6XAZ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = waither/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
