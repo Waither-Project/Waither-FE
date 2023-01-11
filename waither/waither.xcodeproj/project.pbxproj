@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D018E941296E525300862307 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018E940296E525300862307 /* MainPageViewController.swift */; };
 		D018E943296E527C00862307 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D018E942296E527C00862307 /* MainPage.storyboard */; };
+		D018E947296EC5D900862307 /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018E945296EC5D900862307 /* MainPageTableViewCell.swift */; };
+		D018E948296EC5D900862307 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D018E946296EC5D900862307 /* MainPageTableViewCell.xib */; };
 		D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF01F29687C2A00703336 /* SF-Pro.ttf */; };
 		D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */; };
 		E756BC1D2965B5B800948296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756BC1C2965B5B800948296 /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		D018E940296E525300862307 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		D018E942296E527C00862307 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		D018E945296EC5D900862307 /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
+		D018E946296EC5D900862307 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
 		D08DF01F29687C2A00703336 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
 		E756BC192965B5B800948296 /* waither.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waither.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +49,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D018E944296EC55800862307 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D018E940296E525300862307 /* MainPageViewController.swift */,
+				D018E942296E527C00862307 /* MainPage.storyboard */,
+				D018E949296EC5F300862307 /* Cells */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D018E949296EC5F300862307 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D018E945296EC5D900862307 /* MainPageTableViewCell.swift */,
+				D018E946296EC5D900862307 /* MainPageTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D08DF01E29687B9000703336 /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,16 +96,15 @@
 		E756BC1B2965B5B800948296 /* waither */ = {
 			isa = PBXGroup;
 			children = (
+				D018E944296EC55800862307 /* Main */,
 				E756BC1C2965B5B800948296 /* AppDelegate.swift */,
 				E756BC1E2965B5B800948296 /* SceneDelegate.swift */,
 				E756BC202965B5B800948296 /* ViewController.swift */,
 				E756BC222965B5B800948296 /* Main.storyboard */,
-				E756BC252965B5B900948296 /* Assets.xcassets */,
 				E756BC272965B5B900948296 /* LaunchScreen.storyboard */,
 				E756BC2A2965B5B900948296 /* Info.plist */,
 				D08DF01E29687B9000703336 /* font */,
-				D018E940296E525300862307 /* MainPageViewController.swift */,
-				D018E942296E527C00862307 /* MainPage.storyboard */,
+				E756BC252965B5B900948296 /* Assets.xcassets */,
 			);
 			path = waither;
 			sourceTree = "<group>";
@@ -148,6 +170,7 @@
 				D018E943296E527C00862307 /* MainPage.storyboard in Resources */,
 				E756BC292965B5B900948296 /* LaunchScreen.storyboard in Resources */,
 				D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */,
+				D018E948296EC5D900862307 /* MainPageTableViewCell.xib in Resources */,
 				E756BC262965B5B900948296 /* Assets.xcassets in Resources */,
 				E756BC242965B5B800948296 /* Main.storyboard in Resources */,
 				D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */,
@@ -163,6 +186,7 @@
 			files = (
 				D018E941296E525300862307 /* MainPageViewController.swift in Sources */,
 				E756BC212965B5B800948296 /* ViewController.swift in Sources */,
+				D018E947296EC5D900862307 /* MainPageTableViewCell.swift in Sources */,
 				E756BC1D2965B5B800948296 /* AppDelegate.swift in Sources */,
 				E756BC1F2965B5B800948296 /* SceneDelegate.swift in Sources */,
 			);

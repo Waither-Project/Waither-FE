@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="669" id="KGk-i7-Jjw" customClass="MainPageTableViewCell" customModule="waither" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="669"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="669"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oF-U1-4pU">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="92"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="fYj-u4-Thn">
+                                <rect key="frame" x="31" y="24.333333333333332" width="66" height="43.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43.07" id="pzN-Qj-Uqp"/>
+                                    <constraint firstAttribute="width" constant="65.969999999999999" id="z6j-ae-JOQ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="비가 오네요. 우산 챙기세요!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O2q-3i-GSn">
+                                <rect key="frame" x="114" y="22" width="170" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="15:30에 그칠 예정입니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UJt-1j-klC">
+                                <rect key="frame" x="114" y="40" width="180" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31764705882352939" green="0.53725490196078429" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="92" id="EJh-jR-AdI"/>
+                            <constraint firstItem="fYj-u4-Thn" firstAttribute="centerY" secondItem="1oF-U1-4pU" secondAttribute="centerY" id="OrS-cV-0iP"/>
+                            <constraint firstItem="fYj-u4-Thn" firstAttribute="leading" secondItem="1oF-U1-4pU" secondAttribute="leading" constant="31" id="up0-2P-3Vz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1Z-xs-dUo">
+                        <rect key="frame" x="0.0" y="100" width="343" height="92"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="00님이 춥다고 답변하셨던 날씨" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-Tt-yzd">
+                                <rect key="frame" x="115" y="18" width="170" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="오늘은 따뜻하게 입으세요!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1zd-6j-Jep">
+                                <rect key="frame" x="115" y="36" width="187" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="databox" translatesAutoresizingMaskIntoConstraints="NO" id="pj1-cd-m4j">
+                                <rect key="frame" x="39" y="18.000000000000004" width="55" height="55.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="MZ2-fC-vqB"/>
+                                    <constraint firstAttribute="height" constant="55.32" id="P96-oS-Hh8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightarrow" translatesAutoresizingMaskIntoConstraints="NO" id="FAH-DI-qgm">
+                                <rect key="frame" x="311" y="38" width="11" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10.85" id="Zai-e7-SV7"/>
+                                    <constraint firstAttribute="height" constant="18.949999999999999" id="s7X-Ze-WOQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31764705879999999" green="0.53725490200000003" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FAH-DI-qgm" firstAttribute="top" secondItem="j1Z-xs-dUo" secondAttribute="top" constant="38" id="OBB-fT-w9W"/>
+                            <constraint firstAttribute="trailing" secondItem="FAH-DI-qgm" secondAttribute="trailing" constant="21.149999999999999" id="OMc-dq-QNs"/>
+                            <constraint firstItem="pj1-cd-m4j" firstAttribute="top" secondItem="j1Z-xs-dUo" secondAttribute="top" constant="18" id="i0r-gx-YGl"/>
+                            <constraint firstItem="pj1-cd-m4j" firstAttribute="leading" secondItem="j1Z-xs-dUo" secondAttribute="leadingMargin" constant="31" id="jp3-9l-UNW"/>
+                            <constraint firstAttribute="height" constant="92" id="m1T-eP-1Yo"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCG-np-Ryu">
+                        <rect key="frame" x="0.0" y="204" width="343" height="156"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gps" translatesAutoresizingMaskIntoConstraints="NO" id="BZm-s6-Lgf">
+                                <rect key="frame" x="20" y="18" width="12.666666666666664" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12.82" id="Nge-e8-wpN"/>
+                                    <constraint firstAttribute="height" constant="12" id="uFf-OI-GtM"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="경기도 용인시 기흥구" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NdR-Yg-x4e">
+                                <rect key="frame" x="36" y="8.6666666666666572" width="144" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="UGA-TP-ALR"/>
+                                    <constraint firstAttribute="width" constant="144" id="nLx-U2-PoV"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather_rain" translatesAutoresizingMaskIntoConstraints="NO" id="FB2-1b-au3">
+                                <rect key="frame" x="216.66666666666666" y="21" width="118.33333333333334" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113.73999999999999" id="Rrq-ve-qy4"/>
+                                    <constraint firstAttribute="width" constant="118.20999999999999" id="oBr-eg-2Vw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FB2-1b-au3" secondAttribute="trailing" constant="8" id="2fg-Cm-3o0"/>
+                            <constraint firstItem="FB2-1b-au3" firstAttribute="centerY" secondItem="qCG-np-Ryu" secondAttribute="centerY" id="39g-SI-4Cx"/>
+                            <constraint firstItem="BZm-s6-Lgf" firstAttribute="top" secondItem="qCG-np-Ryu" secondAttribute="top" constant="18" id="AzZ-fx-Jhz"/>
+                            <constraint firstItem="BZm-s6-Lgf" firstAttribute="leading" secondItem="qCG-np-Ryu" secondAttribute="leading" constant="20" id="CQc-uG-aZL"/>
+                            <constraint firstItem="NdR-Yg-x4e" firstAttribute="leading" secondItem="BZm-s6-Lgf" secondAttribute="trailing" constant="3.21" id="EXE-x2-pG2"/>
+                            <constraint firstAttribute="height" constant="156" id="NQh-Pb-w69"/>
+                            <constraint firstItem="NdR-Yg-x4e" firstAttribute="centerY" secondItem="BZm-s6-Lgf" secondAttribute="centerY" id="mF7-bQ-IAz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bG-vL-ZQh">
+                        <rect key="frame" x="0.0" y="372" width="343" height="127"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="127" id="QYl-fH-FSO"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JUJ-Mg-bmP">
+                        <rect key="frame" x="0.0" y="511" width="343" height="127"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="127" id="xec-CK-waa"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vh5-9R-YGn">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1bG-vL-ZQh" secondAttribute="trailing" id="36z-lJ-NdF"/>
+                    <constraint firstItem="j1Z-xs-dUo" firstAttribute="top" secondItem="1oF-U1-4pU" secondAttribute="bottom" constant="8" id="52f-PN-vc8"/>
+                    <constraint firstItem="j1Z-xs-dUo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7zd-8f-4VX"/>
+                    <constraint firstItem="1bG-vL-ZQh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8AI-dz-Nr9"/>
+                    <constraint firstItem="JUJ-Mg-bmP" firstAttribute="top" secondItem="1bG-vL-ZQh" secondAttribute="bottom" constant="12" id="GMP-Zc-sgU"/>
+                    <constraint firstAttribute="trailing" secondItem="1oF-U1-4pU" secondAttribute="trailing" id="LDF-JX-wJH"/>
+                    <constraint firstItem="qCG-np-Ryu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PlS-ig-Mq6"/>
+                    <constraint firstItem="1bG-vL-ZQh" firstAttribute="top" secondItem="qCG-np-Ryu" secondAttribute="bottom" constant="12" id="Sfn-Di-65S"/>
+                    <constraint firstItem="1oF-U1-4pU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iHe-qa-rEw"/>
+                    <constraint firstItem="JUJ-Mg-bmP" firstAttribute="leading" secondItem="qCG-np-Ryu" secondAttribute="leadingMargin" constant="-8" id="igf-cr-d6f"/>
+                    <constraint firstItem="1oF-U1-4pU" firstAttribute="trailingMargin" secondItem="JUJ-Mg-bmP" secondAttribute="trailing" constant="-8" id="m2J-v8-eYr"/>
+                    <constraint firstItem="1oF-U1-4pU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pnk-gp-q7G"/>
+                    <constraint firstAttribute="trailing" secondItem="j1Z-xs-dUo" secondAttribute="trailing" id="spq-FK-5XP"/>
+                    <constraint firstItem="qCG-np-Ryu" firstAttribute="top" secondItem="j1Z-xs-dUo" secondAttribute="bottom" constant="12" id="uf0-do-glO"/>
+                    <constraint firstAttribute="trailing" secondItem="qCG-np-Ryu" secondAttribute="trailing" id="xRM-oy-uDr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="75.572519083969468" y="35.563380281690144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="databox" width="50" height="56"/>
+        <image name="gps" width="13" height="12"/>
+        <image name="rain" width="66" height="44"/>
+        <image name="rightarrow" width="11" height="19"/>
+        <image name="weather_rain" width="219" height="221"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

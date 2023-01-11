@@ -16,8 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FVh-If-laX">
+                                <rect key="frame" x="0.0" y="135" width="393" height="683"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="FVh-If-laX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="JYZ-Ry-5Zt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FVh-If-laX" secondAttribute="trailing" id="UER-A9-q90"/>
+                            <constraint firstItem="FVh-If-laX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="hfL-aO-xIQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="FVh-If-laX" secondAttribute="bottom" id="wIJ-fB-byY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="NOW." id="ORm-Zg-Uzv">
                         <rightBarButtonItems>
@@ -29,6 +41,9 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mainTableView" destination="FVh-If-laX" id="qUc-qB-V9I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,6 +80,9 @@
         <image name="setting" width="21" height="22"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
