@@ -16,7 +16,7 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setBackgroundColor()
+//        setBackgroundColor()
         
         mainTableView.delegate = self
         mainTableView.dataSource = self
@@ -29,7 +29,7 @@ class MainPageViewController: UIViewController {
     func setBackgroundColor() {
         self.gradientLayer = CAGradientLayer()
         self.gradientLayer.frame = self.view.bounds
-        self.gradientLayer.colors = [UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 1).withAlphaComponent(0.7).cgColor, UIColor(red: 0.43, green: 0.515, blue: 0.583, alpha: 1).withAlphaComponent(0.7).cgColor,UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 1).withAlphaComponent(0.7).cgColor]
+        self.gradientLayer.colors = [UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 0.7).cgColor, UIColor(red: 0.43, green: 0.515, blue: 0.583, alpha: 0.7).cgColor,UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 0.7).cgColor]
         self.view.layer.addSublayer(self.gradientLayer)
     }
     
@@ -56,7 +56,7 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 620
+        return 638
     }
     
 }
