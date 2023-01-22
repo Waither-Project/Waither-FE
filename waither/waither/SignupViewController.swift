@@ -22,6 +22,11 @@ class SignupViewController: UIViewController {
         super.viewDidLoad()
 
         signupLabel.addCharacterSpacing()
+        signupButton.addTextSpacing(-1)
+        signupButton.layer.cornerRadius = 25
+        
+        duplicatedButton.addTextSpacing(-1)
+        duplicatedButton.layer.cornerRadius = 13
         
         //text field 입력 감지
         emailTextField.addTarget(self, action: #selector(emailTextFieldDidChange(textField:)),
@@ -39,8 +44,8 @@ class SignupViewController: UIViewController {
             emailBottomLine.backgroundColor = UIColor.main_blue
         } else {
             emailBottomLine.backgroundColor = UIColor.none_gray
-            signupButton.configuration?.background.backgroundColor = UIColor.none_gray
-            duplicatedButton.configuration?.background.backgroundColor = UIColor.none_gray
+            signupButton.backgroundColor = UIColor.none_gray
+            duplicatedButton.backgroundColor = UIColor.none_gray
         }
         
         guard let email = emailTextField.text, !email.isEmpty else { return }
@@ -49,14 +54,14 @@ class SignupViewController: UIViewController {
             alertIcon.isHidden = false
             emailValidLabel.isHidden = false
             emailBottomLine.backgroundColor = UIColor.alert_red
-            signupButton.configuration?.background.backgroundColor = UIColor.none_gray
-            duplicatedButton.configuration?.background.backgroundColor = UIColor.none_gray
+            signupButton.backgroundColor = UIColor.none_gray
+            duplicatedButton.backgroundColor = UIColor.none_gray
         } else {
             alertIcon.isHidden = true
             emailValidLabel.isHidden = true
             emailBottomLine.backgroundColor = UIColor.main_blue
-            signupButton.configuration?.background.backgroundColor = UIColor.main_blue
-            duplicatedButton.configuration?.background.backgroundColor = UIColor.main_blue
+            signupButton.backgroundColor = UIColor.main_blue
+            duplicatedButton.backgroundColor = UIColor.main_blue
         }
         
         

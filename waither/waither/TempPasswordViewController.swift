@@ -26,6 +26,9 @@ class TempPasswordViewController: UIViewController {
         descrLabel.text = "웨이더에 가입하셨던 이메일을 입력해주세요. \n" + "임시 비밀번호를 보내드릴게요."
         descrLabel.addCharacterSpacing()
         
+        tempPasswordButton.addTextSpacing(-1)
+        tempPasswordButton.layer.cornerRadius = 25
+        
         //text field 입력 감지
         emailTextField.addTarget(self, action: #selector(emailTextFieldDidChange(textField:)),
             for: UIControl.Event.editingChanged)
@@ -44,7 +47,7 @@ class TempPasswordViewController: UIViewController {
             emailBottomLine.backgroundColor = UIColor.main_blue
         } else {
             emailBottomLine.backgroundColor = UIColor.none_gray
-            tempPasswordButton.configuration?.background.backgroundColor = UIColor.none_gray
+            tempPasswordButton.backgroundColor = UIColor.none_gray
         }
         
         guard let email = emailTextField.text, !email.isEmpty else { return }
@@ -53,12 +56,12 @@ class TempPasswordViewController: UIViewController {
             alertIcon.isHidden = false
             emailValidLabel.isHidden = false
             emailBottomLine.backgroundColor = UIColor.alert_red
-            tempPasswordButton.configuration?.background.backgroundColor = UIColor.none_gray
+            tempPasswordButton.backgroundColor = UIColor.none_gray
         } else {
             alertIcon.isHidden = true
             emailValidLabel.isHidden = true
             emailBottomLine.backgroundColor = UIColor.main_blue
-            tempPasswordButton.configuration?.background.backgroundColor = UIColor.main_blue
+            tempPasswordButton.backgroundColor = UIColor.main_blue
         }
         
         

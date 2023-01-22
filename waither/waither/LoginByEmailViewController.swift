@@ -19,11 +19,16 @@ class LoginByEmailViewController: UIViewController {
     @IBOutlet weak var onOffButton: UIButton!
     
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var lostPwLabel: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         loginLabel.addCharacterSpacing()
+        lostPwLabel.addTextSpacing(-1)
+        loginButton.addTextSpacing(-1)
+        
+        loginButton.layer.cornerRadius = 25
         
         onOffButton.layer.isHidden = true
         
@@ -43,6 +48,13 @@ class LoginByEmailViewController: UIViewController {
             for: UIControl.Event.editingChanged)
         
         
+    }
+    @IBAction func lostPasswordButtonClicked(_ sender: Any) {
+        guard let tempPasswordVC = self.storyboard?.instantiateViewController(identifier: "TempPasswordViewController")
+        else{
+                return
+            }
+        self.navigationController?.pushViewController(tempPasswordVC, animated: true)
     }
     @IBAction func onOffBtnClicked(_ sender: Any) {
         if pwTextField.isSecureTextEntry == true {
@@ -92,14 +104,14 @@ class LoginByEmailViewController: UIViewController {
         if idTextField.text?.isEmpty == true || pwTextField.text?.isEmpty == true {
             if idTextField.text?.isEmpty == true {
                 idBottomLine.backgroundColor = UIColor.none_gray
-                loginButton.configuration?.background.backgroundColor = UIColor.none_gray
+                loginButton.backgroundColor = UIColor.none_gray
             } else {
                 pwBottomLine.backgroundColor = UIColor.none_gray
-                loginButton.configuration?.background.backgroundColor = UIColor.none_gray
+                loginButton.backgroundColor = UIColor.none_gray
             }
-            loginButton.configuration?.background.backgroundColor = UIColor.none_gray
+            loginButton.backgroundColor = UIColor.none_gray
         } else {
-            loginButton.configuration?.background.backgroundColor = UIColor.main_blue
+            loginButton.backgroundColor = UIColor.main_blue
         }
     }
 

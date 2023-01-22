@@ -64,15 +64,16 @@
                                     <color key="baseBackgroundColor" red="1" green="0.30588235289999999" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVe-7Q-WLv">
-                                <rect key="frame" x="88" y="501" width="100.66666666666669" height="19"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVe-7Q-WLv">
+                                <rect key="frame" x="88" y="501" width="71" height="19"/>
                                 <color key="backgroundColor" red="1" green="0.30588235289999999" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="8g4-i8-8Zp"/>
+                                    <constraint firstAttribute="width" constant="71" id="8g4-i8-8Zp"/>
                                     <constraint firstAttribute="height" constant="19" id="rtl-Jn-Ik5"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="이메일 로그인">
                                     <attributedString key="attributedTitle">
                                         <fragment content="이메일 로그인">
                                             <attributes>
@@ -83,16 +84,12 @@
                                     </attributedString>
                                     <color key="titleColor" name="Dark_gray"/>
                                 </state>
-                                <buttonConfiguration key="configuration" style="plain" title="이메일 로그인">
-                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
-                                    <color key="baseForegroundColor" name="Dark_gray"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="loginByEmailBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UcI-8Q-frZ"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgf-GJ-jmH">
-                                <rect key="frame" x="200.66666666666666" y="502.66666666666669" width="1" height="14.000000000000057"/>
+                                <rect key="frame" x="171" y="502.66666666666669" width="1" height="14.000000000000057"/>
                                 <color key="backgroundColor" name="Dark_gray"/>
                                 <color key="tintColor" name="Dark_gray"/>
                                 <constraints>
@@ -100,31 +97,6 @@
                                     <constraint firstAttribute="height" constant="14" id="ZJs-qQ-XNJ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5C-f5-k12">
-                                <rect key="frame" x="213.66666666666663" y="501" width="135.33333333333337" height="19"/>
-                                <color key="backgroundColor" red="1" green="0.30588235289999999" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="Bl0-bO-QpF"/>
-                                    <constraint firstAttribute="height" constant="19" id="EaK-1D-evL"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="107" id="hj8-iY-QVD"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="이메일 로그인">
-                                            <attributes>
-                                                <font key="NSFont" size="14" name="AppleSDGothicNeo-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="titleColor" name="Dark_gray"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" title="로그인 없이 계속하기 ">
-                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="13"/>
-                                    <color key="baseForegroundColor" name="Dark_gray"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ph-Fj-nfU">
                                 <rect key="frame" x="115.66666666666669" y="566" width="144" height="19"/>
                                 <constraints>
@@ -143,7 +115,7 @@
                                     <color key="baseForegroundColor" name="#898A8D"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAG-Xk-6Di">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAG-Xk-6Di">
                                 <rect key="frame" x="37.666666666666657" y="593" width="300" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.30588235289999999" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -151,8 +123,8 @@
                                     <constraint firstAttribute="width" constant="300" id="m87-Lm-oq0"/>
                                 </constraints>
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="이메일로 회원가입">
                                             <attributes>
@@ -160,31 +132,42 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseForegroundColor" name="Splash_blue"/>
-                                    <color key="baseBackgroundColor" red="1" green="0.30588235289999999" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
+                                    <color key="titleColor" name="Splash_blue"/>
+                                </state>
                                 <connections>
                                     <action selector="signupBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5rK-PG-OCg"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9w-MW-1IF">
+                                <rect key="frame" x="184" y="501" width="107" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="QKa-NU-sKp"/>
+                                    <constraint firstAttribute="width" constant="107" id="QbM-mk-Ig4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="로그인 없이 계속하기">
+                                    <color key="titleColor" name="Dark_gray"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eX9-s1-qLX" firstAttribute="centerX" secondItem="xgD-3R-g2D" secondAttribute="centerX" id="4KL-ii-20p"/>
-                            <constraint firstItem="Z5C-f5-k12" firstAttribute="top" secondItem="utS-hX-RMX" secondAttribute="bottom" constant="14" id="51D-5Q-OMn"/>
                             <constraint firstItem="1ph-Fj-nfU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="B2A-rj-cMe"/>
                             <constraint firstItem="UAG-Xk-6Di" firstAttribute="top" secondItem="1ph-Fj-nfU" secondAttribute="bottom" constant="8" id="CPL-Fe-lxi"/>
                             <constraint firstItem="utS-hX-RMX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="CpR-9F-Ocr"/>
                             <constraint firstItem="xgD-3R-g2D" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="G1p-DG-vFb"/>
                             <constraint firstItem="utS-hX-RMX" firstAttribute="top" secondItem="irf-m3-Fte" secondAttribute="bottom" constant="8" id="GaY-iQ-vCL"/>
                             <constraint firstItem="irf-m3-Fte" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="HdT-9j-JEZ"/>
+                            <constraint firstItem="F9w-MW-1IF" firstAttribute="top" secondItem="utS-hX-RMX" secondAttribute="bottom" constant="14" id="OYH-4J-2EP"/>
                             <constraint firstItem="xgD-3R-g2D" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="95" id="OoH-GE-ffC"/>
                             <constraint firstItem="xgf-GJ-jmH" firstAttribute="leading" secondItem="dVe-7Q-WLv" secondAttribute="trailing" constant="12" id="Sb0-F8-hzb"/>
                             <constraint firstItem="dVe-7Q-WLv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="88" id="Tic-KW-mvd"/>
-                            <constraint firstItem="Z5C-f5-k12" firstAttribute="leading" secondItem="xgf-GJ-jmH" secondAttribute="trailing" constant="12" id="Xg7-Wt-HxS"/>
+                            <constraint firstItem="1ph-Fj-nfU" firstAttribute="top" secondItem="F9w-MW-1IF" secondAttribute="bottom" constant="46" id="eha-Dj-bK5"/>
                             <constraint firstItem="dVe-7Q-WLv" firstAttribute="top" secondItem="utS-hX-RMX" secondAttribute="bottom" constant="14" id="ffh-zr-sWn"/>
-                            <constraint firstItem="1ph-Fj-nfU" firstAttribute="top" secondItem="Z5C-f5-k12" secondAttribute="bottom" constant="46" id="hkw-kg-81l"/>
+                            <constraint firstItem="F9w-MW-1IF" firstAttribute="leading" secondItem="xgf-GJ-jmH" secondAttribute="trailing" constant="12" id="iUh-ga-hJo"/>
                             <constraint firstItem="xgf-GJ-jmH" firstAttribute="top" secondItem="utS-hX-RMX" secondAttribute="bottom" constant="15.5" id="ilW-Gd-4Sh"/>
                             <constraint firstItem="UAG-Xk-6Di" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uop-As-ZyU"/>
                             <constraint firstItem="eX9-s1-qLX" firstAttribute="top" secondItem="xgD-3R-g2D" secondAttribute="top" constant="124" id="w0J-13-Tqt"/>
@@ -196,11 +179,12 @@
                         <outlet property="loginByEmailLabel" destination="dVe-7Q-WLv" id="EXf-74-ftX"/>
                         <outlet property="loginLabel" destination="eX9-s1-qLX" id="GOs-MI-Evu"/>
                         <outlet property="signinByEmailBtn" destination="UAG-Xk-6Di" id="J7Z-7u-WtP"/>
+                        <outlet property="withoutLoginLabel" destination="F9w-MW-1IF" id="hie-YB-kcA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884.05797101449286" y="75.669642857142847"/>
+            <point key="canvasLocation" x="884" y="75.369458128078819"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="s6G-kq-5xU">
@@ -235,14 +219,16 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7i-1p-4aB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7i-1p-4aB">
                                 <rect key="frame" x="300" y="303" width="60" height="24"/>
+                                <color key="backgroundColor" name="Gray"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="9kb-PG-f0U"/>
                                     <constraint firstAttribute="height" constant="24" id="Y7a-J1-RGK"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="중복확인">
                                             <attributes>
@@ -250,8 +236,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseBackgroundColor" name="Gray"/>
-                                </buttonConfiguration>
+                                </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBt-ML-FgN">
                                 <rect key="frame" x="16" y="335" width="344" height="2"/>
@@ -260,14 +245,16 @@
                                     <constraint firstAttribute="height" constant="2" id="m4C-Rn-Y9U"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B5-W7-G2N">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5B5-W7-G2N">
                                 <rect key="frame" x="16" y="707" width="343" height="52"/>
+                                <color key="backgroundColor" name="Gray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="05j-6c-X55"/>
                                     <constraint firstAttribute="width" constant="343" id="LJS-jG-5u7"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="회원가입 완료">
                                             <attributes>
@@ -275,8 +262,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseBackgroundColor" name="Gray"/>
-                                </buttonConfiguration>
+                                </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="ZHW-Eh-078">
                                 <rect key="frame" x="16" y="346" width="12" height="12"/>
@@ -421,14 +407,14 @@
                                     <action selector="onOffBtnClicked:" destination="zkv-Ve-2iY" eventType="touchUpInside" id="9gj-2m-l2m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCy-LO-jaG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PCy-LO-jaG">
                                 <rect key="frame" x="129.66666666666666" y="438" width="116" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="Tdu-T9-oxN"/>
                                     <constraint firstAttribute="height" constant="12" id="ZDC-sk-dUE"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="비밀번호를 잊으셨다면?">
                                             <attributes>
@@ -437,8 +423,8 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseForegroundColor" name="Dark_gray"/>
-                                </buttonConfiguration>
+                                    <color key="titleColor" name="Dark_gray"/>
+                                </state>
                                 <connections>
                                     <action selector="lostPasswordButtonClicked:" destination="zkv-Ve-2iY" eventType="touchUpInside" id="OR1-O9-XLa"/>
                                 </connections>
@@ -450,14 +436,15 @@
                                     <constraint firstAttribute="width" constant="16" id="yPo-UA-zil"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59G-dS-oB7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59G-dS-oB7">
                                 <rect key="frame" x="16" y="718" width="343" height="52"/>
+                                <color key="backgroundColor" name="Gray"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="7h8-6U-3CG"/>
                                     <constraint firstAttribute="height" constant="52" id="H9f-ML-s8h"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="로그인 하기">
                                             <attributes>
@@ -465,10 +452,17 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" name="Gray"/>
-                                </buttonConfiguration>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhP-rg-PGW">
+                                <rect key="frame" x="129.66666666666666" y="451" width="116" height="1"/>
+                                <color key="backgroundColor" name="Dark_gray"/>
+                                <color key="tintColor" name="Dark_gray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GfI-Fn-nUb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qHD-lO-n1R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -479,11 +473,14 @@
                             <constraint firstItem="PCy-LO-jaG" firstAttribute="top" secondItem="37I-Ay-jE8" secondAttribute="bottom" constant="20" id="Jfl-oZ-c5H"/>
                             <constraint firstItem="37I-Ay-jE8" firstAttribute="leading" secondItem="g2m-P6-AQe" secondAttribute="leading" id="M1M-9s-kLY"/>
                             <constraint firstItem="37I-Ay-jE8" firstAttribute="top" secondItem="g2m-P6-AQe" secondAttribute="bottom" constant="10" id="N2r-T7-0cM"/>
+                            <constraint firstItem="lhP-rg-PGW" firstAttribute="trailing" secondItem="PCy-LO-jaG" secondAttribute="trailing" id="NUk-Qq-kaQ"/>
                             <constraint firstItem="Hj0-1A-1Bs" firstAttribute="leading" secondItem="qHD-lO-n1R" secondAttribute="leading" constant="16" id="Rcz-qA-1DV"/>
                             <constraint firstItem="PCy-LO-jaG" firstAttribute="centerX" secondItem="SRw-5e-jMk" secondAttribute="centerX" id="ReJ-Ur-A1e"/>
+                            <constraint firstItem="lhP-rg-PGW" firstAttribute="bottom" secondItem="PCy-LO-jaG" secondAttribute="bottom" constant="2" id="SAS-ja-eQx"/>
                             <constraint firstAttribute="trailing" secondItem="69b-fW-8XV" secondAttribute="trailing" constant="16" id="TWM-km-5XU"/>
                             <constraint firstItem="37I-Ay-jE8" firstAttribute="top" secondItem="mHM-m6-k9t" secondAttribute="bottom" constant="12" id="U5o-Tu-NQU"/>
                             <constraint firstItem="qHD-lO-n1R" firstAttribute="trailing" secondItem="Hj0-1A-1Bs" secondAttribute="trailing" constant="16" id="XXA-VJ-S1j"/>
+                            <constraint firstItem="lhP-rg-PGW" firstAttribute="leading" secondItem="PCy-LO-jaG" secondAttribute="leading" id="ZFR-1b-dGf"/>
                             <constraint firstItem="qHD-lO-n1R" firstAttribute="bottom" secondItem="59G-dS-oB7" secondAttribute="bottom" constant="8" id="df3-ps-rD4"/>
                             <constraint firstItem="mHM-m6-k9t" firstAttribute="leading" secondItem="g2m-P6-AQe" secondAttribute="trailing" constant="10" id="dtl-wE-AVd"/>
                             <constraint firstItem="g2m-P6-AQe" firstAttribute="top" secondItem="69b-fW-8XV" secondAttribute="bottom" constant="27" id="eGd-Fs-2f5"/>
@@ -504,6 +501,7 @@
                         <outlet property="idTextField" destination="Hj0-1A-1Bs" id="VHB-Wj-AwV"/>
                         <outlet property="loginButton" destination="59G-dS-oB7" id="zW2-XT-1xV"/>
                         <outlet property="loginLabel" destination="rDs-St-Kss" id="oww-27-cs6"/>
+                        <outlet property="lostPwLabel" destination="PCy-LO-jaG" id="5Pn-tu-8LS"/>
                         <outlet property="onOffButton" destination="mHM-m6-k9t" id="Ayx-q9-afF"/>
                         <outlet property="pwBottomLine" destination="37I-Ay-jE8" id="GRd-TM-AuE"/>
                         <outlet property="pwTextField" destination="g2m-P6-AQe" id="2t7-vu-Xad"/>
@@ -511,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3z-Hl-F7k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="76"/>
+            <point key="canvasLocation" x="1674.4000000000001" y="75.369458128078819"/>
         </scene>
         <!--Temp Password View Controller-->
         <scene sceneID="uWG-W3-SFE">
@@ -561,14 +559,16 @@
                                     <constraint firstAttribute="height" constant="2" id="Hz4-QB-Rht"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNS-PJ-1Ii">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNS-PJ-1Ii">
                                 <rect key="frame" x="16" y="714" width="343" height="56"/>
+                                <color key="backgroundColor" name="Gray"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="kIb-lS-5AK"/>
                                     <constraint firstAttribute="height" constant="56" id="rzI-rT-03R"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="임시 비밀번호 받기 ">
                                             <attributes>
@@ -576,8 +576,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseBackgroundColor" name="Gray"/>
-                                </buttonConfiguration>
+                                </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="b50-wg-uZ8">
                                 <rect key="frame" x="16" y="436.66666666666669" width="12" height="12"/>

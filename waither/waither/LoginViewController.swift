@@ -12,19 +12,30 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginByEmailLabel: UIButton!
     @IBOutlet weak var signinByEmailBtn: UIButton!
     
+    @IBOutlet weak var withoutLoginLabel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         loginLabel.addCharacterSpacing()
+
+        loginByEmailLabel.addTextSpacing(-1)
+        withoutLoginLabel.addTextSpacing(-1)
+        signinByEmailBtn.addTextSpacing(-1)
         
-//        loginByEmailLabel.addTextSpacing(-1)
-//        loginByEmailLabel.titleLabel?.font =
         
         signinByEmailBtn.layer.borderWidth = 1
         signinByEmailBtn.layer.borderColor = UIColor.main_blue?.cgColor
         signinByEmailBtn.layer.cornerRadius = 20
     }
     
+    @IBAction func signupBtnClicked(_ sender: Any) {
+        guard let signupVC = self.storyboard?.instantiateViewController(identifier: "SignupViewController")
+        else{
+                return
+            }
+        self.navigationController?.pushViewController(signupVC, animated: true)
+    }
     @IBAction func loginByEmailBtnClicked(_ sender: Any) {
         guard let loginByEmailVC = self.storyboard?.instantiateViewController(identifier: "LoginByEmailViewController")
         else{
@@ -33,21 +44,13 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(loginByEmailVC, animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
 extension UIColor{
     static let main_blue = UIColor(named: "Splash_blue")
     static let none_gray = UIColor(named: "Gray")
+    static let alert_red = UIColor(named: "waither_red")
 }
 
 extension UIButton{
