@@ -114,16 +114,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRW-hM-cvV" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
-                                <rect key="frame" x="82" y="385" width="212" height="42.333333333333314"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" size="26" name="AppleSDGothicNeo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3500000000000001" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRW-hM-cvV" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
+                                <rect key="frame" x="82" y="370" width="212" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="bYZ-7W-2iu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="26"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
@@ -131,19 +128,31 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저는 당신의 어쩌고" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfz-DG-Rb1">
+                                <rect key="frame" x="90.666666666666671" y="415" width="193.66666666666663" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="XoQ-w4-flY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aRW-hM-cvV" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="eFg-MK-dXf"/>
+                            <constraint firstItem="Hfz-DG-Rb1" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="YeU-z5-7yN"/>
+                            <constraint firstItem="aRW-hM-cvV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="282" id="YrG-s1-ZmX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aRW-hM-cvV" secondAttribute="trailing" constant="81" id="fgh-UV-7vy"/>
                             <constraint firstItem="aRW-hM-cvV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="82" id="xnL-14-n9N"/>
+                            <constraint firstItem="Hfz-DG-Rb1" firstAttribute="top" secondItem="aRW-hM-cvV" secondAttribute="bottom" constant="10" id="yoA-ZG-gaP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qRC-Uj-Oht"/>
                     <connections>
-                        <outlet property="greetingMsg" destination="aRW-hM-cvV" id="AXN-S3-t2T"/>
+                        <outlet property="greetingMsg" destination="Hfz-DG-Rb1" id="qBc-vU-LzO"/>
                         <outlet property="greetingView" destination="5EZ-qb-Rvc" id="S3w-rC-CJ0"/>
+                        <outlet property="helloMsg" destination="aRW-hM-cvV" id="xug-d3-xxk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

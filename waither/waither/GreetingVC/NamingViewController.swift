@@ -19,6 +19,8 @@ class NamingViewController: UIViewController{
         super.viewDidLoad()
         
         explainLabel.text = "제가 뭐라고 부르면 될까요?"
+        explainLabel.addCharacterSpacing()
+        alertLabel.addCharacterSpacing()
         
         nameTextField.addTarget(self, action: #selector(nameTextFieldDidChange(textField:)),
                                 for: UIControl.Event.editingChanged)
@@ -30,15 +32,20 @@ class NamingViewController: UIViewController{
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+         self.navigationItem.hidesBackButton = true
+    }
+    
     @objc func nameTextFieldDidChange(textField: UITextField){
-        nameBottomLine.backgroundColor = UIColor.waither_blue
+        nameBottomLine.backgroundColor = UIColor.main_blue
         isfilled()
     }
     @objc func didEndOnExit(_ sender: UITextField) {
         
     }
     func isfilled(){
-        var res = isValid()
+        let res = isValid()
         if nameTextField.text?.isEmpty == true{
             okBtn.configuration?.background.backgroundColor = UIColor.none_gray
             nameBottomLine.backgroundColor = UIColor.red
@@ -46,8 +53,8 @@ class NamingViewController: UIViewController{
             okBtn.configuration?.background.backgroundColor = UIColor.none_gray
             nameBottomLine.backgroundColor = UIColor.red
         }else {
-            okBtn.configuration?.background.backgroundColor = UIColor.waither_blue
-            nameBottomLine.backgroundColor = UIColor.waither_blue
+            okBtn.configuration?.background.backgroundColor = UIColor.main_blue
+            nameBottomLine.backgroundColor = UIColor.main_blue
         }
     }
     
@@ -60,7 +67,7 @@ class NamingViewController: UIViewController{
         }else{
             alertIcon.isHidden = true
             alertLabel.isHidden = true
-            nameBottomLine.backgroundColor = UIColor.waither_blue
+            nameBottomLine.backgroundColor = UIColor.main_blue
         }
         
         return true

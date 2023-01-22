@@ -10,6 +10,7 @@ import UIKit
 
 
 class GreetingViewController: UIViewController {
+    @IBOutlet weak var helloMsg: UILabel!
     @IBOutlet weak var greetingMsg: UILabel!
     @IBOutlet var greetingView: UIView!
     
@@ -17,24 +18,23 @@ class GreetingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let greeting = "안녕하세요." + "\n저는 당신의 가상 비서" + "\n웨이더에요!"
+        greetingMsg.text = "저는 당신의 가상 비서" + "\n웨이더에요!"
         
-        let style = NSMutableParagraphStyle()
-        let fontSize: CGFloat = 26
-        let lineheight = fontSize * 1.35  //font size * multiple
-        style.minimumLineHeight = lineheight
-        style.maximumLineHeight = lineheight
-        style.alignment = .center
-        
-        
-    
-        greetingMsg.attributedText = NSAttributedString(
-          string: greeting,
-          attributes: [
-            .paragraphStyle: style,
-                .baselineOffset: (lineheight - fontSize) / 4
-          ])
+        helloMsg.addCharacterSpacing()
         greetingMsg.addCharacterSpacing()
+        
+        let attributedString = NSMutableAttributedString(string: greetingMsg.text!, attributes: [
+            .font: UIFont.fontWithName(type: .medium, size: 26),
+                  .foregroundColor: UIColor(white: 0.0, alpha: 1.0),
+                  .kern: -1
+                 ])
+                
+        attributedString.addAttribute(.font, value: UIFont.fontWithName(type: .bold, size: 26), range: (greetingMsg.text! as NSString).range(of: "가상 비서"))
+        
+        attributedString.addAttribute(.font, value: UIFont.fontWithName(type: .bold, size: 26), range: (greetingMsg.text! as NSString).range(of: "웨이더"))
+                
+        self.greetingMsg.attributedText = attributedString
+        
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
 
@@ -53,19 +53,8 @@ class GreetingViewController: UIViewController {
                         .bold(string: "가상 비서", fontSize: 26)
     }
     
-    
-    
 }
-open class CustomLabel : UILabel {
-    @IBInspectable open var characterSpacing:CGFloat = 1 {
-        didSet {
-            let attributedString = NSMutableAttributedString(string: self.text!)
-            attributedString.addAttribute(NSAttributedString.Key.kern, value: self.characterSpacing, range: NSRange(location: 0, length: attributedString.length))
-            self.attributedText = attributedString
-        }
 
-    }
-}
 extension UILabel {
     func addCharacterSpacing(kernValue:Double = -1.0) {
         guard let text = text, !text.isEmpty else { return }
@@ -84,4 +73,31 @@ extension NSMutableAttributedString {
         return self
     }
 }
+
+enum FontType {
+    case regular, bold, medium, light, semibold
+}
+
+extension UIFont {
+    static func fontWithName(type: FontType, size: CGFloat) -> UIFont {
+        var fontName = ""
+        switch type {
+        case .regular:
+            fontName = "AppleSDGothicNeo-Regular"
+        case .light:
+            fontName = "AppleSDGothicNeo-Light"
+        case .medium:
+            fontName = "AppleSDGothicNeo-Medium"
+        case .semibold:
+            fontName = "AppleSDGothicNeo-SemiBold"
+        case .bold:
+            fontName = "AppleSDGothicNeo-Bold"
+        }
+        
+        return UIFont(name: fontName, size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+}
+                                                         
+                                                        
+
 
