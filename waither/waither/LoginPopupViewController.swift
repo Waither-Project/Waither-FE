@@ -46,6 +46,18 @@ class LoginPopupViewController: UIViewController {
 
         
     }
+    @IBAction func okButtonClicked(_ sender: Any) {
+        
+        let Greeting = UIStoryboard.init(name: "Greeting", bundle: nil)
+        guard let pvc = self.presentingViewController else { return }
+        self.dismiss(animated: false) {
+            let nextVC = Greeting.instantiateViewController(withIdentifier: "GreetingViewController") as! GreetingViewController
+            let navController = UINavigationController(rootViewController: nextVC)
+            navController.modalTransitionStyle = .coverVertical
+            navController.modalPresentationStyle = .fullScreen
+            pvc.present(navController, animated:true, completion: nil)
+        }
+    }
     
     @objc func dismissView(){
             dismiss(animated: false, completion: nil)
