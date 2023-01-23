@@ -27,6 +27,9 @@ class LoginViewController: UIViewController {
         signinByEmailBtn.layer.borderWidth = 1
         signinByEmailBtn.layer.borderColor = UIColor.main_blue?.cgColor
         signinByEmailBtn.layer.cornerRadius = 20
+        
+        withoutLoginLabel.addTarget(self, action: #selector(goAlert), for: .touchUpInside)
+        
     }
     
     @IBAction func signupBtnClicked(_ sender: Any) {
@@ -44,8 +47,17 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(loginByEmailVC, animated: true)
     }
     
+    
+    @objc func goAlert(){
+            let alert = self.storyboard?.instantiateViewController(withIdentifier: "LoginPopupViewController") as! LoginPopupViewController
+            alert.modalPresentationStyle = .overCurrentContext
+            present(alert, animated: false, completion: nil)
+        }
+    
 
 }
+
+
 
 extension UIColor{
     static let main_blue = UIColor(named: "Splash_blue")
