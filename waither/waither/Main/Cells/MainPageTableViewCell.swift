@@ -10,13 +10,25 @@ import UIKit
 class MainPageTableViewCell: UITableViewCell {
 
     @IBOutlet weak var notiView: UIView!
+    @IBOutlet weak var notiSmallLabel: UILabel!
+    @IBOutlet weak var notiBigLabel: UILabel!
+    @IBOutlet weak var notiWeatherImage: UIImageView!
+    
     @IBOutlet weak var personalView: UIView!
+    @IBOutlet weak var personalSmallLabel: UILabel!
+    @IBOutlet weak var personalBigLabel: UILabel!
+    
     @IBOutlet weak var normView: UIView!
+    @IBOutlet weak var normLocationLabel: UILabel!
+    @IBOutlet weak var normTemLabel: UILabel!
+    @IBOutlet weak var normLowestLabel: UILabel!
+    @IBOutlet weak var normTopLabel: UILabel!
+    @IBOutlet weak var normWeatherImage: UIImageView!
     
     @IBOutlet weak var onoffView: UIView!
-    @IBOutlet weak var windTitleView: UIView!
-    @IBOutlet weak var rainTitleView: UIView!
-    @IBOutlet weak var dustTitleView: UIView!
+    @IBOutlet weak var onoffWindTitleView: UIView!
+    @IBOutlet weak var onoffRainTitleView: UIView!
+    @IBOutlet weak var onoffDustTitleView: UIView!
     
     @IBOutlet weak var forecastCollectionView: UICollectionView!
     
@@ -25,10 +37,15 @@ class MainPageTableViewCell: UITableViewCell {
         // Initialization code
         self.backgroundColor = UIColor.clear
         setView(view: notiView)
+        
+        
+        
         setView(view: personalView)
         setView(view: normView)
+        
         setView(view: onoffView)
         setOnoffView()
+        
         setView(view: forecastCollectionView)
     }
 
@@ -38,6 +55,7 @@ class MainPageTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // 모든 섹션
     func setView(view: UIView) {
         view.layer.cornerRadius = 16
         
@@ -47,9 +65,10 @@ class MainPageTableViewCell: UITableViewCell {
         view.layer.masksToBounds = false
     }
     
+    // 섹션4 특정
     func setOnoffView() {
-        windTitleView.layer.cornerRadius = 10
-        rainTitleView.layer.cornerRadius = 10
-        dustTitleView.layer.cornerRadius = 10
+        onoffWindTitleView.layer.cornerRadius = 10
+        onoffRainTitleView.layer.cornerRadius = 10
+        onoffDustTitleView.layer.cornerRadius = 10
     }
 }
