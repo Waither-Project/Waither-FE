@@ -14,6 +14,8 @@
 		D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF01F29687C2A00703336 /* SF-Pro.ttf */; };
 		D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */; };
 		D0D4B567297EB5B4007E3A6D /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D4B566297EB5B4007E3A6D /* CustomLabel.swift */; };
+		D0D4B56A297EC0B5007E3A6D /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D4B568297EC0B5007E3A6D /* ForecastCollectionViewCell.swift */; };
+		D0D4B56B297EC0B5007E3A6D /* ForecastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D4B569297EC0B5007E3A6D /* ForecastCollectionViewCell.xib */; };
 		E756BC1D2965B5B800948296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756BC1C2965B5B800948296 /* AppDelegate.swift */; };
 		E756BC1F2965B5B800948296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756BC1E2965B5B800948296 /* SceneDelegate.swift */; };
 		E756BC212965B5B800948296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756BC202965B5B800948296 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		D08DF01F29687C2A00703336 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
 		D0D4B566297EB5B4007E3A6D /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		D0D4B568297EC0B5007E3A6D /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0D4B569297EC0B5007E3A6D /* ForecastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastCollectionViewCell.xib; sourceTree = "<group>"; };
 		E756BC192965B5B800948296 /* waither.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waither.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E756BC1C2965B5B800948296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E756BC1E2965B5B800948296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 			children = (
 				D018E945296EC5D900862307 /* MainPageTableViewCell.swift */,
 				D018E946296EC5D900862307 /* MainPageTableViewCell.xib */,
+				D0D4B568297EC0B5007E3A6D /* ForecastCollectionViewCell.swift */,
+				D0D4B569297EC0B5007E3A6D /* ForecastCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 				D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */,
 				D018E948296EC5D900862307 /* MainPageTableViewCell.xib in Resources */,
 				E756BC262965B5B900948296 /* Assets.xcassets in Resources */,
+				D0D4B56B297EC0B5007E3A6D /* ForecastCollectionViewCell.xib in Resources */,
 				E756BC242965B5B800948296 /* Main.storyboard in Resources */,
 				D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */,
 			);
@@ -191,6 +198,7 @@
 				D0D4B567297EB5B4007E3A6D /* CustomLabel.swift in Sources */,
 				E756BC212965B5B800948296 /* ViewController.swift in Sources */,
 				D018E947296EC5D900862307 /* MainPageTableViewCell.swift in Sources */,
+				D0D4B56A297EC0B5007E3A6D /* ForecastCollectionViewCell.swift in Sources */,
 				E756BC1D2965B5B800948296 /* AppDelegate.swift in Sources */,
 				E756BC1F2965B5B800948296 /* SceneDelegate.swift in Sources */,
 			);

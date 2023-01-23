@@ -8,6 +8,7 @@
 import UIKit
 
 class MainPageTableViewCell: UITableViewCell {
+    static let identifier = "MainPageTableViewCell"
 
     @IBOutlet weak var notiView: UIView!
     @IBOutlet weak var notiSmallLabel: UILabel!
@@ -37,9 +38,6 @@ class MainPageTableViewCell: UITableViewCell {
         // Initialization code
         self.backgroundColor = UIColor.clear
         setView(view: notiView)
-        
-        
-        
         setView(view: personalView)
         setView(view: normView)
         
@@ -47,6 +45,10 @@ class MainPageTableViewCell: UITableViewCell {
         setOnoffView()
         
         setView(view: forecastCollectionView)
+        let forecastNib = UINib(nibName: ForecastCollectionViewCell.identifier, bundle: nil)
+        forecastCollectionView.register(forecastNib, forCellWithReuseIdentifier: ForecastCollectionViewCell.identifier)
+        forecastCollectionView.delegate = self
+        forecastCollectionView.dataSource = self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -71,4 +73,20 @@ class MainPageTableViewCell: UITableViewCell {
         onoffRainTitleView.layer.cornerRadius = 10
         onoffDustTitleView.layer.cornerRadius = 10
     }
+}
+
+extension MainPageTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = forecastCollectionView.dequeueReusableCell(withReuseIdentifier: ForecastCollectionViewCell.identifier, for: indexPath) as? ForecastCollectionViewCell else { return UICollectionViewCell() }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 48, height: 127)
+    }
+    
 }
