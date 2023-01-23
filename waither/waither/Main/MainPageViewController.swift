@@ -32,11 +32,6 @@ class MainPageViewController: UIViewController {
         self.gradientLayer.colors = [UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 0.7).cgColor, UIColor(red: 0.43, green: 0.515, blue: 0.583, alpha: 0.7).cgColor,UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 0.7).cgColor]
         self.view.layer.addSublayer(self.gradientLayer)
     }
-    
-    // title font 설정
-    func setTitleFont() {
-        
-    }
 
 }
 
@@ -52,11 +47,12 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainPageTableViewCell", for: indexPath) as? MainPageTableViewCell else {
             return UITableViewCell()
         }
+        cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 638
+        return 670
     }
     
 }
