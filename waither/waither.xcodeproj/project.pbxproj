@@ -18,7 +18,6 @@
 		10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3ED2961AED500A93DB3 /* ViewController.swift */; };
 		10EDD3F12961AED500A93DB3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EDD3EF2961AED500A93DB3 /* Settings.storyboard */; };
 		10EDD3F32961AED600A93DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EDD3F22961AED600A93DB3 /* Assets.xcassets */; };
-		10EDD3F62961AED600A93DB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EDD3F42961AED600A93DB3 /* LaunchScreen.storyboard */; };
 		10EDD3FE2961B55A00A93DB3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */; };
 		10EDD4002961B59600A93DB3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */; };
 		10EDD4062965783B00A93DB3 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */; };
@@ -29,6 +28,20 @@
 		10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A2296F36130097C900 /* SettingsViewController.swift */; };
 		10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A4296FEF490097C900 /* CustomLabel.swift */; };
 		C7F6871A5A774B531AC70FE0 /* Pods_waither.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D731590A32775A68193051A /* Pods_waither.framework */; };
+		E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */; };
+		E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FB9D297FB96C00AAF69A /* Greeting.storyboard */; };
+		E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FB9F297FB97500AAF69A /* GreetingViewController.swift */; };
+		E731FBA2297FB97500AAF69A /* NamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBA0297FB97500AAF69A /* NamingViewController.swift */; };
+		E731FBA4297FB98500AAF69A /* LaunchScreen_white.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FBA3297FB98400AAF69A /* LaunchScreen_white.storyboard */; };
+		E731FBAA297FB98F00AAF69A /* LoginByEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBA5297FB98F00AAF69A /* LoginByEmailViewController.swift */; };
+		E731FBAB297FB98F00AAF69A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FBA6297FB98F00AAF69A /* Login.storyboard */; };
+		E731FBAC297FB98F00AAF69A /* LoginPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBA7297FB98F00AAF69A /* LoginPopupViewController.swift */; };
+		E731FBAD297FB98F00AAF69A /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBA8297FB98F00AAF69A /* LoginNavigationController.swift */; };
+		E731FBAE297FB98F00AAF69A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBA9297FB98F00AAF69A /* LoginViewController.swift */; };
+		E731FBB3297FB99E00AAF69A /* TempPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBAF297FB99E00AAF69A /* TempPasswordViewController.swift */; };
+		E731FBB4297FB99E00AAF69A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBB0297FB99E00AAF69A /* SplashViewController.swift */; };
+		E731FBB5297FB99E00AAF69A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBB1297FB99E00AAF69A /* SignupViewController.swift */; };
+		E731FBB6297FB99E00AAF69A /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBB2297FB99E00AAF69A /* SigninViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +59,6 @@
 		10EDD3ED2961AED500A93DB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10EDD3F02961AED500A93DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		10EDD3F22961AED600A93DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		10EDD3F52961AED600A93DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10EDD3F72961AED600A93DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -58,6 +70,20 @@
 		10F873A2296F36130097C900 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		10F873A4296FEF490097C900 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		7C8DEB68397007B090EE7886 /* Pods-waither.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.release.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.release.xcconfig"; sourceTree = "<group>"; };
+		E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E731FB9D297FB96C00AAF69A /* Greeting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Greeting.storyboard; path = PasswordDataManager/Greeting.storyboard; sourceTree = "<group>"; };
+		E731FB9F297FB97500AAF69A /* GreetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		E731FBA0297FB97500AAF69A /* NamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamingViewController.swift; sourceTree = "<group>"; };
+		E731FBA3297FB98400AAF69A /* LaunchScreen_white.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen_white.storyboard; sourceTree = "<group>"; };
+		E731FBA5297FB98F00AAF69A /* LoginByEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginByEmailViewController.swift; sourceTree = "<group>"; };
+		E731FBA6297FB98F00AAF69A /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		E731FBA7297FB98F00AAF69A /* LoginPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPopupViewController.swift; sourceTree = "<group>"; };
+		E731FBA8297FB98F00AAF69A /* LoginNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		E731FBA9297FB98F00AAF69A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E731FBAF297FB99E00AAF69A /* TempPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempPasswordViewController.swift; sourceTree = "<group>"; };
+		E731FBB0297FB99E00AAF69A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		E731FBB1297FB99E00AAF69A /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E731FBB2297FB99E00AAF69A /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +130,24 @@
 			children = (
 				10C1045C2977E385008AEE46 /* PasswordDataManager */,
 				10EDD3E92961AED500A93DB3 /* AppDelegate.swift */,
+				E731FB9D297FB96C00AAF69A /* Greeting.storyboard */,
+				E731FB9F297FB97500AAF69A /* GreetingViewController.swift */,
+				E731FBA0297FB97500AAF69A /* NamingViewController.swift */,
 				10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */,
+				E731FBA3297FB98400AAF69A /* LaunchScreen_white.storyboard */,
+				E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */,
 				10EDD3ED2961AED500A93DB3 /* ViewController.swift */,
 				10C104612977F7B3008AEE46 /* Main.storyboard */,
 				10EDD3EF2961AED500A93DB3 /* Settings.storyboard */,
+				E731FBB2297FB99E00AAF69A /* SigninViewController.swift */,
+				E731FBB1297FB99E00AAF69A /* SignupViewController.swift */,
+				E731FBB0297FB99E00AAF69A /* SplashViewController.swift */,
+				E731FBAF297FB99E00AAF69A /* TempPasswordViewController.swift */,
+				E731FBA6297FB98F00AAF69A /* Login.storyboard */,
+				E731FBA5297FB98F00AAF69A /* LoginByEmailViewController.swift */,
+				E731FBA8297FB98F00AAF69A /* LoginNavigationController.swift */,
+				E731FBA7297FB98F00AAF69A /* LoginPopupViewController.swift */,
+				E731FBA9297FB98F00AAF69A /* LoginViewController.swift */,
 				10F873A4296FEF490097C900 /* CustomLabel.swift */,
 				10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */,
 				10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */,
@@ -120,7 +160,6 @@
 				10F8739A296AD5FE0097C900 /* PasswordViewController.swift */,
 				10F8739E296C2DF10097C900 /* PopupViewController.swift */,
 				10EDD3F22961AED600A93DB3 /* Assets.xcassets */,
-				10EDD3F42961AED600A93DB3 /* LaunchScreen.storyboard */,
 				10EDD3F72961AED600A93DB3 /* Info.plist */,
 				10F873A1296EECD60097C900 /* SF-Pro.ttf */,
 			);
@@ -204,11 +243,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10EDD3F62961AED600A93DB3 /* LaunchScreen.storyboard in Resources */,
 				10C104632977F7B3008AEE46 /* Main.storyboard in Resources */,
 				10F71A102976AED4008EA002 /* SF-Pro.ttf in Resources */,
 				10EDD3F32961AED600A93DB3 /* Assets.xcassets in Resources */,
+				E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */,
+				E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */,
 				10EDD3F12961AED500A93DB3 /* Settings.storyboard in Resources */,
+				E731FBA4297FB98500AAF69A /* LaunchScreen_white.storyboard in Resources */,
+				E731FBAB297FB98F00AAF69A /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,18 +306,28 @@
 				10C1045E2977E3D7008AEE46 /* PasswordModel.swift in Sources */,
 				10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */,
 				10F8739B296AD5FE0097C900 /* PasswordViewController.swift in Sources */,
+				E731FBAA297FB98F00AAF69A /* LoginByEmailViewController.swift in Sources */,
 				10EDD4062965783B00A93DB3 /* PrivacyViewController.swift in Sources */,
+				E731FBA2297FB97500AAF69A /* NamingViewController.swift in Sources */,
 				10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */,
 				10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */,
 				10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */,
 				10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */,
+				E731FBAE297FB98F00AAF69A /* LoginViewController.swift in Sources */,
+				E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */,
 				10F8739F296C2DF10097C900 /* PopupViewController.swift in Sources */,
 				10F8739D296AFD460097C900 /* AlarmViewController.swift in Sources */,
+				E731FBAD297FB98F00AAF69A /* LoginNavigationController.swift in Sources */,
+				E731FBB4297FB99E00AAF69A /* SplashViewController.swift in Sources */,
+				E731FBB6297FB99E00AAF69A /* SigninViewController.swift in Sources */,
 				1061C2302970160200A6670E /* WindViewController.swift in Sources */,
 				10EDD3FE2961B55A00A93DB3 /* UIView+Extension.swift in Sources */,
 				10C104602977E3E5008AEE46 /* PasswordDataManager.swift in Sources */,
 				103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */,
+				E731FBAC297FB98F00AAF69A /* LoginPopupViewController.swift in Sources */,
 				10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */,
+				E731FBB5297FB99E00AAF69A /* SignupViewController.swift in Sources */,
+				E731FBB3297FB99E00AAF69A /* TempPasswordViewController.swift in Sources */,
 				10EDD4002961B59600A93DB3 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +349,6 @@
 				10EDD3F02961AED500A93DB3 /* Base */,
 			);
 			name = Settings.storyboard;
-			sourceTree = "<group>";
-		};
-		10EDD3F42961AED600A93DB3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10EDD3F52961AED600A93DB3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,7 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R62RZ89ZRU;
+				DEVELOPMENT_TEAM = 3SUNDG6XAZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Waither/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -440,12 +484,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.waither.waither;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunseo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,9 +504,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R62RZ89ZRU;
+				DEVELOPMENT_TEAM = 3SUNDG6XAZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Waither/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,13 +515,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.waither.waither;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunseo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

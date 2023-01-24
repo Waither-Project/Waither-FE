@@ -25,7 +25,7 @@ class WindViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Apple SD Gothic Neo Bold", size: 15)!, .foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.tintColor = .white
         
-        switch9.transform = CGAffineTransformMakeScale(0.75, 0.75);
+        switch9.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
         
         verticalSlider.slider.addTarget(self, action: #selector(sliderChanged), for: .valueChanged)
         
