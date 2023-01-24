@@ -48,9 +48,6 @@ class GreetingViewController: UIViewController {
                 guard let namingVC = self.storyboard?.instantiateViewController(identifier: "NamingViewController") as? NamingViewController else { return }
                     self.navigationController?.pushViewController(namingVC, animated: true)
 
-                
-                greetingMsg.attributedText = NSMutableAttributedString()
-                        .bold(string: "가상 비서", fontSize: 26)
     }
     
 }

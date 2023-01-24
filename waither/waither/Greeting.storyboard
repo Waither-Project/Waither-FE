@@ -159,10 +159,10 @@
             </objects>
             <point key="canvasLocation" x="916" y="75.369458128078819"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--GreetingNavigationController-->
         <scene sceneID="jeI-xZ-Dn6">
             <objects>
-                <navigationController storyboardIdentifier="GreetingNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="YRE-Q9-Pae" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GreetingNavigationController" title="GreetingNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="YRE-Q9-Pae" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Teb-jO-5pn">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
