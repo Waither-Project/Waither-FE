@@ -120,6 +120,7 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        UserdataDataManager().userdataDataManager()
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: NameTextField)
         
         //view.isOpaque = false
