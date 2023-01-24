@@ -28,6 +28,12 @@
 		10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A2296F36130097C900 /* SettingsViewController.swift */; };
 		10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A4296FEF490097C900 /* CustomLabel.swift */; };
 		C7F6871A5A774B531AC70FE0 /* Pods_waither.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D731590A32775A68193051A /* Pods_waither.framework */; };
+		D0C7AB9129804FC400D96CB4 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C7AB8E29804FC300D96CB4 /* MainPage.storyboard */; };
+		D0C7AB9329804FC400D96CB4 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7AB9029804FC300D96CB4 /* MainPageViewController.swift */; };
+		D0C7AB9929804FED00D96CB4 /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7AB9529804FEC00D96CB4 /* MainPageTableViewCell.swift */; };
+		D0C7AB9A29804FED00D96CB4 /* ForecastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7AB9629804FEC00D96CB4 /* ForecastCollectionViewCell.xib */; };
+		D0C7AB9B29804FED00D96CB4 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7AB9729804FEC00D96CB4 /* MainPageTableViewCell.xib */; };
+		D0C7AB9C29804FED00D96CB4 /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7AB9829804FED00D96CB4 /* ForecastCollectionViewCell.swift */; };
 		E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */; };
 		E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FB9D297FB96C00AAF69A /* Greeting.storyboard */; };
 		E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FB9F297FB97500AAF69A /* GreetingViewController.swift */; };
@@ -70,6 +76,12 @@
 		10F873A2296F36130097C900 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		10F873A4296FEF490097C900 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		7C8DEB68397007B090EE7886 /* Pods-waither.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.release.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.release.xcconfig"; sourceTree = "<group>"; };
+		D0C7AB8E29804FC300D96CB4 /* MainPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		D0C7AB9029804FC300D96CB4 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		D0C7AB9529804FEC00D96CB4 /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
+		D0C7AB9629804FEC00D96CB4 /* ForecastCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastCollectionViewCell.xib; sourceTree = "<group>"; };
+		D0C7AB9729804FEC00D96CB4 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
+		D0C7AB9829804FED00D96CB4 /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E731FB9D297FB96C00AAF69A /* Greeting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Greeting.storyboard; path = PasswordDataManager/Greeting.storyboard; sourceTree = "<group>"; };
 		E731FB9F297FB97500AAF69A /* GreetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +140,7 @@
 		10EDD3E82961AED500A93DB3 /* waither */ = {
 			isa = PBXGroup;
 			children = (
+				D0C7AB8D29804FAC00D96CB4 /* Main */,
 				10C1045C2977E385008AEE46 /* PasswordDataManager */,
 				10EDD3E92961AED500A93DB3 /* AppDelegate.swift */,
 				E731FB9D297FB96C00AAF69A /* Greeting.storyboard */,
@@ -181,6 +194,27 @@
 				7C8DEB68397007B090EE7886 /* Pods-waither.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0C7AB8D29804FAC00D96CB4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7AB9429804FCB00D96CB4 /* Cells */,
+				D0C7AB8E29804FC300D96CB4 /* MainPage.storyboard */,
+				D0C7AB9029804FC300D96CB4 /* MainPageViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D0C7AB9429804FCB00D96CB4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7AB9829804FED00D96CB4 /* ForecastCollectionViewCell.swift */,
+				D0C7AB9629804FEC00D96CB4 /* ForecastCollectionViewCell.xib */,
+				D0C7AB9529804FEC00D96CB4 /* MainPageTableViewCell.swift */,
+				D0C7AB9729804FEC00D96CB4 /* MainPageTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +280,12 @@
 				10C104632977F7B3008AEE46 /* Main.storyboard in Resources */,
 				10F71A102976AED4008EA002 /* SF-Pro.ttf in Resources */,
 				10EDD3F32961AED600A93DB3 /* Assets.xcassets in Resources */,
+				D0C7AB9A29804FED00D96CB4 /* ForecastCollectionViewCell.xib in Resources */,
 				E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */,
 				E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */,
+				D0C7AB9B29804FED00D96CB4 /* MainPageTableViewCell.xib in Resources */,
 				10EDD3F12961AED500A93DB3 /* Settings.storyboard in Resources */,
+				D0C7AB9129804FC400D96CB4 /* MainPage.storyboard in Resources */,
 				E731FBA4297FB98500AAF69A /* LaunchScreen_white.storyboard in Resources */,
 				E731FBAB297FB98F00AAF69A /* Login.storyboard in Resources */,
 			);
@@ -310,6 +347,8 @@
 				10EDD4062965783B00A93DB3 /* PrivacyViewController.swift in Sources */,
 				E731FBA2297FB97500AAF69A /* NamingViewController.swift in Sources */,
 				10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */,
+				D0C7AB9C29804FED00D96CB4 /* ForecastCollectionViewCell.swift in Sources */,
+				D0C7AB9329804FC400D96CB4 /* MainPageViewController.swift in Sources */,
 				10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */,
 				10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */,
 				10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */,
@@ -324,6 +363,7 @@
 				10EDD3FE2961B55A00A93DB3 /* UIView+Extension.swift in Sources */,
 				10C104602977E3E5008AEE46 /* PasswordDataManager.swift in Sources */,
 				103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */,
+				D0C7AB9929804FED00D96CB4 /* MainPageTableViewCell.swift in Sources */,
 				E731FBAC297FB98F00AAF69A /* LoginPopupViewController.swift in Sources */,
 				10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */,
 				E731FBB5297FB99E00AAF69A /* SignupViewController.swift in Sources */,
@@ -479,6 +519,7 @@
 				DEVELOPMENT_TEAM = 3SUNDG6XAZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Waither/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -510,6 +551,7 @@
 				DEVELOPMENT_TEAM = 3SUNDG6XAZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Waither/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

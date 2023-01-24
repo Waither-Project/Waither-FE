@@ -134,12 +134,12 @@
 		90C2B7BF0C5CCD7E093BAE5AA51201F0 /* Pods-waither-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-waither-dummy.m"; sourceTree = "<group>"; };
 		9C22B24DB172B9F93DE557B0B896A4B6 /* CircularSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircularSlider-Info.plist"; sourceTree = "<group>"; };
 		9C6773B83DAA14AEA5E940522A843EDE /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0F8B6501CDF1ACE21E3025583BC5912 /* VerticalSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VerticalSlider.debug.xcconfig; sourceTree = "<group>"; };
 		A33F90BF0958D3EB5AA9969F88719B23 /* CircularSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircularSlider-dummy.m"; sourceTree = "<group>"; };
 		A8983338D0593D10B54C5BDD5444AEBF /* Pods-waither-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-waither-Info.plist"; sourceTree = "<group>"; };
 		A911D5D879896EC037EC6EBC005BE933 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
-		AC8A020185EABB080AEE9B517D63408B /* Pods-waither */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-waither"; path = Pods_waither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8A020185EABB080AEE9B517D63408B /* Pods_waither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF859569B790893B0E6087F4E3A210B /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		B2C34054A7C3D847E177FD2B8C888FE1 /* VerticalSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalSlider.swift; path = VerticalSlider/Classes/VerticalSlider.swift; sourceTree = "<group>"; };
 		B33173FE69C60B55556D721244E035D4 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
@@ -222,7 +222,6 @@
 				B2C34054A7C3D847E177FD2B8C888FE1 /* VerticalSlider.swift */,
 				2FC38DFDBF6C3C988E01284F9B0014C0 /* Support Files */,
 			);
-			name = VerticalSlider;
 			path = VerticalSlider;
 			sourceTree = "<group>";
 		};
@@ -235,7 +234,6 @@
 				F70B89A03F69D63B381A85A2F33843DA /* Utils.swift */,
 				87CA8ED83E587D997FF6DF8A29E8F39C /* Support Files */,
 			);
-			name = CircularSlider;
 			path = CircularSlider;
 			sourceTree = "<group>";
 		};
@@ -305,7 +303,6 @@
 				E7ECBC7C67E15273315EC1BEBD04A1A0 /* Validation.swift */,
 				50DB88343F981A3D5DEE1665D74ECC2A /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -329,7 +326,7 @@
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
 				2F194B25E8FA37D02FF818BCEE437855 /* CircularSlider */,
-				AC8A020185EABB080AEE9B517D63408B /* Pods-waither */,
+				AC8A020185EABB080AEE9B517D63408B /* Pods_waither.framework */,
 				D22880FC1EC9C698A1F5FBD2F23D2E3D /* VerticalSlider */,
 			);
 			name = Products;
@@ -488,7 +485,7 @@
 			);
 			name = "Pods-waither";
 			productName = Pods_waither;
-			productReference = AC8A020185EABB080AEE9B517D63408B /* Pods-waither */;
+			productReference = AC8A020185EABB080AEE9B517D63408B /* Pods_waither.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
