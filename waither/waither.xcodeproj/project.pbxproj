@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D018E941296E525300862307 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018E940296E525300862307 /* MainPageViewController.swift */; };
+		D018E943296E527C00862307 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D018E942296E527C00862307 /* MainPage.storyboard */; };
+		D018E947296EC5D900862307 /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018E945296EC5D900862307 /* MainPageTableViewCell.swift */; };
+		D018E948296EC5D900862307 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D018E946296EC5D900862307 /* MainPageTableViewCell.xib */; };
+		D08DF02129687C2B00703336 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF01F29687C2A00703336 /* SF-Pro.ttf */; };
+		D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */; };
+		D0D4B567297EB5B4007E3A6D /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D4B566297EB5B4007E3A6D /* CustomLabel.swift */; };
+		D0D4B56A297EC0B5007E3A6D /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D4B568297EC0B5007E3A6D /* ForecastCollectionViewCell.swift */; };
+		D0D4B56B297EC0B5007E3A6D /* ForecastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D4B569297EC0B5007E3A6D /* ForecastCollectionViewCell.xib */; };
+
+/* Begin PBXFileReference section */
+		D018E940296E525300862307 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		D018E942296E527C00862307 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		D018E945296EC5D900862307 /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
+		D018E946296EC5D900862307 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
+		D08DF01F29687C2A00703336 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
+		D0D4B566297EB5B4007E3A6D /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		D0D4B568297EC0B5007E3A6D /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0D4B569297EC0B5007E3A6D /* ForecastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastCollectionViewCell.xib; sourceTree = "<group>"; };
+		E756BC192965B5B800948296 /* waither.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waither.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		
+
 		103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103FFF0D2976C25500C3D059 /* TimeViewController.swift */; };
 		1061C2302970160200A6670E /* WindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1061C22F2970160200A6670E /* WindViewController.swift */; };
 		10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1045629774E11008AEE46 /* UserDataViewController.swift */; };
@@ -58,6 +81,7 @@
 		10F873A2296F36130097C900 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		10F873A4296FEF490097C900 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		7C8DEB68397007B090EE7886 /* Pods-waither.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.release.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.release.xcconfig"; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +96,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D018E944296EC55800862307 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D018E940296E525300862307 /* MainPageViewController.swift */,
+				D018E942296E527C00862307 /* MainPage.storyboard */,
+				D0D4B566297EB5B4007E3A6D /* CustomLabel.swift */,
+				D018E949296EC5F300862307 /* Cells */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D018E949296EC5F300862307 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D018E945296EC5D900862307 /* MainPageTableViewCell.swift */,
+				D018E946296EC5D900862307 /* MainPageTableViewCell.xib */,
+				D0D4B568297EC0B5007E3A6D /* ForecastCollectionViewCell.swift */,
+				D0D4B569297EC0B5007E3A6D /* ForecastCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D08DF01E29687B9000703336 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				D08DF02029687C2B00703336 /* SF-Pro-Italic.ttf */,
+				D08DF01F29687C2A00703336 /* SF-Pro.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		E756BC102965B5B800948296 = {
 		10C1045C2977E385008AEE46 /* PasswordDataManager */ = {
+
 			isa = PBXGroup;
 			children = (
 				10C1045D2977E3D7008AEE46 /* PasswordModel.swift */,
@@ -204,6 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D018E943296E527C00862307 /* MainPage.storyboard in Resources */,
+				D018E948296EC5D900862307 /* MainPageTableViewCell.xib in Resources */,
+				D0D4B56B297EC0B5007E3A6D /* ForecastCollectionViewCell.xib in Resources */,
+				E756BC242965B5B800948296 /* Main.storyboard in Resources */,
+				D08DF02229687C2B00703336 /* SF-Pro-Italic.ttf in Resources */,
 				10EDD3F62961AED600A93DB3 /* LaunchScreen.storyboard in Resources */,
 				10C104632977F7B3008AEE46 /* Main.storyboard in Resources */,
 				10F71A102976AED4008EA002 /* SF-Pro.ttf in Resources */,
@@ -261,6 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D018E941296E525300862307 /* MainPageViewController.swift in Sources */,
+				D0D4B567297EB5B4007E3A6D /* CustomLabel.swift in Sources */,
+				D018E947296EC5D900862307 /* MainPageTableViewCell.swift in Sources */,
+				D0D4B56A297EC0B5007E3A6D /* ForecastCollectionViewCell.swift in Sources */,
 				10C1045E2977E3D7008AEE46 /* PasswordModel.swift in Sources */,
 				10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */,
 				10F8739B296AD5FE0097C900 /* PasswordViewController.swift in Sources */,
@@ -432,7 +498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R62RZ89ZRU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Waither/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -461,7 +527,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R62RZ89ZRU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Waither/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
