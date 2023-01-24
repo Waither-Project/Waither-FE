@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double CircleSliderVersionNumber;
-FOUNDATION_EXPORT const unsigned char CircleSliderVersionString[];
+FOUNDATION_EXPORT double CircularSliderVersionNumber;
+FOUNDATION_EXPORT const unsigned char CircularSliderVersionString[];
 

@@ -1,24 +1,24 @@
 PODS:
   - Alamofire (5.6.2)
-  - CircleSlider (0.6.0)
+  - CircularSlider (1.1.2)
   - VerticalSlider (2.0.0)
 
 DEPENDENCIES:
   - Alamofire
-  - CircleSlider
+  - CircularSlider
   - VerticalSlider
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - CircleSlider
+    - CircularSlider
     - VerticalSlider
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  CircleSlider: e5ebeeda1ae15637fc992756adecbed115292649
+  CircularSlider: 448f9f7723b845ccd470dac41981feb192e20c50
   VerticalSlider: 655f2bc3ed062bac13e21c174f5ff93b8308571d
 
-PODFILE CHECKSUM: 493323a55f19f1d4ad240d03429a201bdad7a2d5
+PODFILE CHECKSUM: 07496bb0ed71c63bc41428b427a4de0e6f0a4a74
 
 COCOAPODS: 1.11.3
