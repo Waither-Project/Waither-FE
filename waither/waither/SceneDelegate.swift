@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  waither
 //
-//  Created by eunseo on 2023/01/04.
+//  Created by 김유빈 on 2023/01/01.
 //
 
 import UIKit
