@@ -1,4 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-waither/Pods-waither-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/CircleSlider/CircleSlider.framework
+${BUILT_PRODUCTS_DIR}/CircularSlider/CircularSlider.framework
 ${BUILT_PRODUCTS_DIR}/VerticalSlider/VerticalSlider.framework

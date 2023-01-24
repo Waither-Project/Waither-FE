@@ -6,7 +6,8 @@ target 'waither' do
   use_frameworks!
   pod 'Alamofire'
   pod 'VerticalSlider'
-  pod 'CircleSlider'
+  pod 'CircularSlider'
+
 
   # Pods for waither
 
