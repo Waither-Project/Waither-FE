@@ -69,6 +69,7 @@ class MainPageTableViewCell: UITableViewCell {
     
     // 섹션4 특정
     func setOnoffView() {
+//        onoffView.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.85)
         onoffWindTitleView.layer.cornerRadius = 10
         onoffRainTitleView.layer.cornerRadius = 10
         onoffDustTitleView.layer.cornerRadius = 10
