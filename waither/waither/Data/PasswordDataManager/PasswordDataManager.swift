@@ -9,13 +9,13 @@ import Alamofire
 
 class PasswordDataManager {
     func passwordDataManager() {
-        AF.request("http://www.waither.shop/",
+        AF.request("http://www.waither.shop",
                    method: .get,
                    parameters: nil)
         .validate()
         .responseDecodable(of: PasswordModel.self) { response in
             switch response.result {
-            case .success(let result):
+            case .success(_):
                 print("성공")
             case .failure(let error):
                 print(error.localizedDescription)

@@ -7,4 +7,6 @@
 
 struct PasswordModel : Decodable {
     let isSuccess : String?
+    //let message : String?
+    //let code : Int?
 }
