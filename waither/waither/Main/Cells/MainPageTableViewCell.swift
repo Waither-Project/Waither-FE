@@ -20,6 +20,7 @@ class MainPageTableViewCell: UITableViewCell {
     @IBOutlet weak var personalBigLabel: UILabel!
     
     @IBOutlet weak var normView: UIView!
+    @IBOutlet weak var normBackView: UIView!
     @IBOutlet weak var normLocationLabel: UILabel!
     @IBOutlet weak var normTemLabel: UILabel!
     @IBOutlet weak var normLowestLabel: UILabel!
@@ -27,6 +28,7 @@ class MainPageTableViewCell: UITableViewCell {
     @IBOutlet weak var normWeatherImage: UIImageView!
     
     @IBOutlet weak var onoffView: UIView!
+    @IBOutlet weak var onoffBackView: UIView!
     @IBOutlet weak var onoffWindTitleView: UIView!
     @IBOutlet weak var onoffRainTitleView: UIView!
     @IBOutlet weak var onoffDustTitleView: UIView!
@@ -65,17 +67,34 @@ class MainPageTableViewCell: UITableViewCell {
         view.layer.borderColor = UIColor(red: 217, green: 217, blue: 217, alpha: 0.9).cgColor
 
         view.layer.masksToBounds = false
+        
+        if (view == normView || view == onoffView || view == forecastCollectionView) {
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.type = .radial
+            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.5)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+            gradientLayer.frame = view.layer.bounds
+            gradientLayer.colors = [
+                UIColor(red: 217, green: 217, blue: 217, alpha: 0.05).cgColor,
+                UIColor(red: 217, green: 217, blue: 217, alpha: 0.15).cgColor
+            ]
+            gradientLayer.shouldRasterize = true
+            gradientLayer.cornerRadius = 16
+            view.layer.addSublayer(gradientLayer)
+        }
+                
     }
     
     // 섹션4 특정
     func setOnoffView() {
-//        onoffView.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.85)
+        onoffView.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 0)
         onoffWindTitleView.layer.cornerRadius = 10
         onoffRainTitleView.layer.cornerRadius = 10
         onoffDustTitleView.layer.cornerRadius = 10
     }
 }
 
+// 섹션5 - 컬렉션뷰 처리
 extension MainPageTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
