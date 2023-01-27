@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1030009B29842E4F0011DA84 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1030009A29842E4F0011DA84 /* Settings.storyboard */; };
 		103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103FFF0D2976C25500C3D059 /* TimeViewController.swift */; };
 		1061C2302970160200A6670E /* WindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1061C22F2970160200A6670E /* WindViewController.swift */; };
 		10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1045629774E11008AEE46 /* UserDataViewController.swift */; };
@@ -16,7 +17,6 @@
 		10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3E92961AED500A93DB3 /* AppDelegate.swift */; };
 		10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */; };
 		10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3ED2961AED500A93DB3 /* ViewController.swift */; };
-		10EDD3F12961AED500A93DB3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EDD3EF2961AED500A93DB3 /* Settings.storyboard */; };
 		10EDD3F32961AED600A93DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EDD3F22961AED600A93DB3 /* Assets.xcassets */; };
 		10EDD3FE2961B55A00A93DB3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */; };
 		10EDD4002961B59600A93DB3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */; };
@@ -53,6 +53,7 @@
 /* Begin PBXFileReference section */
 		08971674B00450F935EB8302 /* Pods-waither.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.debug.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.debug.xcconfig"; sourceTree = "<group>"; };
 		0D731590A32775A68193051A /* Pods_waither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1030009A29842E4F0011DA84 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		103FFF0D2976C25500C3D059 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		1061C22F2970160200A6670E /* WindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindViewController.swift; sourceTree = "<group>"; };
 		10C1045629774E11008AEE46 /* UserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		10EDD3E92961AED500A93DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		10EDD3ED2961AED500A93DB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		10EDD3F02961AED500A93DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		10EDD3F22961AED600A93DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10EDD3F72961AED600A93DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -110,6 +110,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1030009329842A070011DA84 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				10F873A4296FEF490097C900 /* CustomLabel.swift */,
+				10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */,
+				10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		1030009529842ACE0011DA84 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1030009A29842E4F0011DA84 /* Settings.storyboard */,
+				10F873A2296F36130097C900 /* SettingsViewController.swift */,
+				10F8739C296AFD460097C900 /* AlarmViewController.swift */,
+				10C1045629774E11008AEE46 /* UserDataViewController.swift */,
+				10F8739A296AD5FE0097C900 /* PasswordViewController.swift */,
+				10F8739E296C2DF10097C900 /* PopupViewController.swift */,
+				103FFF0D2976C25500C3D059 /* TimeViewController.swift */,
+				1061C22F2970160200A6670E /* WindViewController.swift */,
+				10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		10C1045C2977E385008AEE46 /* PasswordDataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,9 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				D0C7AB8D29804FAC00D96CB4 /* Main */,
-				10C1045C2977E385008AEE46 /* PasswordDataManager */,
 				10EDD3E92961AED500A93DB3 /* AppDelegate.swift */,
 				E731FB9D297FB96C00AAF69A /* Greeting.storyboard */,
+				10C1045C2977E385008AEE46 /* PasswordDataManager */,
 				E731FB9F297FB97500AAF69A /* GreetingViewController.swift */,
 				E731FBA0297FB97500AAF69A /* NamingViewController.swift */,
 				10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */,
@@ -151,7 +177,6 @@
 				E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */,
 				10EDD3ED2961AED500A93DB3 /* ViewController.swift */,
 				10C104612977F7B3008AEE46 /* Main.storyboard */,
-				10EDD3EF2961AED500A93DB3 /* Settings.storyboard */,
 				E731FBB2297FB99E00AAF69A /* SigninViewController.swift */,
 				E731FBB1297FB99E00AAF69A /* SignupViewController.swift */,
 				E731FBB0297FB99E00AAF69A /* SplashViewController.swift */,
@@ -161,17 +186,8 @@
 				E731FBA8297FB98F00AAF69A /* LoginNavigationController.swift */,
 				E731FBA7297FB98F00AAF69A /* LoginPopupViewController.swift */,
 				E731FBA9297FB98F00AAF69A /* LoginViewController.swift */,
-				10F873A4296FEF490097C900 /* CustomLabel.swift */,
-				10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */,
-				10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */,
-				10F873A2296F36130097C900 /* SettingsViewController.swift */,
-				10F8739C296AFD460097C900 /* AlarmViewController.swift */,
-				10C1045629774E11008AEE46 /* UserDataViewController.swift */,
-				103FFF0D2976C25500C3D059 /* TimeViewController.swift */,
-				1061C22F2970160200A6670E /* WindViewController.swift */,
-				10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */,
-				10F8739A296AD5FE0097C900 /* PasswordViewController.swift */,
-				10F8739E296C2DF10097C900 /* PopupViewController.swift */,
+				1030009329842A070011DA84 /* Custom */,
+				1030009529842ACE0011DA84 /* Settings */,
 				10EDD3F22961AED600A93DB3 /* Assets.xcassets */,
 				10EDD3F72961AED600A93DB3 /* Info.plist */,
 				10F873A1296EECD60097C900 /* SF-Pro.ttf */,
@@ -280,11 +296,11 @@
 				10C104632977F7B3008AEE46 /* Main.storyboard in Resources */,
 				10F71A102976AED4008EA002 /* SF-Pro.ttf in Resources */,
 				10EDD3F32961AED600A93DB3 /* Assets.xcassets in Resources */,
+				1030009B29842E4F0011DA84 /* Settings.storyboard in Resources */,
 				D0C7AB9A29804FED00D96CB4 /* ForecastCollectionViewCell.xib in Resources */,
 				E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */,
 				E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */,
 				D0C7AB9B29804FED00D96CB4 /* MainPageTableViewCell.xib in Resources */,
-				10EDD3F12961AED500A93DB3 /* Settings.storyboard in Resources */,
 				D0C7AB9129804FC400D96CB4 /* MainPage.storyboard in Resources */,
 				E731FBA4297FB98500AAF69A /* LaunchScreen_white.storyboard in Resources */,
 				E731FBAB297FB98F00AAF69A /* Login.storyboard in Resources */,
@@ -381,14 +397,6 @@
 				10C104622977F7B3008AEE46 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		10EDD3EF2961AED500A93DB3 /* Settings.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10EDD3F02961AED500A93DB3 /* Base */,
-			);
-			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -10,13 +10,12 @@ import UIKit
 class MainPageViewController: UIViewController {
     
     @IBOutlet weak var mainTableView: UITableView!
-    
-    var gradientLayer: CAGradientLayer! // 그라데이션에 필요한 layer
+    @IBOutlet var backgroundView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        setBackgroundColor()
+        setBackgroundColor()
         
         mainTableView.delegate = self
         mainTableView.dataSource = self
@@ -27,10 +26,11 @@ class MainPageViewController: UIViewController {
     
     // 그라데이션 배경
     func setBackgroundColor() {
-        self.gradientLayer = CAGradientLayer()
-        self.gradientLayer.frame = self.view.bounds
-        self.gradientLayer.colors = [UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 0.7).cgColor, UIColor(red: 0.43, green: 0.515, blue: 0.583, alpha: 0.7).cgColor,UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 0.7).cgColor]
-        self.view.layer.addSublayer(self.gradientLayer)
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        gradientLayer.colors = [UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 0.7).cgColor, UIColor(red: 0.43, green: 0.515, blue: 0.583, alpha: 0.7).cgColor,UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 0.7).cgColor]
+        gradientLayer.shouldRasterize = true
+        backgroundView.layer.addSublayer(gradientLayer)
     }
 
 }

@@ -198,7 +198,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZSB-bq-8WE" firstAttribute="top" secondItem="xar-d8-HzO" secondAttribute="bottom" constant="22" id="6W1-gY-B6m"/>
                             <constraint firstItem="W3s-hQ-bpN" firstAttribute="centerY" secondItem="dTd-qV-o26" secondAttribute="centerY" id="70j-qj-eLy"/>
@@ -365,7 +365,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8eD-KO-TOV" firstAttribute="centerX" secondItem="1bG-vL-ZQh" secondAttribute="centerX" id="0KS-C1-XJJ"/>
                             <constraint firstItem="Ltb-1i-494" firstAttribute="centerY" secondItem="4SE-X6-Vu5" secondAttribute="centerY" id="0dG-bf-xe5"/>
@@ -405,7 +405,7 @@
                         </constraints>
                     </view>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JUJ-Mg-bmP">
-                        <rect key="frame" x="0.0" y="543" width="384" height="127"/>
+                        <rect key="frame" x="0.0" y="543" width="403" height="127"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="127" id="PIx-wM-XYw"/>
@@ -424,7 +424,7 @@
                     <constraint firstItem="j1Z-xs-dUo" firstAttribute="top" secondItem="1oF-U1-4pU" secondAttribute="bottom" constant="8" id="52f-PN-vc8"/>
                     <constraint firstItem="j1Z-xs-dUo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7zd-8f-4VX"/>
                     <constraint firstItem="1bG-vL-ZQh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8AI-dz-Nr9"/>
-                    <constraint firstAttribute="trailing" secondItem="JUJ-Mg-bmP" secondAttribute="trailing" constant="-41" id="Cno-wu-GbZ"/>
+                    <constraint firstAttribute="trailing" secondItem="JUJ-Mg-bmP" secondAttribute="trailing" constant="-60" id="Cno-wu-GbZ"/>
                     <constraint firstItem="JUJ-Mg-bmP" firstAttribute="top" secondItem="1bG-vL-ZQh" secondAttribute="bottom" constant="12" id="GMP-Zc-sgU"/>
                     <constraint firstAttribute="trailing" secondItem="1oF-U1-4pU" secondAttribute="trailing" constant="16" id="LDF-JX-wJH"/>
                     <constraint firstItem="qCG-np-Ryu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PlS-ig-Mq6"/>
@@ -471,9 +471,6 @@
         <image name="tem" width="14" height="21"/>
         <image name="weather_rain" width="219" height="221"/>
         <image name="wind" width="34" height="30"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

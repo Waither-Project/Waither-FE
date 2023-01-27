@@ -23,6 +23,7 @@ class UserDataViewController: UIViewController {
     @IBOutlet weak var coldbtn: UIButton!
     @IBOutlet weak var vcoldbtn: UIButton!
     @IBOutlet weak var savebtn: UIBarButtonItem!
+    @IBOutlet weak var minusImage: UIImageView!
     
     @IBAction func clicksaveBtn(_ sender: UIBarButtonItem) {
         print(circularslider.textfield.text! + "℃")
@@ -43,6 +44,8 @@ class UserDataViewController: UIViewController {
                 guard let wheather = btn.titleLabel?.text else { return }
                 
                 print(wheather)
+                self.savebtn.isEnabled = true
+                self.savebtn.tintColor = .buttonColor
                 
                 Label.attributedText = NSMutableAttributedString().ENGbold(string: "Waither", fontSize: 18)
                     .regular(string: "의 유저분들이 \n", fontSize: 18)
@@ -52,7 +55,7 @@ class UserDataViewController: UIViewController {
                     .regular(string: "' 온도", fontSize: 18)
                 
                 let say: String = "고 느끼는 온도를 나타내요.\n 이 데이터를 기반으로 제가 날씨를 판단해드릴게요."
-                var nickname: String = "OO"
+                let nickname: String = "OO"
                 var percent: Int = 10
                 
                 if vhotbtn == sender {
@@ -60,7 +63,7 @@ class UserDataViewController: UIViewController {
                         .regular(string: "님이 ", fontSize: 12)
                         .bold(string: feel[0], fontSize: 12)
                         .regular(string: say, fontSize: 12)
-                    
+                    minusImage.isHidden = true
                     percent = 50
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 } else if hotbtn == sender {
@@ -68,7 +71,7 @@ class UserDataViewController: UIViewController {
                         .regular(string: "님이 ", fontSize: 12)
                         .bold(string: feel[1], fontSize: 12)
                         .regular(string: say, fontSize: 12)
-                    
+                    minusImage.isHidden = true
                     percent = 60
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 } else if goodbtn == sender {
@@ -76,7 +79,7 @@ class UserDataViewController: UIViewController {
                         .regular(string: "님이 ", fontSize: 12)
                         .bold(string: feel[2], fontSize: 12)
                         .regular(string: say, fontSize: 12)
-                    
+                    minusImage.isHidden = true
                     percent = 70
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 } else if coldbtn == sender {
@@ -84,7 +87,7 @@ class UserDataViewController: UIViewController {
                         .regular(string: "님이 ", fontSize: 12)
                         .bold(string: feel[3], fontSize: 12)
                         .regular(string: say, fontSize: 12)
-                    
+                    minusImage.isHidden = false
                     percent = 80
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 } else {
@@ -92,6 +95,7 @@ class UserDataViewController: UIViewController {
                         .regular(string: "님이 ", fontSize: 12)
                         .bold(string: feel[4], fontSize: 12)
                         .regular(string: say, fontSize: 12)
+                    minusImage.isHidden = false
                     percent = 90
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 }
@@ -132,11 +136,8 @@ class UserDataViewController: UIViewController {
         backgroundView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         backgroundView.layer.masksToBounds = true
         
-        
         self.navigationController?.navigationBar.tintColor = .black
         
         //circularslider.textfield.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .allEvents)
-        
     }
-    
 }

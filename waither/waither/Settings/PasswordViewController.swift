@@ -16,10 +16,8 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var changePW: UITextField!
     @IBOutlet weak var PWToChange: UITextField!
     @IBOutlet weak var resetButton: UIButton!
-    
     @IBOutlet weak var limitLabel: UILabel!
     @IBOutlet weak var warningLabel: UILabel!
-    
     @IBOutlet weak var firstBarView: UIView!
     @IBOutlet var secondBarView: UIView!
     @IBOutlet var thirdBarView: UIView!
@@ -133,8 +131,6 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
             print("다음 버튼 비활성화")
         }
     }
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()

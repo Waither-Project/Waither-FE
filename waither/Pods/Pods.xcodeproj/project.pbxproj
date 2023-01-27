@@ -12,7 +12,7 @@
 		04A896288CE3A59B530250337A5F8362 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E6CF9AE88013873C4FF0F3BB6619E5 /* Result+Alamofire.swift */; };
 		0B4756D6B7C1B696232401E3585CD02D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
 		0F4037DBF307AC8058BD0A3D35C7E7E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
-		1883C3469BD91A3128591CE57A75B10B /* CircularSlider.xib in Sources */ = {isa = PBXBuildFile; fileRef = 10FED05E60B6F802D9124EB7A026E5A7 /* CircularSlider.xib */; };
+		1030009729842B800011DA84 /* CircularSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1030009629842B7F0011DA84 /* CircularSlider.xib */; };
 		1976BB7D7E26A12E29283E71154B63B3 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B775857CF1A925ADF5CE9F3F42598C9 /* SessionDelegate.swift */; };
 		1EE44196E7BCE57AD96A2C751651EF40 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6773B83DAA14AEA5E940522A843EDE /* AlamofireExtended.swift */; };
 		2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEA402D48024A11FB6D4FEC8BC33A5 /* CachedResponseHandler.swift */; };
@@ -95,8 +95,8 @@
 		087D7AA4D01FCEF78D17984A40E1EEF5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		0DED9EB31CDBAF6302EB8F9F4AA685AD /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		0F62A4D69296E4DFA2D253AD31F9EE72 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		1030009629842B7F0011DA84 /* CircularSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircularSlider.xib; sourceTree = "<group>"; };
 		10A556FF0B8E3C9E8BC44EF691A1C75B /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
-		10FED05E60B6F802D9124EB7A026E5A7 /* CircularSlider.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CircularSlider.xib; path = CircularSlider/Classes/CircularSlider.xib; sourceTree = "<group>"; };
 		14EABD36049BE9D07F798AE9543EF734 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		17793056507C648CCCCD01CD18B573D3 /* Pods-waither-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-waither-umbrella.h"; sourceTree = "<group>"; };
 		1C3F4CFEA5B9C24258A215F484643433 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				B557D015764FB83044188F754254002B /* CircularSlider.swift */,
-				10FED05E60B6F802D9124EB7A026E5A7 /* CircularSlider.xib */,
+				1030009629842B7F0011DA84 /* CircularSlider.xib */,
 				E0B63A9BF005D46D4F46C4266169DFD0 /* RotationGesture.swift */,
 				F70B89A03F69D63B381A85A2F33843DA /* Utils.swift */,
 				87CA8ED83E587D997FF6DF8A29E8F39C /* Support Files */,
@@ -555,6 +555,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1030009729842B800011DA84 /* CircularSlider.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +591,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB590D5E855230D846679B0A2909AC4F /* CircularSlider.swift in Sources */,
-				1883C3469BD91A3128591CE57A75B10B /* CircularSlider.xib in Sources */,
 				B02AC047BB3BF2DD5002CDBC43615B31 /* CircularSlider-dummy.m in Sources */,
 				8C6244F585A7029F875DDF232E1FCC9E /* RotationGesture.swift in Sources */,
 				5AFA917F592CF7A9A3120D9D961B869B /* Utils.swift in Sources */,

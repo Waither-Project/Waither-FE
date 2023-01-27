@@ -82,5 +82,4 @@ class PopupViewController: UIViewController {
             .bold(string: "데이터를\n다시 복구할 수 없어요.\n", fontSize: 18)
             .regular(string: "그래도 진행할까요?", fontSize: 18)
     }
-
 }

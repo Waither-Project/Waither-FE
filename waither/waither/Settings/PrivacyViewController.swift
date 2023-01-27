@@ -106,9 +106,7 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
                     warningLabel.attributedText = attributedString
                     warningLabel.sizeToFit()
                     ChangeButton.isEnabled = true
-                    //ChangeButton.tintColor = UIColor.clear
                     ChangeButton.setTitleColor(.buttonColor, for: .selected)
-                    //ChangeButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
                     warningLabel.textColor = .buttonColor
                     BarView.backgroundColor = .buttonColor
                 }
@@ -125,5 +123,4 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
         //view.isOpaque = false
         self.navigationController?.navigationBar.tintColor = .black
     }
-    
 }
