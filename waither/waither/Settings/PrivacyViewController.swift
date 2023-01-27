@@ -106,9 +106,7 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
                     warningLabel.attributedText = attributedString
                     warningLabel.sizeToFit()
                     ChangeButton.isEnabled = true
-                    //ChangeButton.tintColor = UIColor.clear
                     ChangeButton.setTitleColor(.buttonColor, for: .selected)
-                    //ChangeButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
                     warningLabel.textColor = .buttonColor
                     BarView.backgroundColor = .buttonColor
                 }
@@ -120,11 +118,9 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        UserdataDataManager().userdataDataManager()
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: NameTextField)
         
         //view.isOpaque = false
         self.navigationController?.navigationBar.tintColor = .black
     }
-    
 }

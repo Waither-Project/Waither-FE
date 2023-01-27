@@ -40,10 +40,4 @@ class WindViewController: UIViewController {
         self.backgroundView.layer.shadowRadius = 5
         self.backgroundView.layer.shadowOpacity = 0.3
     }
-
-    /*
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
-    }
-    */
 }

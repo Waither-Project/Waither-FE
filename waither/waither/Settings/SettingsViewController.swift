@@ -13,7 +13,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var switch2: UISwitch!
     @IBOutlet weak var switch3: UISwitch!
     
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "SF Pro Black", size: 15)!]
