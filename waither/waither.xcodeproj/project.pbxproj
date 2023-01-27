@@ -72,6 +72,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		103A980A298150D6004428B1 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				10F873A4296FEF490097C900 /* CustomLabel.swift */,
+				10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */,
+				10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		103A980C29815105004428B1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				10EDD3EF2961AED500A93DB3 /* Settings.storyboard */,
+				10F873A2296F36130097C900 /* SettingsViewController.swift */,
+				10F8739C296AFD460097C900 /* AlarmViewController.swift */,
+				10C1045629774E11008AEE46 /* UserDataViewController.swift */,
+				103FFF0D2976C25500C3D059 /* TimeViewController.swift */,
+				1061C22F2970160200A6670E /* WindViewController.swift */,
+				10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */,
+				10F8739A296AD5FE0097C900 /* PasswordViewController.swift */,
+				10F8739E296C2DF10097C900 /* PopupViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		103A980D29815132004428B1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				10F873A1296EECD60097C900 /* SF-Pro.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		103A980E29815141004428B1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				10C1045C2977E385008AEE46 /* PasswordDataManager */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		10C1045C2977E385008AEE46 /* PasswordDataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,27 +144,17 @@
 		10EDD3E82961AED500A93DB3 /* waither */ = {
 			isa = PBXGroup;
 			children = (
-				10C1045C2977E385008AEE46 /* PasswordDataManager */,
 				10EDD3E92961AED500A93DB3 /* AppDelegate.swift */,
 				10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */,
 				10EDD3ED2961AED500A93DB3 /* ViewController.swift */,
 				10C104612977F7B3008AEE46 /* Main.storyboard */,
-				10EDD3EF2961AED500A93DB3 /* Settings.storyboard */,
-				10F873A4296FEF490097C900 /* CustomLabel.swift */,
-				10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */,
-				10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */,
-				10F873A2296F36130097C900 /* SettingsViewController.swift */,
-				10F8739C296AFD460097C900 /* AlarmViewController.swift */,
-				10C1045629774E11008AEE46 /* UserDataViewController.swift */,
-				103FFF0D2976C25500C3D059 /* TimeViewController.swift */,
-				1061C22F2970160200A6670E /* WindViewController.swift */,
-				10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */,
-				10F8739A296AD5FE0097C900 /* PasswordViewController.swift */,
-				10F8739E296C2DF10097C900 /* PopupViewController.swift */,
-				10EDD3F22961AED600A93DB3 /* Assets.xcassets */,
 				10EDD3F42961AED600A93DB3 /* LaunchScreen.storyboard */,
+				103A980A298150D6004428B1 /* Custom */,
+				103A980E29815141004428B1 /* Data */,
+				103A980C29815105004428B1 /* Settings */,
+				103A980D29815132004428B1 /* Font */,
+				10EDD3F22961AED600A93DB3 /* Assets.xcassets */,
 				10EDD3F72961AED600A93DB3 /* Info.plist */,
-				10F873A1296EECD60097C900 /* SF-Pro.ttf */,
 			);
 			path = waither;
 			sourceTree = "<group>";
