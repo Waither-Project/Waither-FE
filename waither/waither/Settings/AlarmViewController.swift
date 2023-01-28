@@ -66,11 +66,11 @@ class AlarmViewController: UIViewController, SendDataDelegate{
             btn.layer.borderColor = UIColor.buttonColor.cgColor
         }
         
-        switch4.transform = CGAffineTransformMakeScale(0.75, 0.75);
-        switch5.transform = CGAffineTransformMakeScale(0.75, 0.75);
-        switch6.transform = CGAffineTransformMakeScale(0.75, 0.75);
-        switch7.transform = CGAffineTransformMakeScale(0.75, 0.75);
-        switch8.transform = CGAffineTransformMakeScale(0.75, 0.75);
+        switch4.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
+        switch5.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
+        switch6.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
+        switch7.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
+        switch8.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
     }
     
     @IBOutlet weak var DayLabel: UILabel!

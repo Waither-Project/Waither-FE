@@ -686,11 +686,11 @@
                             <constraint firstItem="H0Y-uv-79f" firstAttribute="leading" secondItem="D5p-kN-bwq" secondAttribute="leading" constant="37" id="BuF-P3-13O"/>
                             <constraint firstItem="H0Y-uv-79f" firstAttribute="top" secondItem="iKm-hv-cpG" secondAttribute="bottom" constant="36" id="CMd-Oa-hA6"/>
                             <constraint firstItem="IQT-6r-5wQ" firstAttribute="trailing" secondItem="D5p-kN-bwq" secondAttribute="trailing" id="DMR-nI-Kl9"/>
+                            <constraint firstItem="iKm-hv-cpG" firstAttribute="top" secondItem="D5p-kN-bwq" secondAttribute="top" constant="99" id="EwU-Ne-9iJ"/>
                             <constraint firstItem="iKm-hv-cpG" firstAttribute="leading" secondItem="D5p-kN-bwq" secondAttribute="leading" constant="63" id="L1A-C6-u3K"/>
                             <constraint firstAttribute="bottom" secondItem="IQT-6r-5wQ" secondAttribute="bottom" id="LnB-XM-yKs"/>
                             <constraint firstItem="D5p-kN-bwq" firstAttribute="trailing" secondItem="H0Y-uv-79f" secondAttribute="trailing" constant="38" id="NGQ-VS-LhZ"/>
                             <constraint firstItem="NhJ-l5-Lsu" firstAttribute="trailing" secondItem="D5p-kN-bwq" secondAttribute="trailing" id="QSa-lZ-IYR"/>
-                            <constraint firstItem="iKm-hv-cpG" firstAttribute="top" secondItem="NhJ-l5-Lsu" secondAttribute="bottom" constant="24" id="ZwZ-8q-v9l"/>
                             <constraint firstItem="IQT-6r-5wQ" firstAttribute="top" secondItem="H0Y-uv-79f" secondAttribute="bottom" constant="27" id="beu-uM-zYm"/>
                             <constraint firstItem="IQT-6r-5wQ" firstAttribute="leading" secondItem="D5p-kN-bwq" secondAttribute="leading" id="bew-vB-ByG"/>
                             <constraint firstItem="iKm-hv-cpG" firstAttribute="centerX" secondItem="D5p-kN-bwq" secondAttribute="centerX" id="bnD-dd-yvJ"/>
@@ -890,7 +890,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyL-NU-ayk" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
-                                <rect key="frame" x="187" y="115" width="28.666666666666742" height="22"/>
+                                <rect key="frame" x="187" y="115" width="28.666666666666657" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Vnu-8b-WaP"/>
                                     <constraint firstAttribute="width" constant="28.670000000000002" id="ydz-cs-hG4"/>
@@ -906,6 +906,9 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39Q-qZ-bd9" customClass="VerticalSlider" customModule="VerticalSlider">
                                 <rect key="frame" x="175" y="301" width="30" height="468"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Kd8-s3-ign"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
                                         <real key="value" value="0.0"/>

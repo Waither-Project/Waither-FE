@@ -42,7 +42,7 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // 두 텍스트필드 문자가 같은 지 확인
+    // 두 텍스트 필드 문자가 같은 지 확인
     func isSameBothTextField(_ first: UITextField,_ second: UITextField) -> Bool {
         if(first.text == second.text) {
             return true
@@ -110,7 +110,7 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
             warningLabel.textColor = .warningLabelColor
         }
     
-        // 3개 텍스트필드가 채워졌는지, 비밀번호가 일치하는 지 확인
+        // 3개 텍스트 필드가 채워졌는지, 비밀번호가 일치하는 지 확인
         if !(self.nowPW.text?.isEmpty ?? true)
             && !(self.changePW.text?.isEmpty ?? true) && isSameBothTextField(changePW, PWToChange) {
             updateNextButton(willActive: true)
@@ -132,19 +132,38 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // 화면 터치시 키보드 내리기
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        // 키보드 내리면서 동작
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         PasswordDataManager().passwordDataManager()
         
-        self.nowPW.delegate = self
-        self.changePW.delegate = self
-        self.PWToChange.delegate = self
+        hideKeyboardWhenTappedAround()
         
-        // 텍스트필드 입력값 변경 감지
-        //self.nowPW.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
-        self.changePW.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
-        self.PWToChange.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
+        nowPW.delegate = self
+        changePW.delegate = self
+        PWToChange.delegate = self
+        
+        // 텍스트 필드 입력값 변경 감지
+        //nowPW.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
+        changePW.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
+        PWToChange.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
         
         self.navigationController?.navigationBar.tintColor = .black
     }
