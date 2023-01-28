@@ -115,9 +115,29 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // 화면 터치시 키보드 내리기
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        // 키보드 내리면서 동작
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        hideKeyboardWhenTappedAround()
+        NameTextField.delegate = self
+        
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: NameTextField)
         
         //view.isOpaque = false
