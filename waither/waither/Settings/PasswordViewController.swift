@@ -132,19 +132,38 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // 화면 터치시 키보드 내리기
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        // 키보드 내리면서 동작
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        hideKeyboardWhenTappedAround()
+        
         PasswordDataManager().passwordDataManager()
         
-        self.nowPW.delegate = self
-        self.changePW.delegate = self
-        self.PWToChange.delegate = self
+        nowPW.delegate = self
+        changePW.delegate = self
+        PWToChange.delegate = self
         
         // 텍스트필드 입력값 변경 감지
-        //self.nowPW.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
-        self.changePW.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
-        self.PWToChange.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
+        //nowPW.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
+        changePW.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
+        PWToChange.addTarget(self, action: #selector(self.TFdidChanged(_:)), for: .editingChanged)
         
         self.navigationController?.navigationBar.tintColor = .black
     }

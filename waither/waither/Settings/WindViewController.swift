@@ -16,7 +16,6 @@ class WindViewController: UIViewController {
     @IBOutlet weak var backgroundView: UIView!
     
     @objc func sliderChanged() {
-        //print(Int(verticalSlider.value))
         label.text = String(Int(verticalSlider.value))
     }
     
