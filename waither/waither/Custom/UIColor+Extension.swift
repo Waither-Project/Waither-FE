@@ -26,3 +26,25 @@ extension UIColor {
         blue: 0.894,
         alpha: 1.0)
 }
+
+extension CALayer {
+    func addGradientBorder(colors:[UIColor],width:CGFloat = 1) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.cornerRadius = 16
+        gradientLayer.frame =  CGRect(origin: CGPointZero, size: self.bounds.size)
+        gradientLayer.startPoint = CGPointMake(0.0, 0.5)
+        gradientLayer.endPoint = CGPointMake(1.0, 0.5)
+        gradientLayer.colors = colors.map({$0.cgColor})
+
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.lineWidth = width
+        shapeLayer.path = UIBezierPath(rect: self.bounds).cgPath
+        shapeLayer.fillColor = nil
+        shapeLayer.strokeColor = UIColor.black.cgColor
+        shapeLayer.cornerRadius = 16
+        gradientLayer.mask = shapeLayer
+
+        self.addSublayer(gradientLayer)
+    }
+
+}
