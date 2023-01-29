@@ -36,7 +36,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irf-m3-Fte">
                                 <rect key="frame" x="37.666666666666657" y="391" width="300" height="44"/>
-                                <color key="backgroundColor" name="Kakao"/>
+                                <color key="backgroundColor" name="color-kakao"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Juh-JV-vs2"/>
                                     <constraint firstAttribute="width" constant="300" id="yPY-ND-XQq"/>
@@ -83,7 +83,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="titleColor" name="Dark_gray"/>
+                                    <color key="titleColor" name="color-waither.gray"/>
                                 </state>
                                 <connections>
                                     <action selector="loginByEmailBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UcI-8Q-frZ"/>
@@ -148,7 +148,7 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="로그인 없이 계속하기">
-                                    <color key="titleColor" name="Dark_gray"/>
+                                    <color key="titleColor" name="color-waither.gray"/>
                                 </state>
                             </button>
                         </subviews>
@@ -224,7 +224,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7i-1p-4aB">
                                 <rect key="frame" x="300" y="303" width="60" height="24"/>
-                                <color key="backgroundColor" name="Gray"/>
+                                <color key="backgroundColor" name="color-waither.lightgray"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="9kb-PG-f0U"/>
                                     <constraint firstAttribute="height" constant="24" id="Y7a-J1-RGK"/>
@@ -243,14 +243,14 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBt-ML-FgN">
                                 <rect key="frame" x="16" y="335" width="344" height="2"/>
-                                <color key="backgroundColor" name="Gray"/>
+                                <color key="backgroundColor" name="color-waither.lightgray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="m4C-Rn-Y9U"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5B5-W7-G2N">
                                 <rect key="frame" x="16" y="707" width="343" height="52"/>
-                                <color key="backgroundColor" name="Gray"/>
+                                <color key="backgroundColor" name="color-waither.lightgray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="05j-6c-X55"/>
                                     <constraint firstAttribute="width" constant="343" id="LJS-jG-5u7"/>
@@ -267,7 +267,7 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="ZHW-Eh-078">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-verifi" translatesAutoresizingMaskIntoConstraints="NO" id="ZHW-Eh-078">
                                 <rect key="frame" x="16" y="346" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="he3-Ls-i65"/>
@@ -281,7 +281,7 @@
                                     <constraint firstAttribute="height" constant="11" id="gIA-1X-XND"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="11"/>
-                                <color key="textColor" name="waither_red"/>
+                                <color key="textColor" name="color-waither.red"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -364,8 +364,8 @@
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69b-fW-8XV">
                                 <rect key="frame" x="16" y="357" width="343" height="2"/>
-                                <color key="backgroundColor" name="Gray"/>
-                                <color key="tintColor" name="Gray"/>
+                                <color key="backgroundColor" name="color-waither.lightgray"/>
+                                <color key="tintColor" name="color-waither.lightgray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="oZo-Sc-ak4"/>
                                 </constraints>
@@ -390,8 +390,8 @@
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37I-Ay-jE8">
                                 <rect key="frame" x="16" y="416" width="343" height="2"/>
-                                <color key="backgroundColor" name="Gray"/>
-                                <color key="tintColor" name="Gray"/>
+                                <color key="backgroundColor" name="color-waither.lightgray"/>
+                                <color key="tintColor" name="color-waither.lightgray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="zGe-Tr-Tc9"/>
                                 </constraints>
@@ -399,12 +399,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHM-m6-k9t">
                                 <rect key="frame" x="322" y="385" width="29" height="19"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="19" id="4vw-bb-LE6"/>
                                     <constraint firstAttribute="width" constant="29.059999999999999" id="dvL-Ml-ZAp"/>
+                                    <constraint firstAttribute="height" constant="19" id="w5Z-bc-dlj"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="Eye_fill"/>
+                                    <backgroundConfiguration key="background" image="ic-eye.fill-visible"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onOffBtnClicked:" destination="zkv-Ve-2iY" eventType="touchUpInside" id="9gj-2m-l2m"/>
@@ -432,7 +432,7 @@
                                     <action selector="lostPasswordButtonClicked:" destination="zkv-Ve-2iY" eventType="touchUpInside" id="OR1-O9-XLa"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_question" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-Is-3gi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-login-forgot" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-Is-3gi">
                                 <rect key="frame" x="109.66666666666667" y="438" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="S59-o4-nDE"/>
@@ -441,7 +441,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59G-dS-oB7">
                                 <rect key="frame" x="16" y="718" width="343" height="52"/>
-                                <color key="backgroundColor" name="Gray"/>
+                                <color key="backgroundColor" name="color-waither.lightgray"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="7h8-6U-3CG"/>
                                     <constraint firstAttribute="height" constant="52" id="H9f-ML-s8h"/>
@@ -460,8 +460,8 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhP-rg-PGW">
                                 <rect key="frame" x="129.66666666666666" y="451" width="116" height="1"/>
-                                <color key="backgroundColor" name="Dark_gray"/>
-                                <color key="tintColor" name="Dark_gray"/>
+                                <color key="backgroundColor" name="color-waither.gray"/>
+                                <color key="tintColor" name="color-waither.gray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="GfI-Fn-nUb"/>
                                 </constraints>
@@ -556,15 +556,15 @@
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2j-Cx-0Sq">
                                 <rect key="frame" x="16" y="424.66666666666669" width="343" height="2"/>
-                                <color key="backgroundColor" name="Gray"/>
-                                <color key="tintColor" name="Gray"/>
+                                <color key="backgroundColor" name="color-waither.lightgray"/>
+                                <color key="tintColor" name="color-waither.lightgray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="Hz4-QB-Rht"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNS-PJ-1Ii">
                                 <rect key="frame" x="16" y="714" width="343" height="56"/>
-                                <color key="backgroundColor" name="Gray"/>
+                                <color key="backgroundColor" name="color-waither.lightgray"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="kIb-lS-5AK"/>
                                     <constraint firstAttribute="height" constant="56" id="rzI-rT-03R"/>
@@ -581,7 +581,7 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="b50-wg-uZ8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-verifi" translatesAutoresizingMaskIntoConstraints="NO" id="b50-wg-uZ8">
                                 <rect key="frame" x="16" y="436.66666666666669" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12" id="7MD-y3-33T"/>
@@ -595,7 +595,7 @@
                                     <constraint firstAttribute="height" constant="11" id="hZW-Px-JnQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="11"/>
-                                <color key="textColor" name="waither_red"/>
+                                <color key="textColor" name="color-waither.red"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -659,7 +659,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eq8-7N-HZR">
                                         <rect key="frame" x="46" y="109" width="106" height="45"/>
-                                        <color key="backgroundColor" name="Gray"/>
+                                        <color key="backgroundColor" name="color-waither.lightgray"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="5rp-5p-A9x"/>
                                             <constraint firstAttribute="width" constant="106" id="6oN-1B-n28"/>
@@ -672,7 +672,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAj-9i-lg5">
                                         <rect key="frame" x="168" y="109" width="106" height="45"/>
-                                        <color key="backgroundColor" name="Splash_blue"/>
+                                        <color key="backgroundColor" name="color-waither.blue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="106" id="Nam-eC-gzH"/>
                                             <constraint firstAttribute="height" constant="45" id="dhq-cS-sYe"/>
@@ -721,27 +721,33 @@
     </scenes>
     <resources>
         <image name="Apple_logo" width="5.3333334922790527" height="6.3333334922790527"/>
-        <image name="Eye_fill" width="10" height="6.3333334922790527"/>
         <image name="Kakao_logo" width="6.6666665077209473" height="6.3333334922790527"/>
         <image name="MainIcon_blue" width="47.666667938232422" height="40"/>
-        <image name="ic_alert" width="4" height="4"/>
-        <image name="ic_question" width="5.3333334922790527" height="5.3333334922790527"/>
+        <image name="ic-eye.fill-visible" width="44" height="44"/>
+        <image name="ic-login-forgot" width="16" height="16"/>
+        <image name="ic-verifi" width="12" height="12"/>
         <namedColor name="#898A8D">
             <color red="0.53725490196078429" green="0.54117647058823526" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Dark_gray">
             <color red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Gray">
-            <color red="0.8784313725490196" green="0.88235294117647056" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Kakao">
-            <color red="0.99607843137254903" green="0.89803921568627454" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Splash_blue">
             <color red="0.31764705882352939" green="0.53725490196078429" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="waither_red">
+        <namedColor name="color-kakao">
+            <color red="0.99607843137254903" green="0.89803921568627454" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-waither.blue">
+            <color red="0.31764705882352939" green="0.53725490196078429" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-waither.gray">
+            <color red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-waither.lightgray">
+            <color red="0.8784313725490196" green="0.88235294117647056" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-waither.red">
             <color red="1" green="0.30588235294117649" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">

@@ -70,9 +70,10 @@ class LoginViewController: UIViewController {
 
 
 extension UIColor{
-    static let main_blue = UIColor(named: "Splash_blue")
-    static let none_gray = UIColor(named: "Gray")
-    static let alert_red = UIColor(named: "waither_red")
+    static let main_blue = UIColor(named: "color-waither.blue")
+    static let none_gray = UIColor(named: "color-waither.lightgray")
+    static let main_gray = UIColor(named: "color-waither.gray")
+    static let alert_red = UIColor(named: "color-waither.red")
 }
 
 extension UIButton{
