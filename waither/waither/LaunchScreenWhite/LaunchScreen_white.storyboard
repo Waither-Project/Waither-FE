@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainIcon_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Jcf-wx-Kj8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-waither.blue" translatesAutoresizingMaskIntoConstraints="NO" id="Jcf-wx-Kj8">
                                 <rect key="frame" x="101" y="327" width="173" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="Hwa-Ht-sLA"/>
@@ -38,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MainIcon_blue" width="47.666667938232422" height="40"/>
+        <image name="ic-waither.blue" width="165" height="138"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

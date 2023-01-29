@@ -83,7 +83,7 @@
 		D0C7AB9729804FEC00D96CB4 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
 		D0C7AB9829804FED00D96CB4 /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E731FB9D297FB96C00AAF69A /* Greeting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Greeting.storyboard; path = PasswordDataManager/Greeting.storyboard; sourceTree = "<group>"; };
+		E731FB9D297FB96C00AAF69A /* Greeting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Greeting.storyboard; sourceTree = "<group>"; };
 		E731FB9F297FB97500AAF69A /* GreetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		E731FBA0297FB97500AAF69A /* NamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamingViewController.swift; sourceTree = "<group>"; };
 		E731FBA3297FB98400AAF69A /* LaunchScreen_white.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen_white.storyboard; sourceTree = "<group>"; };
@@ -140,27 +140,17 @@
 		10EDD3E82961AED500A93DB3 /* waither */ = {
 			isa = PBXGroup;
 			children = (
+				E74066DC29866B3A00CECA2C /* LaunchScreenWhite */,
+				E74066DB29866B0C00CECA2C /* Greeting */,
+				E74066DA29866AC900CECA2C /* Login */,
 				D0C7AB8D29804FAC00D96CB4 /* Main */,
 				10C1045C2977E385008AEE46 /* PasswordDataManager */,
 				10EDD3E92961AED500A93DB3 /* AppDelegate.swift */,
-				E731FB9D297FB96C00AAF69A /* Greeting.storyboard */,
-				E731FB9F297FB97500AAF69A /* GreetingViewController.swift */,
-				E731FBA0297FB97500AAF69A /* NamingViewController.swift */,
 				10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */,
-				E731FBA3297FB98400AAF69A /* LaunchScreen_white.storyboard */,
 				E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */,
 				10EDD3ED2961AED500A93DB3 /* ViewController.swift */,
 				10C104612977F7B3008AEE46 /* Main.storyboard */,
 				10EDD3EF2961AED500A93DB3 /* Settings.storyboard */,
-				E731FBB2297FB99E00AAF69A /* SigninViewController.swift */,
-				E731FBB1297FB99E00AAF69A /* SignupViewController.swift */,
-				E731FBB0297FB99E00AAF69A /* SplashViewController.swift */,
-				E731FBAF297FB99E00AAF69A /* TempPasswordViewController.swift */,
-				E731FBA6297FB98F00AAF69A /* Login.storyboard */,
-				E731FBA5297FB98F00AAF69A /* LoginByEmailViewController.swift */,
-				E731FBA8297FB98F00AAF69A /* LoginNavigationController.swift */,
-				E731FBA7297FB98F00AAF69A /* LoginPopupViewController.swift */,
-				E731FBA9297FB98F00AAF69A /* LoginViewController.swift */,
 				10F873A4296FEF490097C900 /* CustomLabel.swift */,
 				10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */,
 				10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */,
@@ -215,6 +205,40 @@
 				D0C7AB9729804FEC00D96CB4 /* MainPageTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		E74066DA29866AC900CECA2C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E731FBAF297FB99E00AAF69A /* TempPasswordViewController.swift */,
+				E731FBB1297FB99E00AAF69A /* SignupViewController.swift */,
+				E731FBB2297FB99E00AAF69A /* SigninViewController.swift */,
+				E731FBA9297FB98F00AAF69A /* LoginViewController.swift */,
+				E731FBA7297FB98F00AAF69A /* LoginPopupViewController.swift */,
+				E731FBA8297FB98F00AAF69A /* LoginNavigationController.swift */,
+				E731FBA5297FB98F00AAF69A /* LoginByEmailViewController.swift */,
+				E731FBA6297FB98F00AAF69A /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E74066DB29866B0C00CECA2C /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+				E731FB9D297FB96C00AAF69A /* Greeting.storyboard */,
+				E731FB9F297FB97500AAF69A /* GreetingViewController.swift */,
+				E731FBA0297FB97500AAF69A /* NamingViewController.swift */,
+			);
+			path = Greeting;
+			sourceTree = "<group>";
+		};
+		E74066DC29866B3A00CECA2C /* LaunchScreenWhite */ = {
+			isa = PBXGroup;
+			children = (
+				E731FBA3297FB98400AAF69A /* LaunchScreen_white.storyboard */,
+				E731FBB0297FB99E00AAF69A /* SplashViewController.swift */,
+			);
+			path = LaunchScreenWhite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

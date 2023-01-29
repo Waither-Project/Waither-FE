@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ic-eye.fill-visible.svg",
+      "filename" : "ic-kakao.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic-eye.fill-visible-1.svg",
+      "filename" : "ic-kakao-1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic-eye.fill-visible-2.svg",
+      "filename" : "ic-kakao-2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
