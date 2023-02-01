@@ -42,6 +42,9 @@
                         <rightBarButtonItems>
                             <barButtonItem title="setting" image="setting" style="plain" id="gNh-fm-yco">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="hkg-e8-kQo" kind="show" id="ef1-8Y-vOf"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem title="notice" image="noticeOff" style="plain" id="Qw9-1x-ma9">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,6 +59,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1118.320610687023" y="10.563380281690142"/>
+        </scene>
+        <!--SettingVC-->
+        <scene sceneID="rWo-XZ-zv1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingVC" id="hkg-e8-kQo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fp8-1c-mQs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UD8-AT-l6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663" y="-270"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="snx-B7-gwW">
