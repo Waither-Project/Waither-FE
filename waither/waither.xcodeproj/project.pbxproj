@@ -28,6 +28,12 @@
 		10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A2296F36130097C900 /* SettingsViewController.swift */; };
 		10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A4296FEF490097C900 /* CustomLabel.swift */; };
 		C7F6871A5A774B531AC70FE0 /* Pods_waither.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D731590A32775A68193051A /* Pods_waither.framework */; };
+		D0AF8A55298E56F100A0C9A9 /* WeatherInfoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF8A54298E56F100A0C9A9 /* WeatherInfoDataManager.swift */; };
+		D0AF8A57298E577000A0C9A9 /* WeatherInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF8A56298E577000A0C9A9 /* WeatherInfoModel.swift */; };
+		D0AF8A59298E76FF00A0C9A9 /* WeatherInfoInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF8A58298E76FF00A0C9A9 /* WeatherInfoInput.swift */; };
+		D0AF8A5D298E88B000A0C9A9 /* SettingsMainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF8A5C298E88B000A0C9A9 /* SettingsMainDataManager.swift */; };
+		D0AF8A5F298E88FA00A0C9A9 /* SettingsMainInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF8A5E298E88FA00A0C9A9 /* SettingsMainInput.swift */; };
+		D0AF8A62298E89E500A0C9A9 /* SettingsMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF8A61298E89E500A0C9A9 /* SettingsMainModel.swift */; };
 		D0C7AB9129804FC400D96CB4 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C7AB8E29804FC300D96CB4 /* MainPage.storyboard */; };
 		D0C7AB9329804FC400D96CB4 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7AB9029804FC300D96CB4 /* MainPageViewController.swift */; };
 		D0C7AB9929804FED00D96CB4 /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7AB9529804FEC00D96CB4 /* MainPageTableViewCell.swift */; };
@@ -76,6 +82,12 @@
 		10F873A2296F36130097C900 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		10F873A4296FEF490097C900 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		7C8DEB68397007B090EE7886 /* Pods-waither.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.release.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.release.xcconfig"; sourceTree = "<group>"; };
+		D0AF8A54298E56F100A0C9A9 /* WeatherInfoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoDataManager.swift; sourceTree = "<group>"; };
+		D0AF8A56298E577000A0C9A9 /* WeatherInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoModel.swift; sourceTree = "<group>"; };
+		D0AF8A58298E76FF00A0C9A9 /* WeatherInfoInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoInput.swift; sourceTree = "<group>"; };
+		D0AF8A5C298E88B000A0C9A9 /* SettingsMainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainDataManager.swift; sourceTree = "<group>"; };
+		D0AF8A5E298E88FA00A0C9A9 /* SettingsMainInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainInput.swift; sourceTree = "<group>"; };
+		D0AF8A61298E89E500A0C9A9 /* SettingsMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainModel.swift; sourceTree = "<group>"; };
 		D0C7AB8E29804FC300D96CB4 /* MainPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		D0C7AB9029804FC300D96CB4 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		D0C7AB9529804FEC00D96CB4 /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
@@ -212,9 +224,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D0AF8A53298E55DA00A0C9A9 /* MainDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D0AF8A5B298E886A00A0C9A9 /* SettingsMain */,
+				D0AF8A5A298E885B00A0C9A9 /* WeatherInfo */,
+			);
+			path = MainDataManager;
+			sourceTree = "<group>";
+		};
+		D0AF8A5A298E885B00A0C9A9 /* WeatherInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D0AF8A54298E56F100A0C9A9 /* WeatherInfoDataManager.swift */,
+				D0AF8A56298E577000A0C9A9 /* WeatherInfoModel.swift */,
+				D0AF8A58298E76FF00A0C9A9 /* WeatherInfoInput.swift */,
+			);
+			path = WeatherInfo;
+			sourceTree = "<group>";
+		};
+		D0AF8A5B298E886A00A0C9A9 /* SettingsMain */ = {
+			isa = PBXGroup;
+			children = (
+				D0AF8A5C298E88B000A0C9A9 /* SettingsMainDataManager.swift */,
+				D0AF8A5E298E88FA00A0C9A9 /* SettingsMainInput.swift */,
+				D0AF8A61298E89E500A0C9A9 /* SettingsMainModel.swift */,
+			);
+			path = SettingsMain;
+			sourceTree = "<group>";
+		};
 		D0C7AB8D29804FAC00D96CB4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D0AF8A53298E55DA00A0C9A9 /* MainDataManager */,
 				D0C7AB9429804FCB00D96CB4 /* Cells */,
 				D0C7AB8E29804FC300D96CB4 /* MainPage.storyboard */,
 				D0C7AB9029804FC300D96CB4 /* MainPageViewController.swift */,
@@ -356,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AF8A55298E56F100A0C9A9 /* WeatherInfoDataManager.swift in Sources */,
 				10C1045E2977E3D7008AEE46 /* PasswordModel.swift in Sources */,
 				10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */,
 				10F8739B296AD5FE0097C900 /* PasswordViewController.swift in Sources */,
@@ -364,10 +407,12 @@
 				E731FBA2297FB97500AAF69A /* NamingViewController.swift in Sources */,
 				10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */,
 				D0C7AB9C29804FED00D96CB4 /* ForecastCollectionViewCell.swift in Sources */,
+				D0AF8A5D298E88B000A0C9A9 /* SettingsMainDataManager.swift in Sources */,
 				D0C7AB9329804FC400D96CB4 /* MainPageViewController.swift in Sources */,
 				10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */,
 				10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */,
 				10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */,
+				D0AF8A5F298E88FA00A0C9A9 /* SettingsMainInput.swift in Sources */,
 				E731FBAE297FB98F00AAF69A /* LoginViewController.swift in Sources */,
 				E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */,
 				10F8739F296C2DF10097C900 /* PopupViewController.swift in Sources */,
@@ -382,9 +427,12 @@
 				D0C7AB9929804FED00D96CB4 /* MainPageTableViewCell.swift in Sources */,
 				E731FBAC297FB98F00AAF69A /* LoginPopupViewController.swift in Sources */,
 				10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */,
+				D0AF8A62298E89E500A0C9A9 /* SettingsMainModel.swift in Sources */,
 				E731FBB5297FB99E00AAF69A /* SignupViewController.swift in Sources */,
 				E731FBB3297FB99E00AAF69A /* TempPasswordViewController.swift in Sources */,
+				D0AF8A59298E76FF00A0C9A9 /* WeatherInfoInput.swift in Sources */,
 				10EDD4002961B59600A93DB3 /* UIColor+Extension.swift in Sources */,
+				D0AF8A57298E577000A0C9A9 /* WeatherInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +500,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치를 받아오려고 합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치를 받아오려고 합니다.";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -506,6 +556,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치를 받아오려고 합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치를 받아오려고 합니다.";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
