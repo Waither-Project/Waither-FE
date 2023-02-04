@@ -59,6 +59,11 @@ class MainPageTableViewCell: UITableViewCell {
         onoffRainTitleView.layer.cornerRadius = 10
         onoffDustTitleView.layer.cornerRadius = 10
     }
+    
+    // data 설정
+    public func setWeatherInfoData(_ cellData: WeatherInfoModel) {
+        if let normTem = cellData.tmp { normTemLabel.text = "\(normTem)"}
+    }
 }
 
 // 섹션5 - 컬렉션뷰 처리
