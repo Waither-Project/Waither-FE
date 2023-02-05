@@ -36,7 +36,7 @@ class MainPageViewController: UIViewController {
         
         // 설정 메인화면 조회 api
         let settingsMainInput = SettingsMainInput(userIdx: 1)
-        SettingsMainDataManager().settingsMainDataManager(settingsMainInput, self)
+        WeatherInfoDataManager().settingsMainDataManager(settingsMainInput, self)
     }
     
     // 그라데이션 배경

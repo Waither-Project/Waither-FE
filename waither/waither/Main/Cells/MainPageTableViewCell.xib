@@ -162,7 +162,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSB-bq-8WE" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
-                                <rect key="frame" x="68" y="54" width="34.666666666666657" height="36"/>
+                                <rect key="frame" x="68.666666666666671" y="54" width="33.666666666666671" height="36"/>
                                 <fontDescription key="fontDescription" name="SFPro-Semibold" family="SF Pro" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -235,7 +235,7 @@
                             <constraint firstItem="W3s-hQ-bpN" firstAttribute="leading" secondItem="dTd-qV-o26" secondAttribute="trailing" constant="8.1500000000000004" id="Vpc-50-8Sq"/>
                             <constraint firstItem="a5x-hw-3mw" firstAttribute="leading" secondItem="xar-d8-HzO" secondAttribute="leading" id="g1I-d3-QlK"/>
                             <constraint firstAttribute="bottom" secondItem="8TM-04-JKI" secondAttribute="bottom" id="ja4-oz-eSp"/>
-                            <constraint firstItem="ZSB-bq-8WE" firstAttribute="leading" secondItem="a5x-hw-3mw" secondAttribute="leading" constant="28.333333333333336" id="jqv-WL-PBy"/>
+                            <constraint firstItem="ZSB-bq-8WE" firstAttribute="leading" secondItem="a5x-hw-3mw" secondAttribute="trailing" id="jqv-WL-PBy"/>
                             <constraint firstItem="qvV-k9-9PY" firstAttribute="leading" secondItem="nQf-mn-OKl" secondAttribute="trailing" constant="9" id="nEe-KY-Jsy"/>
                             <constraint firstAttribute="trailing" secondItem="HPa-0G-1Bk" secondAttribute="trailing" id="rDu-bO-2ib"/>
                             <constraint firstItem="8TM-04-JKI" firstAttribute="top" secondItem="qCG-np-Ryu" secondAttribute="top" constant="23" id="rhV-Ik-9m4"/>
@@ -487,9 +487,14 @@
                 <outlet property="notiView" destination="1oF-U1-4pU" id="d2D-CB-za6"/>
                 <outlet property="notiWeatherImage" destination="fYj-u4-Thn" id="jKX-Oj-jdl"/>
                 <outlet property="onoffDustTitleView" destination="pI0-Ew-SPa" id="Na2-ER-C9h"/>
+                <outlet property="onoffPm10GradeLabel" destination="iDW-A6-tWz" id="wXm-x9-b0D"/>
+                <outlet property="onoffPm10ValueLabel" destination="7gq-7q-1xs" id="OTc-CO-h6b"/>
                 <outlet property="onoffRainTitleView" destination="8eD-KO-TOV" id="8eu-7K-XRD"/>
+                <outlet property="onoffRn1Label" destination="4SE-X6-Vu5" id="m6r-ZR-5Xz"/>
+                <outlet property="onoffVecLabel" destination="vU9-Q5-SBE" id="FmD-EY-qB2"/>
                 <outlet property="onoffView" destination="1bG-vL-ZQh" id="y7K-eC-nX3"/>
                 <outlet property="onoffWindTitleView" destination="9Ng-gn-ald" id="kS9-Fw-wXU"/>
+                <outlet property="onoffWsdLabel" destination="jlP-IN-K4U" id="TAO-Gy-wii"/>
                 <outlet property="personalBigLabel" destination="4Uq-kh-yKj" id="XTY-pb-VEL"/>
                 <outlet property="personalSmallLabel" destination="Ky4-4k-jiU" id="bSb-u5-Xwy"/>
                 <outlet property="personalView" destination="j1Z-xs-dUo" id="zR1-7U-NSh"/>

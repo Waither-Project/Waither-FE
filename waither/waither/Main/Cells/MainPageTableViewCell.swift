@@ -30,6 +30,11 @@ class MainPageTableViewCell: UITableViewCell {
     @IBOutlet weak var onoffWindTitleView: UIView!
     @IBOutlet weak var onoffRainTitleView: UIView!
     @IBOutlet weak var onoffDustTitleView: UIView!
+    @IBOutlet weak var onoffVecLabel: CustomLabel!
+    @IBOutlet weak var onoffWsdLabel: CustomLabel!
+    @IBOutlet weak var onoffRn1Label: UILabel!
+    @IBOutlet weak var onoffPm10GradeLabel: CustomLabel!
+    @IBOutlet weak var onoffPm10ValueLabel: UILabel!
     
     @IBOutlet weak var forecastCollectionView: UICollectionView!
     
@@ -62,7 +67,15 @@ class MainPageTableViewCell: UITableViewCell {
     
     // data 설정
     public func setWeatherInfoData(_ cellData: WeatherInfoModel) {
-        if let normTem = cellData.tmp { normTemLabel.text = "\(Int(normTem))"}
+        if let normTem = cellData.tmp { normTemLabel.text = "\(normTem)"}
+        if let normTen = cellData.tmn { normLowestLabel.text = "최저 \(normTen)°C"}
+        if let normTex = cellData.tmx { normTopLabel.text = "최고 \(normTex)°C"}
+//        if let onoffVec = cellData.vec {
+//            switch onoffVec {
+//                case
+//            }
+//        }
+        if let onoffWsd = cellData.wsd { onoffWsdLabel.text = "\(onoffWsd)m/s"}
     }
 }
 
