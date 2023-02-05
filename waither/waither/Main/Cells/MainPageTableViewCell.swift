@@ -62,7 +62,7 @@ class MainPageTableViewCell: UITableViewCell {
     
     // data 설정
     public func setWeatherInfoData(_ cellData: WeatherInfoModel) {
-        if let normTem = cellData.tmp { normTemLabel.text = "\(normTem)"}
+        if let normTem = cellData.tmp { normTemLabel.text = "\(Int(normTem))"}
     }
 }
 

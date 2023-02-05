@@ -13,10 +13,10 @@ class WeatherInfoDataManager {
                    method: .get,
                    parameters: parameters)
         .validate()
-        .responseDecodable(of: WeatherInfoModel.self) { response in
+        .responseDecodable(of: APIModel<WeatherInfoModel>.self) { response in
             switch response.result {
             case .success(let result):
-                viewcontroller.WeatherInfoSuccessAPI(result)
+                viewcontroller.WeatherInfoSuccessAPI(result.result!)
                 print("성공")
                 print(result)
             case .failure(let error):

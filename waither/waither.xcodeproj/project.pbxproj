@@ -40,6 +40,7 @@
 		D0C7AB9A29804FED00D96CB4 /* ForecastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7AB9629804FEC00D96CB4 /* ForecastCollectionViewCell.xib */; };
 		D0C7AB9B29804FED00D96CB4 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7AB9729804FEC00D96CB4 /* MainPageTableViewCell.xib */; };
 		D0C7AB9C29804FED00D96CB4 /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7AB9829804FED00D96CB4 /* ForecastCollectionViewCell.swift */; };
+		D0F48363298F2A7E00AE117E /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F48362298F2A7E00AE117E /* APIModel.swift */; };
 		E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */; };
 		E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FB9D297FB96C00AAF69A /* Greeting.storyboard */; };
 		E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FB9F297FB97500AAF69A /* GreetingViewController.swift */; };
@@ -94,6 +95,7 @@
 		D0C7AB9629804FEC00D96CB4 /* ForecastCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastCollectionViewCell.xib; sourceTree = "<group>"; };
 		D0C7AB9729804FEC00D96CB4 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
 		D0C7AB9829804FED00D96CB4 /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0F48362298F2A7E00AE117E /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E731FB9D297FB96C00AAF69A /* Greeting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Greeting.storyboard; path = PasswordDataManager/Greeting.storyboard; sourceTree = "<group>"; };
 		E731FB9F297FB97500AAF69A /* GreetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 		D0AF8A53298E55DA00A0C9A9 /* MainDataManager */ = {
 			isa = PBXGroup;
 			children = (
+				D0F48362298F2A7E00AE117E /* APIModel.swift */,
 				D0AF8A5B298E886A00A0C9A9 /* SettingsMain */,
 				D0AF8A5A298E885B00A0C9A9 /* WeatherInfo */,
 			);
@@ -426,6 +429,7 @@
 				103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */,
 				D0C7AB9929804FED00D96CB4 /* MainPageTableViewCell.swift in Sources */,
 				E731FBAC297FB98F00AAF69A /* LoginPopupViewController.swift in Sources */,
+				D0F48363298F2A7E00AE117E /* APIModel.swift in Sources */,
 				10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */,
 				D0AF8A62298E89E500A0C9A9 /* SettingsMainModel.swift in Sources */,
 				E731FBB5297FB99E00AAF69A /* SignupViewController.swift in Sources */,

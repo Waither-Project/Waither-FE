@@ -14,7 +14,8 @@ class MainPageViewController: UIViewController {
     @IBOutlet var backgroundView: UIView!
     
     var locationManager : CLLocationManager!
-    var weatherInfoData : WeatherInfoModel?
+    var weatherInfoData : WeatherInfoModel!
+    var settingsMainData : SettingsMainModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,7 @@ class MainPageViewController: UIViewController {
         
         // 설정 메인화면 조회 api
         let settingsMainInput = SettingsMainInput(userIdx: 1)
-        SettingsMainDataManager().settingsMainDataManager(settingsMainInput)
+        SettingsMainDataManager().settingsMainDataManager(settingsMainInput, self)
     }
     
     // 그라데이션 배경
@@ -81,7 +82,7 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-// MARK: - 메인 페이지 tableView delegate
+// MARK: - 메인 페이지 CLLocationManager delegate
 extension MainPageViewController : CLLocationManagerDelegate {
     func getLocationUsagePermission() {
         self.locationManager.requestWhenInUseAuthorization()
@@ -102,10 +103,10 @@ extension MainPageViewController : CLLocationManagerDelegate {
                 print("GPS: Default")
             }
         
-        let location: CLLocation = locations[locations.count - 1]   // 최근 위치
-        let longtitude: CLLocationDegrees = location.coordinate.longitude   // 경도
-        let latitude : CLLocationDegrees = location.coordinate.latitude   // 위도
-        print("경도: \(longtitude), 위도: \(latitude)")
+//        let location: CLLocation = locations[locations.count - 1]   // 최근 위치
+//        let longtitude: CLLocationDegrees = location.coordinate.longitude   // 경도
+//        let latitude : CLLocationDegrees = location.coordinate.latitude   // 위도
+//        print("경도: \(longtitude), 위도: \(latitude)")
     }
 }
 
@@ -114,6 +115,12 @@ extension MainPageViewController {
     //MARK: 기상 정보 API success
     func WeatherInfoSuccessAPI(_ result : WeatherInfoModel) {
         self.weatherInfoData = result
+        mainTableView.reloadData()
+    }
+    
+    //MARK: 설정 메인화면 조회 API success
+    func SettingsMainSuccessAPI(_ result : SettingsMainModel) {
+        self.settingsMainData = result
         mainTableView.reloadData()
     }
 }
