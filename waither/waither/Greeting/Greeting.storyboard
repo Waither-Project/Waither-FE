@@ -51,6 +51,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" name="color-waither.lightgray"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="okButtonClicked:" destination="Ghe-K7-q2r" eventType="touchUpInside" id="syI-Zs-70Y"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-gX-Bty">
                                 <rect key="frame" x="16" y="188" width="327" height="2"/>

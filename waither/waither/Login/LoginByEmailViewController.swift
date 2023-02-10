@@ -59,10 +59,11 @@ class LoginByEmailViewController: UIViewController {
     @IBAction func onOffBtnClicked(_ sender: Any) {
         if pwTextField.isSecureTextEntry == true {
             pwTextField.isSecureTextEntry = false
-            onOffButton.configuration?.background.image = UIImage(named: "ic-eye.fill-unvisible")
+            
+            onOffButton.setImage(UIImage(named: "ic-eye.fill-unvisible"), for: .normal)
         } else {
             pwTextField.isSecureTextEntry = true
-            onOffButton.configuration?.background.image = UIImage(named: "ic-eye.fill-visible")
+            onOffButton.setImage(UIImage(named: "ic-eye.fill-visible"), for: .normal)
         }
     }
     

@@ -31,6 +31,20 @@ class NamingViewController: UIViewController{
         
         
     }
+    @IBAction func okButtonClicked(_ sender: Any) {
+        //TODO: 추후 설문 page 연결
+        let Main = UIStoryboard.init(name: "MainPage", bundle: nil)
+        guard let pvc = self.presentingViewController else { return }
+        self.dismiss(animated: false) {
+            //MainPageVC : StoryBoard ID
+            let nextVC = Main.instantiateViewController(withIdentifier: "MainPageVC") as! MainPageViewController
+            let navController = UINavigationController(rootViewController: nextVC)
+            navController.modalTransitionStyle = .coverVertical
+            navController.modalPresentationStyle = .fullScreen
+            
+            pvc.present(navController, animated:true, completion: nil)
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
