@@ -153,11 +153,6 @@ class LoginViewController: UIViewController {
     }
     
     func postLogin(authId: String, nickname: String, email: String, provider: String) {
-
-        // 넣는 순서도 순서대로여야 하는 것 같다.
-//        let userInfo = LoginInfo(authId: authId, email: email, nickname: nickname, provider: provider)
-//        guard let uploadData = try? JSONEncoder().encode(userInfo)
-//        else {return}
         
         let authId = authId
         let nickname = nickname
@@ -167,39 +162,43 @@ class LoginViewController: UIViewController {
         let bodyData = try! JSONSerialization.data(withJSONObject: body, options: [])
                 
 
-        // URL 객체 정의
         let url = URL(string: "https://www.waither.shop/app/login")
 
-        // URLRequest 객체를 정의
+        
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
-        // HTTP 메시지 헤더
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = bodyData
 
-        // URLSession 객체를 통해 전송, 응답값 처리
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            
-            print("request\n ")
 
-            // 서버가 응답이 없거나 통신이 실패
             if let e = error {
                 print("An error has occured: \(e.localizedDescription)")
                 return
             }
-            // 응답 처리 로직
+            
             DispatchQueue.main.async {
                         do{
                             let object = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
                             guard let jsonObject = object else { return }
                             
-                            //JSON 결과값을 추출
+                            
                             let status = jsonObject["status"] as? Int
                             let token = jsonObject["data"] as? String
                             
-                            // 결과가 성공일 경우
+                            
                             if status == 200 {
                                 print(token!)
+                                
+                                let Greeting = UIStoryboard.init(name: "Greeting", bundle: nil)
+                                guard let pvc = self.presentingViewController else { return }
+                                self.dismiss(animated: false) {
+                                    let nextVC = Greeting.instantiateViewController(withIdentifier: "GreetingViewController") as! GreetingViewController
+                                    let navController = UINavigationController(rootViewController: nextVC)
+                                    navController.modalTransitionStyle = .coverVertical
+                                    navController.modalPresentationStyle = .fullScreen
+                                    pvc.present(navController, animated:true, completion: nil)
+                                }
                             }
                             
                         }catch let e as NSError{
