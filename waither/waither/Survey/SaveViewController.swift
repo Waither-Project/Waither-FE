@@ -12,25 +12,21 @@ class SaveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
+        
+        saveView.addGestureRecognizer(tapGesture)
+    }
 
-                // 2. add the gesture recognizer to a view
-                saveView.addGestureRecognizer(tapGesture)
-            }
-
-            // 3. this method is called when a tap is recognized
-            @objc func handleTap(sender: UITapGestureRecognizer) {
-                print("tap")
-                let Storyboard = UIStoryboard.init(name: "MainPage", bundle: nil) //splash 종료 후 Login 화면으로 이동
-            
-                let nextVC = Storyboard.instantiateViewController(withIdentifier: "MainPageVC") as! MainPageViewController
-                let navController = UINavigationController(rootViewController: nextVC)
-                navController.modalTransitionStyle = .coverVertical
-                navController.modalPresentationStyle = .fullScreen
-                self.present(navController, animated:true, completion: nil)
-
-        // Do any additional setup after loading the view.
+    @objc func handleTap(sender: UITapGestureRecognizer) {
+        print("tap")
+        let Storyboard = UIStoryboard.init(name: "MainPage", bundle: nil)
+    
+        let nextVC = Storyboard.instantiateViewController(withIdentifier: "MainPageVC") as! MainPageViewController
+        let navController = UINavigationController(rootViewController: nextVC)
+        navController.modalTransitionStyle = .crossDissolve
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated:true, completion: nil)
     }
     
 

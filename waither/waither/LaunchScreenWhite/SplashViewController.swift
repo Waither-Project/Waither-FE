@@ -18,7 +18,7 @@ class SplashViewController: UIViewController {
                        completion: {
                             finished in let Storyboard = UIStoryboard.init(name: "Login", bundle: nil) //splash 종료 후 Login 화면으로 이동
                         
-            let nextVC = Storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                            let nextVC = Storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                             let navController = UINavigationController(rootViewController: nextVC)
                             navController.modalTransitionStyle = .coverVertical
                             navController.modalPresentationStyle = .fullScreen

@@ -38,6 +38,11 @@ class MainPageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var forecastCollectionView: UICollectionView!
     
+    @IBAction func settingButton(_ sender: UIButton) {
+            print("버튼 클릭")
+            let vc = UserDataViewController(nibName: "UserDataViewController", bundle: nil)
+            self.inputViewController?.navigationController?.pushViewController(vc, animated: true)
+        }
     
     override func awakeFromNib() {
         super.awakeFromNib()
