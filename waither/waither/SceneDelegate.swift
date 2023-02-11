@@ -19,6 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let storyboard = UIStoryboard(name: "MainPage", bundle: nil)
                 let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainPageViewController")
+        //let storyboard = UIStoryboard(name: "Settings", bundle: nil)
+                //let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainPageViewController")
                 // rootViewController 설정하기
                 self.window?.rootViewController = initialViewController
                 self.window?.makeKeyAndVisible()

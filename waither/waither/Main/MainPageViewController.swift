@@ -16,7 +16,12 @@ class MainPageViewController: UIViewController {
     var locationManager : CLLocationManager!
     var weatherInfoData : WeatherInfoModel!
     var settingsMainData : SettingsMainModel!
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "SF Pro Black", size: 15)!, .foregroundColor: UIColor.white]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1030009B29842E4F0011DA84 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1030009A29842E4F0011DA84 /* Settings.storyboard */; };
-		103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103FFF0D2976C25500C3D059 /* TimeViewController.swift */; };
-		1061C2302970160200A6670E /* WindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1061C22F2970160200A6670E /* WindViewController.swift */; };
-		10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1045629774E11008AEE46 /* UserDataViewController.swift */; };
-		10C1045E2977E3D7008AEE46 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1045D2977E3D7008AEE46 /* PasswordModel.swift */; };
-		10C104602977E3E5008AEE46 /* PasswordDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1045F2977E3E5008AEE46 /* PasswordDataManager.swift */; };
+		101BEB5529979D4D0042756D /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB4B29979D4D0042756D /* UserDataViewController.swift */; };
+		101BEB5629979D4D0042756D /* WindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB4C29979D4D0042756D /* WindViewController.swift */; };
+		101BEB5729979D4D0042756D /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB4D29979D4D0042756D /* PasswordViewController.swift */; };
+		101BEB5829979D4D0042756D /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB4E29979D4D0042756D /* AlarmViewController.swift */; };
+		101BEB5929979D4D0042756D /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101BEB4F29979D4D0042756D /* Settings.storyboard */; };
+		101BEB5A29979D4D0042756D /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB5129979D4D0042756D /* PopupViewController.swift */; };
+		101BEB5B29979D4D0042756D /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB5229979D4D0042756D /* PrivacyViewController.swift */; };
+		101BEB5C29979D4D0042756D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB5329979D4D0042756D /* SettingsViewController.swift */; };
+		101BEB5D29979D4D0042756D /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB5429979D4D0042756D /* TimeViewController.swift */; };
+		101BEB6B29979DCC0042756D /* SettingsMainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB5F29979DCC0042756D /* SettingsMainDataManager.swift */; };
+		101BEB6C29979DCC0042756D /* WindAlarmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6029979DCC0042756D /* WindAlarmDataManager.swift */; };
+		101BEB6D29979DCC0042756D /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6129979DCC0042756D /* UserDataManager.swift */; };
+		101BEB6E29979DCC0042756D /* AlarmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6229979DCC0042756D /* AlarmDataManager.swift */; };
+		101BEB6F29979DCC0042756D /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6429979DCC0042756D /* AlarmModel.swift */; };
+		101BEB7129979DCC0042756D /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6629979DCC0042756D /* UserDataModel.swift */; };
+		101BEB7229979DCC0042756D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6729979DCC0042756D /* UserModel.swift */; };
+		101BEB7329979DCC0042756D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6829979DCC0042756D /* SettingsModel.swift */; };
+		101BEB7429979DCC0042756D /* WindAlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6929979DCC0042756D /* WindAlarmModel.swift */; };
+		101BEB7529979DCC0042756D /* UserdataDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB6A29979DCC0042756D /* UserdataDataManager.swift */; };
 		10C104632977F7B3008AEE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C104612977F7B3008AEE46 /* Main.storyboard */; };
 		10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3E92961AED500A93DB3 /* AppDelegate.swift */; };
 		10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */; };
@@ -20,12 +33,7 @@
 		10EDD3F32961AED600A93DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EDD3F22961AED600A93DB3 /* Assets.xcassets */; };
 		10EDD3FE2961B55A00A93DB3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */; };
 		10EDD4002961B59600A93DB3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */; };
-		10EDD4062965783B00A93DB3 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */; };
 		10F71A102976AED4008EA002 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F873A1296EECD60097C900 /* SF-Pro.ttf */; };
-		10F8739B296AD5FE0097C900 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8739A296AD5FE0097C900 /* PasswordViewController.swift */; };
-		10F8739D296AFD460097C900 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8739C296AFD460097C900 /* AlarmViewController.swift */; };
-		10F8739F296C2DF10097C900 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8739E296C2DF10097C900 /* PopupViewController.swift */; };
-		10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A2296F36130097C900 /* SettingsViewController.swift */; };
 		10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A4296FEF490097C900 /* CustomLabel.swift */; };
 		C7F6871A5A774B531AC70FE0 /* Pods_waither.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D731590A32775A68193051A /* Pods_waither.framework */; };
 		D01B50442997976200F1A470 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B50432997976200F1A470 /* String+Extension.swift */; };
@@ -60,12 +68,25 @@
 /* Begin PBXFileReference section */
 		08971674B00450F935EB8302 /* Pods-waither.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.debug.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.debug.xcconfig"; sourceTree = "<group>"; };
 		0D731590A32775A68193051A /* Pods_waither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1030009A29842E4F0011DA84 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		103FFF0D2976C25500C3D059 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
-		1061C22F2970160200A6670E /* WindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindViewController.swift; sourceTree = "<group>"; };
-		10C1045629774E11008AEE46 /* UserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
-		10C1045D2977E3D7008AEE46 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
-		10C1045F2977E3E5008AEE46 /* PasswordDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDataManager.swift; sourceTree = "<group>"; };
+		101BEB4B29979D4D0042756D /* UserDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
+		101BEB4C29979D4D0042756D /* WindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindViewController.swift; sourceTree = "<group>"; };
+		101BEB4D29979D4D0042756D /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		101BEB4E29979D4D0042756D /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		101BEB5029979D4D0042756D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		101BEB5129979D4D0042756D /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		101BEB5229979D4D0042756D /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		101BEB5329979D4D0042756D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		101BEB5429979D4D0042756D /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		101BEB5F29979DCC0042756D /* SettingsMainDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMainDataManager.swift; sourceTree = "<group>"; };
+		101BEB6029979DCC0042756D /* WindAlarmDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindAlarmDataManager.swift; sourceTree = "<group>"; };
+		101BEB6129979DCC0042756D /* UserDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		101BEB6229979DCC0042756D /* AlarmDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDataManager.swift; sourceTree = "<group>"; };
+		101BEB6429979DCC0042756D /* AlarmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		101BEB6629979DCC0042756D /* UserDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		101BEB6729979DCC0042756D /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		101BEB6829979DCC0042756D /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		101BEB6929979DCC0042756D /* WindAlarmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindAlarmModel.swift; sourceTree = "<group>"; };
+		101BEB6A29979DCC0042756D /* UserdataDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserdataDataManager.swift; sourceTree = "<group>"; };
 		10C104622977F7B3008AEE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10EDD3E62961AED500A93DB3 /* waither.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waither.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EDD3E92961AED500A93DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,12 +96,7 @@
 		10EDD3F72961AED600A93DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		10EDD3FF2961B59600A93DB3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
-		10F8739A296AD5FE0097C900 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
-		10F8739C296AFD460097C900 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
-		10F8739E296C2DF10097C900 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
-		10F873A1296EECD60097C900 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
-		10F873A2296F36130097C900 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		10F873A1296EECD60097C900 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../SF-Pro.ttf"; sourceTree = "<group>"; };
 		10F873A4296FEF490097C900 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		7C8DEB68397007B090EE7886 /* Pods-waither.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.release.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.release.xcconfig"; sourceTree = "<group>"; };
 		D01B50432997976200F1A470 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -124,6 +140,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101BEB4729979CF60042756D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				10F873A1296EECD60097C900 /* SF-Pro.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		101BEB4A29979D4D0042756D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				101BEB5E29979DCC0042756D /* SettingsData */,
+				101BEB4F29979D4D0042756D /* Settings.storyboard */,
+				101BEB4B29979D4D0042756D /* UserDataViewController.swift */,
+				101BEB4C29979D4D0042756D /* WindViewController.swift */,
+				101BEB4D29979D4D0042756D /* PasswordViewController.swift */,
+				101BEB4E29979D4D0042756D /* AlarmViewController.swift */,
+				101BEB5129979D4D0042756D /* PopupViewController.swift */,
+				101BEB5229979D4D0042756D /* PrivacyViewController.swift */,
+				101BEB5329979D4D0042756D /* SettingsViewController.swift */,
+				101BEB5429979D4D0042756D /* TimeViewController.swift */,
+			);
+			name = Settings;
+			path = Custom/Settings;
+			sourceTree = "<group>";
+		};
+		101BEB5E29979DCC0042756D /* SettingsData */ = {
+			isa = PBXGroup;
+			children = (
+				101BEB6329979DCC0042756D /* Model */,
+				101BEB5F29979DCC0042756D /* SettingsMainDataManager.swift */,
+				101BEB6029979DCC0042756D /* WindAlarmDataManager.swift */,
+				101BEB6129979DCC0042756D /* UserDataManager.swift */,
+				101BEB6229979DCC0042756D /* AlarmDataManager.swift */,
+				101BEB6A29979DCC0042756D /* UserdataDataManager.swift */,
+			);
+			path = SettingsData;
+			sourceTree = "<group>";
+		};
+		101BEB6329979DCC0042756D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				101BEB6429979DCC0042756D /* AlarmModel.swift */,
+				101BEB6629979DCC0042756D /* UserDataModel.swift */,
+				101BEB6729979DCC0042756D /* UserModel.swift */,
+				101BEB6829979DCC0042756D /* SettingsModel.swift */,
+				101BEB6929979DCC0042756D /* WindAlarmModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1030009329842A070011DA84 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,31 +200,6 @@
 				10EDD3FD2961B55A00A93DB3 /* UIView+Extension.swift */,
 			);
 			path = Custom;
-			sourceTree = "<group>";
-		};
-		1030009529842ACE0011DA84 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				1030009A29842E4F0011DA84 /* Settings.storyboard */,
-				10F873A2296F36130097C900 /* SettingsViewController.swift */,
-				10F8739C296AFD460097C900 /* AlarmViewController.swift */,
-				10C1045629774E11008AEE46 /* UserDataViewController.swift */,
-				10F8739A296AD5FE0097C900 /* PasswordViewController.swift */,
-				10F8739E296C2DF10097C900 /* PopupViewController.swift */,
-				103FFF0D2976C25500C3D059 /* TimeViewController.swift */,
-				1061C22F2970160200A6670E /* WindViewController.swift */,
-				10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		10C1045C2977E385008AEE46 /* PasswordDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				10C1045D2977E3D7008AEE46 /* PasswordModel.swift */,
-				10C1045F2977E3E5008AEE46 /* PasswordDataManager.swift */,
-			);
-			path = PasswordDataManager;
 			sourceTree = "<group>";
 		};
 		10EDD3DD2961AED500A93DB3 = {
@@ -184,7 +226,6 @@
 				D0C7AB8D29804FAC00D96CB4 /* Main */,
 				10EDD3E92961AED500A93DB3 /* AppDelegate.swift */,
 				E731FB9D297FB96C00AAF69A /* Greeting.storyboard */,
-				10C1045C2977E385008AEE46 /* PasswordDataManager */,
 				E731FB9F297FB97500AAF69A /* GreetingViewController.swift */,
 				E731FBA0297FB97500AAF69A /* NamingViewController.swift */,
 				10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */,
@@ -201,11 +242,11 @@
 				E731FBA8297FB98F00AAF69A /* LoginNavigationController.swift */,
 				E731FBA7297FB98F00AAF69A /* LoginPopupViewController.swift */,
 				E731FBA9297FB98F00AAF69A /* LoginViewController.swift */,
+				101BEB4A29979D4D0042756D /* Settings */,
 				1030009329842A070011DA84 /* Custom */,
-				1030009529842ACE0011DA84 /* Settings */,
+				101BEB4729979CF60042756D /* Font */,
 				10EDD3F22961AED600A93DB3 /* Assets.xcassets */,
 				10EDD3F72961AED600A93DB3 /* Info.plist */,
-				10F873A1296EECD60097C900 /* SF-Pro.ttf */,
 			);
 			path = waither;
 			sourceTree = "<group>";
@@ -333,9 +374,9 @@
 				D01B5056299797B300F1A470 /* MainPage.storyboard in Resources */,
 				D01B505C29979BAF00F1A470 /* ForecastCollectionViewCell.xib in Resources */,
 				10C104632977F7B3008AEE46 /* Main.storyboard in Resources */,
+				101BEB5929979D4D0042756D /* Settings.storyboard in Resources */,
 				10F71A102976AED4008EA002 /* SF-Pro.ttf in Resources */,
 				10EDD3F32961AED600A93DB3 /* Assets.xcassets in Resources */,
-				1030009B29842E4F0011DA84 /* Settings.storyboard in Resources */,
 				E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */,
 				E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */,
 				E731FBA4297FB98500AAF69A /* LaunchScreen_white.storyboard in Resources */,
@@ -393,48 +434,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10C1045E2977E3D7008AEE46 /* PasswordModel.swift in Sources */,
+				101BEB5829979D4D0042756D /* AlarmViewController.swift in Sources */,
 				D01B50512997979B00F1A470 /* WeatherInfoModel.swift in Sources */,
 				10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */,
-				10F8739B296AD5FE0097C900 /* PasswordViewController.swift in Sources */,
+				101BEB5D29979D4D0042756D /* TimeViewController.swift in Sources */,
 				E731FBAA297FB98F00AAF69A /* LoginByEmailViewController.swift in Sources */,
 				D01B5055299797B300F1A470 /* MainPageViewController.swift in Sources */,
-				10EDD4062965783B00A93DB3 /* PrivacyViewController.swift in Sources */,
 				E731FBA2297FB97500AAF69A /* NamingViewController.swift in Sources */,
-				10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */,
 				D01B504F2997979B00F1A470 /* SettingsMainModel.swift in Sources */,
 				D01B505A29979B3300F1A470 /* ForecastCollectionViewCell.swift in Sources */,
+				101BEB6C29979DCC0042756D /* WindAlarmDataManager.swift in Sources */,
 				10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */,
-				10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */,
+				101BEB5529979D4D0042756D /* UserDataViewController.swift in Sources */,
+				101BEB5629979D4D0042756D /* WindViewController.swift in Sources */,
 				10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */,
+				101BEB7429979DCC0042756D /* WindAlarmModel.swift in Sources */,
+				101BEB5B29979D4D0042756D /* PrivacyViewController.swift in Sources */,
 				E731FBAE297FB98F00AAF69A /* LoginViewController.swift in Sources */,
 				E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */,
+				101BEB7529979DCC0042756D /* UserdataDataManager.swift in Sources */,
 				D01B50502997979B00F1A470 /* WeatherInfoInput.swift in Sources */,
-				10F8739F296C2DF10097C900 /* PopupViewController.swift in Sources */,
-				10F8739D296AFD460097C900 /* AlarmViewController.swift in Sources */,
+				101BEB5A29979D4D0042756D /* PopupViewController.swift in Sources */,
 				E731FBAD297FB98F00AAF69A /* LoginNavigationController.swift in Sources */,
+				101BEB7329979DCC0042756D /* SettingsModel.swift in Sources */,
 				D01B50472997978800F1A470 /* WeatherInfoDataManager.swift in Sources */,
+				101BEB7229979DCC0042756D /* UserModel.swift in Sources */,
 				E731FBB4297FB99E00AAF69A /* SplashViewController.swift in Sources */,
+				101BEB7129979DCC0042756D /* UserDataModel.swift in Sources */,
 				E731FBB6297FB99E00AAF69A /* SigninViewController.swift in Sources */,
-				1061C2302970160200A6670E /* WindViewController.swift in Sources */,
 				10EDD3FE2961B55A00A93DB3 /* UIView+Extension.swift in Sources */,
-				10C104602977E3E5008AEE46 /* PasswordDataManager.swift in Sources */,
+				101BEB6B29979DCC0042756D /* SettingsMainDataManager.swift in Sources */,
 				D01B504E2997979B00F1A470 /* SettingsMainInput.swift in Sources */,
 				D01B50522997979B00F1A470 /* APIModel.swift in Sources */,
-				103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */,
+				101BEB5C29979D4D0042756D /* SettingsViewController.swift in Sources */,
 				E731FBAC297FB98F00AAF69A /* LoginPopupViewController.swift in Sources */,
+				101BEB5729979D4D0042756D /* PasswordViewController.swift in Sources */,
 				10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */,
+				101BEB6E29979DCC0042756D /* AlarmDataManager.swift in Sources */,
 				D01B5058299797CF00F1A470 /* MainPageTableViewCell.swift in Sources */,
 				E731FBB5297FB99E00AAF69A /* SignupViewController.swift in Sources */,
 				E731FBB3297FB99E00AAF69A /* TempPasswordViewController.swift in Sources */,
 				D01B50442997976200F1A470 /* String+Extension.swift in Sources */,
 				10EDD4002961B59600A93DB3 /* UIColor+Extension.swift in Sources */,
+				101BEB6D29979DCC0042756D /* UserDataManager.swift in Sources */,
+				101BEB6F29979DCC0042756D /* AlarmModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		101BEB4F29979D4D0042756D /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101BEB5029979D4D0042756D /* Base */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
 		10C104612977F7B3008AEE46 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
