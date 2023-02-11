@@ -38,11 +38,11 @@ class MainPageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var forecastCollectionView: UICollectionView!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         self.backgroundColor = UIColor.clear
-
         setOnoffView()
         
         // 섹션5 - 컬렉션뷰
@@ -70,12 +70,37 @@ class MainPageTableViewCell: UITableViewCell {
         if let normTem = cellData.tmp { normTemLabel.text = "\(normTem)"}
         if let normTen = cellData.tmn { normLowestLabel.text = "최저 \(normTen)°C"}
         if let normTex = cellData.tmx { normTopLabel.text = "최고 \(normTex)°C"}
-//        if let onoffVec = cellData.vec {
-//            switch onoffVec {
-//                case
-//            }
-//        }
+        if let onoffVec = cellData.vec {
+            let NEmin = onoffVec > 22, NEmax = onoffVec <= 67
+            let Emin = onoffVec > 67, Emax = onoffVec <= 112
+            let SEmin = onoffVec > 112, SEmax = onoffVec <= 157
+            let Smin = onoffVec > 157, Smax = onoffVec <= 202
+            let SWmin = onoffVec > 202, SWmax = onoffVec <= 247
+            let Wmin = onoffVec > 247, Wmax = onoffVec <= 292
+            let NWmin = onoffVec > 292, NWmax = onoffVec <= 337
+            let Nmin = onoffVec > 337, Nmax = onoffVec <= 22
+            if NEmin && NEmax { onoffVecLabel.text = "북동"}
+            else if Emin && Emax { onoffVecLabel.text = "동"}
+            else if SEmin && SEmax { onoffVecLabel.text = "남동"}
+            else if Smin && Smax { onoffVecLabel.text = "남"}
+            else if SWmin && SWmax { onoffVecLabel.text = "남서"}
+            else if Wmin && Wmax { onoffVecLabel.text = "서"}
+            else if NWmin && NWmax { onoffVecLabel.text = "북서"}
+            else if Nmin && Nmax { onoffVecLabel.text = "북"}
+        }
         if let onoffWsd = cellData.wsd { onoffWsdLabel.text = "\(onoffWsd)m/s"}
+        if let onoffRn1 = cellData.rn1 { onoffRn1Label.text = "\(onoffRn1)mm"}
+        if let onoffPm10Grade = cellData.pm10_grade { onoffPm10GradeLabel.text = onoffPm10Grade }
+        if let onoffPm10Value = cellData.pm10_value { onoffPm10ValueLabel.text = "\(onoffPm10Value)㎍/m³" }
+    }
+    
+    // onoff data 설정
+    public func setOnoffData(_ cellData: SettingsMainModel) {
+        if let onoffWind = cellData.wind, let onoffRain = cellData.rainFall, let onoffDust = cellData.dust {
+            if onoffWind == "Y" && onoffRain == "Y" && onoffDust == "N" {
+                
+            }
+        }
     }
 }
 

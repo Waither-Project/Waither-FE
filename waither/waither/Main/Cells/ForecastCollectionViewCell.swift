@@ -18,5 +18,9 @@ class ForecastCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    public func setCellWeatherData(_ cellData: WeatherInfoModel) {
+        timeLabel.text = "\(cellData.time?.split(by: 2))시"
+    }
 
 }

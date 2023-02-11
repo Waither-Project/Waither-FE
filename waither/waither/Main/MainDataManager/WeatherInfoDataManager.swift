@@ -17,7 +17,6 @@ class WeatherInfoDataManager {
             switch response.result {
             case .success(let result):
                 viewcontroller.WeatherInfoSuccessAPI(result.result!)
-                print("성공")
                 print(result)
             case .failure(let error):
                 print(error.localizedDescription)

@@ -71,6 +71,12 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
         if let cellData = self.weatherInfoData {
             // if data exists
             cell.setWeatherInfoData(cellData)
+//            ForecastCollectionViewCell.setCellWeatherData(cellData)
+            
+        }
+        if let cellData = self.settingsMainData {
+            // if data exists
+            cell.setOnoffData(cellData)
         }
         
         return cell
