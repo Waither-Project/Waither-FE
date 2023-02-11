@@ -28,9 +28,6 @@
 		10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A2296F36130097C900 /* SettingsViewController.swift */; };
 		10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F873A4296FEF490097C900 /* CustomLabel.swift */; };
 		C7F6871A5A774B531AC70FE0 /* Pods_waither.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D731590A32775A68193051A /* Pods_waither.framework */; };
-		D01B50402997972900F1A470 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B503C2997972900F1A470 /* MainPageTableViewCell.xib */; };
-		D01B50412997972900F1A470 /* ForecastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B503D2997972900F1A470 /* ForecastCollectionViewCell.xib */; };
-		D01B50422997972900F1A470 /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B503E2997972900F1A470 /* ForecastCollectionViewCell.swift */; };
 		D01B50442997976200F1A470 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B50432997976200F1A470 /* String+Extension.swift */; };
 		D01B50472997978800F1A470 /* WeatherInfoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B50462997978800F1A470 /* WeatherInfoDataManager.swift */; };
 		D01B504E2997979B00F1A470 /* SettingsMainInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B50492997979B00F1A470 /* SettingsMainInput.swift */; };
@@ -41,6 +38,9 @@
 		D01B5055299797B300F1A470 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B5053299797B300F1A470 /* MainPageViewController.swift */; };
 		D01B5056299797B300F1A470 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01B5054299797B300F1A470 /* MainPage.storyboard */; };
 		D01B5058299797CF00F1A470 /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B5057299797CF00F1A470 /* MainPageTableViewCell.swift */; };
+		D01B505A29979B3300F1A470 /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B505929979B3300F1A470 /* ForecastCollectionViewCell.swift */; };
+		D01B505C29979BAF00F1A470 /* ForecastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B505B29979BAF00F1A470 /* ForecastCollectionViewCell.xib */; };
+		D01B505E29979BF500F1A470 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D01B505D29979BF500F1A470 /* MainPageTableViewCell.xib */; };
 		E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */; };
 		E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E731FB9D297FB96C00AAF69A /* Greeting.storyboard */; };
 		E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FB9F297FB97500AAF69A /* GreetingViewController.swift */; };
@@ -83,9 +83,6 @@
 		10F873A2296F36130097C900 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		10F873A4296FEF490097C900 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		7C8DEB68397007B090EE7886 /* Pods-waither.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.release.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.release.xcconfig"; sourceTree = "<group>"; };
-		D01B503C2997972900F1A470 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPageTableViewCell.xib; path = ../../../../../../../../../Main/Cells/MainPageTableViewCell.xib; sourceTree = "<group>"; };
-		D01B503D2997972900F1A470 /* ForecastCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForecastCollectionViewCell.xib; path = ../../../../../../../../../Main/Cells/ForecastCollectionViewCell.xib; sourceTree = "<group>"; };
-		D01B503E2997972900F1A470 /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastCollectionViewCell.swift; path = ../../../../../../../../../Main/Cells/ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		D01B50432997976200F1A470 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D01B50462997978800F1A470 /* WeatherInfoDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfoDataManager.swift; sourceTree = "<group>"; };
 		D01B50492997979B00F1A470 /* SettingsMainInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMainInput.swift; sourceTree = "<group>"; };
@@ -96,6 +93,9 @@
 		D01B5053299797B300F1A470 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		D01B5054299797B300F1A470 /* MainPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		D01B5057299797CF00F1A470 /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
+		D01B505929979B3300F1A470 /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		D01B505B29979BAF00F1A470 /* ForecastCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastCollectionViewCell.xib; sourceTree = "<group>"; };
+		D01B505D29979BF500F1A470 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
 		E731FB9B297FB96200AAF69A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E731FB9D297FB96C00AAF69A /* Greeting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Greeting.storyboard; path = PasswordDataManager/Greeting.storyboard; sourceTree = "<group>"; };
 		E731FB9F297FB97500AAF69A /* GreetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
@@ -262,10 +262,10 @@
 		D0C7AB9429804FCB00D96CB4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D01B503E2997972900F1A470 /* ForecastCollectionViewCell.swift */,
-				D01B503D2997972900F1A470 /* ForecastCollectionViewCell.xib */,
+				D01B505929979B3300F1A470 /* ForecastCollectionViewCell.swift */,
+				D01B505B29979BAF00F1A470 /* ForecastCollectionViewCell.xib */,
 				D01B5057299797CF00F1A470 /* MainPageTableViewCell.swift */,
-				D01B503C2997972900F1A470 /* MainPageTableViewCell.xib */,
+				D01B505D29979BF500F1A470 /* MainPageTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -331,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01B5056299797B300F1A470 /* MainPage.storyboard in Resources */,
+				D01B505C29979BAF00F1A470 /* ForecastCollectionViewCell.xib in Resources */,
 				10C104632977F7B3008AEE46 /* Main.storyboard in Resources */,
 				10F71A102976AED4008EA002 /* SF-Pro.ttf in Resources */,
 				10EDD3F32961AED600A93DB3 /* Assets.xcassets in Resources */,
@@ -339,8 +340,7 @@
 				E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */,
 				E731FBA4297FB98500AAF69A /* LaunchScreen_white.storyboard in Resources */,
 				E731FBAB297FB98F00AAF69A /* Login.storyboard in Resources */,
-				D01B50412997972900F1A470 /* ForecastCollectionViewCell.xib in Resources */,
-				D01B50402997972900F1A470 /* MainPageTableViewCell.xib in Resources */,
+				D01B505E29979BF500F1A470 /* MainPageTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +403,10 @@
 				E731FBA2297FB97500AAF69A /* NamingViewController.swift in Sources */,
 				10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */,
 				D01B504F2997979B00F1A470 /* SettingsMainModel.swift in Sources */,
+				D01B505A29979B3300F1A470 /* ForecastCollectionViewCell.swift in Sources */,
 				10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */,
 				10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */,
 				10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */,
-				D01B50422997972900F1A470 /* ForecastCollectionViewCell.swift in Sources */,
 				E731FBAE297FB98F00AAF69A /* LoginViewController.swift in Sources */,
 				E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */,
 				D01B50502997979B00F1A470 /* WeatherInfoInput.swift in Sources */,
