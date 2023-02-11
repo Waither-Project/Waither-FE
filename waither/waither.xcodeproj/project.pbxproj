@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101BEB29298C09F90042756D /* SettingsMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB28298C09F90042756D /* SettingsMainModel.swift */; };
+		101BEB2B298C0A570042756D /* SettingsMainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB2A298C0A570042756D /* SettingsMainDataManager.swift */; };
+		101BEB2F298D74940042756D /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB2E298D74940042756D /* AlarmModel.swift */; };
+		101BEB31298D75400042756D /* WindAlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB30298D75400042756D /* WindAlarmModel.swift */; };
+		101BEB33298D75B70042756D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB32298D75B70042756D /* UserModel.swift */; };
+		101BEB35298D764B0042756D /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB34298D764B0042756D /* UserDataModel.swift */; };
+		101BEB3B298D779A0042756D /* UserdataDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB3A298D779A0042756D /* UserdataDataManager.swift */; };
+		101BEB3D298D78EE0042756D /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB3C298D78EE0042756D /* UserDataManager.swift */; };
+		101BEB3F298D791B0042756D /* AlarmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB3E298D791B0042756D /* AlarmDataManager.swift */; };
+		101BEB41298D794F0042756D /* WindAlarmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB40298D794F0042756D /* WindAlarmDataManager.swift */; };
+		101BEB44299767020042756D /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BEB43299767010042756D /* APIModel.swift */; };
 		103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103FFF0D2976C25500C3D059 /* TimeViewController.swift */; };
 		1061C2302970160200A6670E /* WindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1061C22F2970160200A6670E /* WindViewController.swift */; };
 		10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1045629774E11008AEE46 /* UserDataViewController.swift */; };
-		10C1045E2977E3D7008AEE46 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1045D2977E3D7008AEE46 /* PasswordModel.swift */; };
-		10C104602977E3E5008AEE46 /* PasswordDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1045F2977E3E5008AEE46 /* PasswordDataManager.swift */; };
 		10C104632977F7B3008AEE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C104612977F7B3008AEE46 /* Main.storyboard */; };
 		10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3E92961AED500A93DB3 /* AppDelegate.swift */; };
 		10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */; };
@@ -34,11 +43,20 @@
 /* Begin PBXFileReference section */
 		08971674B00450F935EB8302 /* Pods-waither.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waither.debug.xcconfig"; path = "Target Support Files/Pods-waither/Pods-waither.debug.xcconfig"; sourceTree = "<group>"; };
 		0D731590A32775A68193051A /* Pods_waither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_waither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		101BEB28298C09F90042756D /* SettingsMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainModel.swift; sourceTree = "<group>"; };
+		101BEB2A298C0A570042756D /* SettingsMainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainDataManager.swift; sourceTree = "<group>"; };
+		101BEB2E298D74940042756D /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		101BEB30298D75400042756D /* WindAlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindAlarmModel.swift; sourceTree = "<group>"; };
+		101BEB32298D75B70042756D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		101BEB34298D764B0042756D /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		101BEB3A298D779A0042756D /* UserdataDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserdataDataManager.swift; sourceTree = "<group>"; };
+		101BEB3C298D78EE0042756D /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		101BEB3E298D791B0042756D /* AlarmDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDataManager.swift; sourceTree = "<group>"; };
+		101BEB40298D794F0042756D /* WindAlarmDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindAlarmDataManager.swift; sourceTree = "<group>"; };
+		101BEB43299767010042756D /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		103FFF0D2976C25500C3D059 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		1061C22F2970160200A6670E /* WindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindViewController.swift; sourceTree = "<group>"; };
 		10C1045629774E11008AEE46 /* UserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
-		10C1045D2977E3D7008AEE46 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
-		10C1045F2977E3E5008AEE46 /* PasswordDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDataManager.swift; sourceTree = "<group>"; };
 		10C104622977F7B3008AEE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10EDD3E62961AED500A93DB3 /* waither.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waither.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EDD3E92961AED500A93DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101BEB422996AAED0042756D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				101BEB28298C09F90042756D /* SettingsMainModel.swift */,
+				101BEB32298D75B70042756D /* UserModel.swift */,
+				101BEB2E298D74940042756D /* AlarmModel.swift */,
+				101BEB30298D75400042756D /* WindAlarmModel.swift */,
+				101BEB34298D764B0042756D /* UserDataModel.swift */,
+				101BEB43299767010042756D /* APIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		103A980A298150D6004428B1 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +118,8 @@
 			children = (
 				10EDD3EF2961AED500A93DB3 /* Settings.storyboard */,
 				10F873A2296F36130097C900 /* SettingsViewController.swift */,
-				10F8739C296AFD460097C900 /* AlarmViewController.swift */,
 				10C1045629774E11008AEE46 /* UserDataViewController.swift */,
+				10F8739C296AFD460097C900 /* AlarmViewController.swift */,
 				103FFF0D2976C25500C3D059 /* TimeViewController.swift */,
 				1061C22F2970160200A6670E /* WindViewController.swift */,
 				10EDD4052965783B00A93DB3 /* PrivacyViewController.swift */,
@@ -106,21 +137,17 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		103A980E29815141004428B1 /* Data */ = {
+		103A980E29815141004428B1 /* SettingsData */ = {
 			isa = PBXGroup;
 			children = (
-				10C1045C2977E385008AEE46 /* PasswordDataManager */,
+				101BEB2A298C0A570042756D /* SettingsMainDataManager.swift */,
+				101BEB3C298D78EE0042756D /* UserDataManager.swift */,
+				101BEB3E298D791B0042756D /* AlarmDataManager.swift */,
+				101BEB40298D794F0042756D /* WindAlarmDataManager.swift */,
+				101BEB3A298D779A0042756D /* UserdataDataManager.swift */,
+				101BEB422996AAED0042756D /* Model */,
 			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		10C1045C2977E385008AEE46 /* PasswordDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				10C1045D2977E3D7008AEE46 /* PasswordModel.swift */,
-				10C1045F2977E3E5008AEE46 /* PasswordDataManager.swift */,
-			);
-			path = PasswordDataManager;
+			path = SettingsData;
 			sourceTree = "<group>";
 		};
 		10EDD3DD2961AED500A93DB3 = {
@@ -150,7 +177,7 @@
 				10C104612977F7B3008AEE46 /* Main.storyboard */,
 				10EDD3F42961AED600A93DB3 /* LaunchScreen.storyboard */,
 				103A980A298150D6004428B1 /* Custom */,
-				103A980E29815141004428B1 /* Data */,
+				103A980E29815141004428B1 /* SettingsData */,
 				103A980C29815105004428B1 /* Settings */,
 				103A980D29815132004428B1 /* Font */,
 				10EDD3F22961AED600A93DB3 /* Assets.xcassets */,
@@ -293,21 +320,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10C1045E2977E3D7008AEE46 /* PasswordModel.swift in Sources */,
+				101BEB44299767020042756D /* APIModel.swift in Sources */,
 				10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */,
 				10F8739B296AD5FE0097C900 /* PasswordViewController.swift in Sources */,
 				10EDD4062965783B00A93DB3 /* PrivacyViewController.swift in Sources */,
 				10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */,
+				101BEB2F298D74940042756D /* AlarmModel.swift in Sources */,
+				101BEB29298C09F90042756D /* SettingsMainModel.swift in Sources */,
 				10F873A5296FEF490097C900 /* CustomLabel.swift in Sources */,
 				10F873A3296F36130097C900 /* SettingsViewController.swift in Sources */,
 				10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */,
+				101BEB33298D75B70042756D /* UserModel.swift in Sources */,
+				101BEB41298D794F0042756D /* WindAlarmDataManager.swift in Sources */,
+				101BEB3F298D791B0042756D /* AlarmDataManager.swift in Sources */,
+				101BEB31298D75400042756D /* WindAlarmModel.swift in Sources */,
+				101BEB2B298C0A570042756D /* SettingsMainDataManager.swift in Sources */,
 				10F8739F296C2DF10097C900 /* PopupViewController.swift in Sources */,
 				10F8739D296AFD460097C900 /* AlarmViewController.swift in Sources */,
 				1061C2302970160200A6670E /* WindViewController.swift in Sources */,
 				10EDD3FE2961B55A00A93DB3 /* UIView+Extension.swift in Sources */,
-				10C104602977E3E5008AEE46 /* PasswordDataManager.swift in Sources */,
+				101BEB3B298D779A0042756D /* UserdataDataManager.swift in Sources */,
 				103FFF0E2976C25500C3D059 /* TimeViewController.swift in Sources */,
+				101BEB3D298D78EE0042756D /* UserDataManager.swift in Sources */,
 				10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */,
+				101BEB35298D764B0042756D /* UserDataModel.swift in Sources */,
 				10EDD4002961B59600A93DB3 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

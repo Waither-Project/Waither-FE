@@ -13,6 +13,9 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var BarView: UIView!
     @IBOutlet weak var warningLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    var userData : UserModel!
     
     @IBAction func LogoutButton(_ sender: UIButton) {
         let storyboard = UIStoryboard.init(name: "Settings", bundle: nil)
@@ -39,7 +42,7 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
             ChangeButton.isSelected = true
             ChangeButton.setTitle("완료", for: .normal)
             BarView.backgroundColor = .buttonColor
-            NameTextField.isHidden = false
+            //NameTextField.isHidden = false
             NameTextField.isEnabled = true
             NameTextField.tintColor = UIColor.clear
             
@@ -135,6 +138,11 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        UserDataManager().userDataManager(self)
+        
+        //emailLabel.text = "waither@gmail.com"
+        
+        
         hideKeyboardWhenTappedAround()
         NameTextField.delegate = self
         
@@ -142,5 +150,14 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
         
         //view.isOpaque = false
         self.navigationController?.navigationBar.tintColor = .black
+    }
+}
+
+extension PrivacyViewController {
+    // MARK: 회원 정보 조회 API success
+    func UserSuccessAPI(_ result : UserModel) {
+        self.userData = result
+        guard (emailLabel.text = userData.email) != nil else {return}
+        guard (NameTextField.text = userData.name) != nil else {return}
     }
 }

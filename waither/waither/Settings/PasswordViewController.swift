@@ -110,7 +110,7 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
             warningLabel.textColor = .warningLabelColor
         }
     
-        // 텍스트 필드 3개가 채워졌는지, 비밀번호가 일치하는 지 확인
+        // 텍스트 필드 3개 모두 채워졌는지, 비밀번호가 일치하는 지 확인
         if !(self.nowPW.text?.isEmpty ?? true)
             && !(self.changePW.text?.isEmpty ?? true) && isSameBothTextField(changePW, PWToChange) {
             updateNextButton(willActive: true)
@@ -151,8 +151,6 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        PasswordDataManager().passwordDataManager()
         
         hideKeyboardWhenTappedAround()
         

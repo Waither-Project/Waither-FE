@@ -25,6 +25,8 @@ class UserDataViewController: UIViewController {
     @IBOutlet weak var savebtn: UIBarButtonItem!
     @IBOutlet weak var minusImage: UIImageView!
     
+    var useralarmData : UserDataModel!
+    
     @IBAction func clicksaveBtn(_ sender: UIBarButtonItem) {
         print(circularslider.textfield.text! + "℃")
     }
@@ -55,7 +57,7 @@ class UserDataViewController: UIViewController {
                     .regular(string: "' 온도", fontSize: 18)
                 
                 let say: String = "고 느끼는 온도를 나타내요.\n 이 데이터를 기반으로 제가 날씨를 판단해드릴게요."
-                let nickname: String = "OO"
+                let nickname: String = "웨이더"
                 var percent: Int = 10
                 
                 if vhotbtn == sender {
@@ -65,6 +67,8 @@ class UserDataViewController: UIViewController {
                         .regular(string: say, fontSize: 12)
                     minusImage.isHidden = true
                     percent = 50
+                    temperatureLabel.text = "3"
+                    temperatureLabels.text = "5"
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 } else if hotbtn == sender {
                     nameLabel.attributedText = NSMutableAttributedString().regular(string: nickname, fontSize: 12)
@@ -73,6 +77,8 @@ class UserDataViewController: UIViewController {
                         .regular(string: say, fontSize: 12)
                     minusImage.isHidden = true
                     percent = 60
+                    temperatureLabel.text = "2"
+                    temperatureLabels.text = "8"
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 } else if goodbtn == sender {
                     nameLabel.attributedText = NSMutableAttributedString().regular(string: nickname, fontSize: 12)
@@ -81,6 +87,8 @@ class UserDataViewController: UIViewController {
                         .regular(string: say, fontSize: 12)
                     minusImage.isHidden = true
                     percent = 70
+                    temperatureLabel.text = "2"
+                    temperatureLabels.text = "2"
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 } else if coldbtn == sender {
                     nameLabel.attributedText = NSMutableAttributedString().regular(string: nickname, fontSize: 12)
@@ -89,6 +97,8 @@ class UserDataViewController: UIViewController {
                         .regular(string: say, fontSize: 12)
                     minusImage.isHidden = false
                     percent = 80
+                    temperatureLabel.text = "0"
+                    temperatureLabels.text = "5"
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 } else {
                     nameLabel.attributedText = NSMutableAttributedString().regular(string: nickname, fontSize: 12)
@@ -97,6 +107,8 @@ class UserDataViewController: UIViewController {
                         .regular(string: say, fontSize: 12)
                     minusImage.isHidden = false
                     percent = 90
+                    temperatureLabel.text = "1"
+                    temperatureLabels.text = "0"
                     percentLabel.text = "약" + " \(percent)" + "%의 유저가 해당 온도를 \n 선택했습니다."
                 }
             }
@@ -106,16 +118,6 @@ class UserDataViewController: UIViewController {
     var feel : [String] = ["매우 덥다","덥다","좋다","춥다","매우 춥다"]
     
     var BtnArray = [UIButton]()
-    
-    /*
-    @objc func textFieldDidChange(_ sender: Any?) {
-        let first = circularslider.textfield.text?[circularslider.textfield.text!.startIndex]
-        let firsts : String = String(first!)
-        let second = circularslider.textfield.text?[circularslider.textfield.text!.index(before: circularslider.textfield.text!.endIndex)]
-        self.temperatureLabel?.text = firsts
-        self.temperatureLabels?.text = String(second!)
-    }
-    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,7 +140,12 @@ class UserDataViewController: UIViewController {
         
         
         self.navigationController?.navigationBar.tintColor = .black
-        
-        //circularslider.textfield.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .allEvents)
+    }
+}
+
+extension UserDataViewController {
+    // MARK: 사용자 설정 데이터 조회 API success
+    func UserAlarmSuccessAPI(_ result : UserDataModel) {
+        self.useralarmData = result
     }
 }

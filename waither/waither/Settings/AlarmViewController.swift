@@ -9,6 +9,8 @@ import UIKit
 
 class AlarmViewController: UIViewController, SendDataDelegate{
     
+    var alarmData : AlarmModel!
+    
     func sendData(data: String) {
         alarmtimeLabel.text = data
     }
@@ -29,7 +31,9 @@ class AlarmViewController: UIViewController, SendDataDelegate{
     
     @IBOutlet weak var alarmtimeLabel: UILabel!
     var alarm : String = ""
-
+    @IBOutlet weak var userLabel: UILabel!
+    var nickname : String = "웨이더"
+    
     @IBAction func TimeButton(_ sender: Any) {
         guard let popUp = self.storyboard?.instantiateViewController(withIdentifier: "timeVC") as? TimeViewController else { return }
 
@@ -52,6 +56,8 @@ class AlarmViewController: UIViewController, SendDataDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        AlarmDataManager().alarmDataManager(self)
+        
         BtnArray.append(SunButton)
         BtnArray.append(MonButton)
         BtnArray.append(TuesButton)
@@ -71,6 +77,8 @@ class AlarmViewController: UIViewController, SendDataDelegate{
         switch6.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
         switch7.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
         switch8.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
+        
+        userLabel.text = nickname + "님의 데이터를 분석한 기상 예보를 받을 수 있어요."
     }
     
     @IBOutlet weak var DayLabel: UILabel!
@@ -96,6 +104,68 @@ class AlarmViewController: UIViewController, SendDataDelegate{
                 guard let DayValue = btn.titleLabel?.text else { return }
                 DayLabel.text! += DayValue + " "
             }
+        }
+    }
+}
+
+extension AlarmViewController {
+    // MARK: 사용자 알람 설정 조회 API success
+    func AlarmSuccessAPI(_ result : AlarmModel) {
+        self.alarmData = result
+        print("outAlarm: " + alarmData.outAlarm)
+        print("sun: " + alarmData.sun)
+        
+        if alarmData.outAlarm == "Y" {
+            switch4.isOn = true
+        }
+        else { switch4.isOn = false }
+        
+        if alarmData.climateAlarm == "Y" {
+            switch5.isOn = true
+        }
+        else { switch5.isOn = false }
+        
+        if alarmData.customAlarm == "Y" {
+            switch6.isOn = true
+        }
+        else { switch6.isOn = false }
+        
+        if alarmData.rainAlarm == "Y" {
+            switch7.isOn = true
+        }
+        else { switch7.isOn = false }
+        
+        if alarmData.snowAlarm == "Y" {
+            switch8.isOn = true
+        }
+        else { switch8.isOn = false }
+        
+        if alarmData.sun == "Y" {
+            selectOptionBtnAction(SunButton)
+        }
+
+        if alarmData.mon == "Y" {
+            selectOptionBtnAction(MonButton)
+        }
+        
+        if alarmData.tue == "Y" {
+            selectOptionBtnAction(TuesButton)
+        }
+        
+        if alarmData.wed == "Y" {
+            selectOptionBtnAction(WedButton)
+        }
+        
+        if alarmData.thu == "Y" {
+            selectOptionBtnAction(ThursButton)
+        }
+        
+        if alarmData.fri == "Y" {
+            selectOptionBtnAction(FriButton)
+        }
+        
+        if alarmData.sat == "Y" {
+            selectOptionBtnAction(SatButton)
         }
     }
 }
