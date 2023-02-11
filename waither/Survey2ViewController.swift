@@ -14,6 +14,7 @@ class Survey2ViewController: UIViewController{
     let cnt = 1
     let max = 12
     var sortCode = 0
+    
     @IBOutlet weak var pickerTime: UIPickerView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var amBtn: UIButton!
@@ -22,7 +23,7 @@ class Survey2ViewController: UIViewController{
 
     var timeFlag = true //true: am, false: pm
     
-    let times = ["1시", "2시", "3시", "4시", "5시", "6시", "7시", "8시", "9시", "10시", "11시", "12시"]
+    let times = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
     let clr = UIColor(named: "buttonColor")
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,17 +61,23 @@ class Survey2ViewController: UIViewController{
     func selectedPickerViewUICustom() {
             pickerTime.subviews[1].backgroundColor = .clear
             
-            let underLine = UIView(frame: CGRect(x: 3, y: 60, width: 150, height: 0.8))
+            let upLine = UIView(frame: CGRect(x: -10, y: 8, width: 150, height: 0.8))
+            let underLine = UIView(frame: CGRect(x: -10, y: 40, width: 150, height: 0.8))
             
-            
+            upLine.backgroundColor = UIColor(red: 0.365, green: 0.557, blue: 0.847, alpha: 1)
             underLine.backgroundColor = UIColor(red: 0.365, green: 0.557, blue: 0.847, alpha: 1)
             
            pickerTime.subviews[1].addSubview(underLine)
+        pickerTime.subviews[1].addSubview(upLine)
         }
     
     @IBAction func checkBtnPrsd(_ sender: UIButton) {
+        guard let newVC = self.storyboard?.instantiateViewController(withIdentifier: "SaveViewController") as? SaveViewController else {return}
         
-        self.presentingViewController?.dismiss(animated: true)
+        newVC.modalTransitionStyle = .coverVertical
+        newVC.modalPresentationStyle = .fullScreen
+        self.present(newVC, animated: true, completion: nil)
+        //self.presentingViewController?.dismiss(animated: true)
     }
     
     @IBAction func dontKnowBtnPrsd(_ sender: UIButton) {
@@ -107,23 +114,30 @@ class Survey2ViewController: UIViewController{
 }
 
 extension Survey2ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        return 60
+        return 45
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-            let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 60))
+            let view = UIView(frame: CGRect(x: 0, y: 0, width: 250, height: 30))
 
-            let timeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 60))
+            let timeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 30))
+            timeLabel.layer.masksToBounds = true
+        
             timeLabel.text = times[row]
             timeLabel.textAlignment = .center
-            timeLabel.font = UIFont.systemFont(ofSize: 25, weight: .light)
-
+            //timeLabel.font = UIFont.systemFont(ofSize: 20, weight: .light)
+            timeLabel.font = UIFont(name: "Apple SD Gothic Neo", size: 25)
+            timeLabel.font = UIFont.boldSystemFont(ofSize: 20)
             view.addSubview(timeLabel)
+            
+           
             return view
         }
     
@@ -136,7 +150,12 @@ extension Survey2ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("select=\(row)")
     }
+    
+    
+    
+    
 }
+
 
 
 extension UIColor {

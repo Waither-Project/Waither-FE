@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +14,72 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueq-KH-N17">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="pfV-HG-tTr">
+                                        <rect key="frame" x="138.33333333333334" y="195.66666666666663" width="113.33333333333334" height="161.33333333333337"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="161.44999999999999" id="GGj-dJ-h2A"/>
+                                            <constraint firstAttribute="width" constant="113.33" id="OgV-fJ-oqW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반가워요 OO님!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekI-6P-SEL">
+                                        <rect key="frame" x="55" y="439" width="280" height="60"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조금 더 정확한 기상예보를 위해 00님이 느낀 어제 날씨가 궁금해요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYL-XI-kDX">
+                                        <rect key="frame" x="46" y="484" width="298" height="88"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <constraints>
+                                    <constraint firstItem="pfV-HG-tTr" firstAttribute="centerX" secondItem="ueq-KH-N17" secondAttribute="centerX" id="3vd-zM-QFw"/>
+                                    <constraint firstAttribute="bottom" secondItem="ekI-6P-SEL" secondAttribute="bottom" constant="345" id="FI0-7n-4g8"/>
+                                    <constraint firstItem="ekI-6P-SEL" firstAttribute="leading" secondItem="ueq-KH-N17" secondAttribute="leading" constant="55" id="URC-nb-UjP"/>
+                                    <constraint firstItem="pfV-HG-tTr" firstAttribute="top" secondItem="ueq-KH-N17" secondAttribute="top" constant="195.55000000000001" id="aFE-hi-E1U"/>
+                                    <constraint firstItem="yYL-XI-kDX" firstAttribute="leading" secondItem="ueq-KH-N17" secondAttribute="leading" constant="46" id="by5-Xd-uOP"/>
+                                    <constraint firstAttribute="trailing" secondItem="yYL-XI-kDX" secondAttribute="trailing" constant="46" id="egO-GV-Gp9"/>
+                                    <constraint firstAttribute="trailing" secondItem="ekI-6P-SEL" secondAttribute="trailing" constant="55" id="iFd-xA-f2U"/>
+                                    <constraint firstAttribute="bottom" secondItem="yYL-XI-kDX" secondAttribute="bottom" constant="272" id="q0g-JJ-UUg"/>
+                                    <constraint firstItem="yYL-XI-kDX" firstAttribute="top" secondItem="ueq-KH-N17" secondAttribute="top" constant="484" id="rMS-sg-4vi"/>
+                                    <constraint firstItem="ekI-6P-SEL" firstAttribute="top" secondItem="ueq-KH-N17" secondAttribute="top" constant="439" id="zaD-vb-YPH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ueq-KH-N17" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7lx-LX-6Mf"/>
+                            <constraint firstItem="ueq-KH-N17" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ODn-1A-MNa"/>
+                            <constraint firstItem="ueq-KH-N17" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bac-bw-dvY"/>
+                            <constraint firstAttribute="bottom" secondItem="ueq-KH-N17" secondAttribute="bottom" id="cib-FH-e6a"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.307692307692307" y="374.64454976303318"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchScreenImage" width="228" height="337"/>
+        <namedColor name="buttonColor">
+            <color red="0.36500000953674316" green="0.55699998140335083" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

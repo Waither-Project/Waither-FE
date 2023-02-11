@@ -47,7 +47,7 @@ class Survey1ViewController: UIViewController {
         newVC.sortCode = 1
         newVC.modalTransitionStyle = .coverVertical
         newVC.modalPresentationStyle = .fullScreen
-        self.present(newVC, animated: true, completion: nil)
+        self.present(newVC, animated: false, completion: nil)
 
     }
     
