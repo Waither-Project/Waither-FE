@@ -31,9 +31,9 @@ extension CALayer {
     func addGradientBorder(colors:[UIColor],width:CGFloat = 1) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.cornerRadius = 16
-        gradientLayer.frame =  CGRect(origin: CGPointZero, size: self.bounds.size)
-        gradientLayer.startPoint = CGPointMake(0.0, 0.5)
-        gradientLayer.endPoint = CGPointMake(1.0, 0.5)
+        gradientLayer.frame =  CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: self.bounds.size)
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         gradientLayer.colors = colors.map({$0.cgColor})
 
         let shapeLayer = CAShapeLayer()

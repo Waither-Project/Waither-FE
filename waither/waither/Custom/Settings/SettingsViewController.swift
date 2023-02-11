@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "SF Pro Black", size: 15)!]
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "SF Pro Black", size: 15)!]
     }
     
     override func viewDidLoad() {
@@ -27,9 +27,9 @@ class SettingsViewController: UIViewController {
         
         self.navigationController?.navigationBar.tintColor = .black
         
-        switch1.transform = CGAffineTransformMakeScale(0.75, 0.75);
-        switch2.transform = CGAffineTransformMakeScale(0.75, 0.75);
-        switch3.transform = CGAffineTransformMakeScale(0.75, 0.75);
+        switch1.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
+        switch2.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
+        switch3.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
     }
 }
 

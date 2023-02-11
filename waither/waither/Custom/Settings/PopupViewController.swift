@@ -63,11 +63,14 @@ class PopupViewController: UIViewController {
         self.present(popUp, animated: true, completion: nil)
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { _ in popUp.dismiss(animated: true, completion: nil)} )
+        
+        
     }
     
     @IBAction func closePopupBtn(_ sender: Any) {
         self.dismiss(animated: false, completion: nil) // 사라지게 하기
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
