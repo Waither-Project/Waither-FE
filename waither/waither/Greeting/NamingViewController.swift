@@ -32,19 +32,75 @@ class NamingViewController: UIViewController{
         
     }
     @IBAction func okButtonClicked(_ sender: Any) {
-        //TODO: 추후 설문 page 연결
-        let Main = UIStoryboard.init(name: "MainPage", bundle: nil)
-        guard let pvc = self.presentingViewController else { return }
-        self.dismiss(animated: false) {
-            //MainPageVC : StoryBoard ID
-            let nextVC = Main.instantiateViewController(withIdentifier: "MainPageVC") as! MainPageViewController
-            let navController = UINavigationController(rootViewController: nextVC)
-            navController.modalTransitionStyle = .coverVertical
-            navController.modalPresentationStyle = .fullScreen
-            
-            pvc.present(navController, animated:true, completion: nil)
+        //text field에서 이름 가져와서 post 보내주기
+        if(okBtn.configuration?.background.backgroundColor == UIColor.main_blue){
+            postName(nickname: self.nameTextField.text!)
         }
+        
     }
+    
+    @objc func dismissView(){
+            dismiss(animated: false, completion: nil)
+        }
+    
+    func postName(nickname: String) {
+        
+        let nickname = nickname
+    
+        let body = ["name" : nickname]
+        let bodyData = try! JSONSerialization.data(withJSONObject: body, options: [])
+                
+
+        let url = URL(string: "https://www.waither.shop/users/settings/user?userIdx=1")
+
+        
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = bodyData
+
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+
+            if let e = error {
+                print("An error has occured: \(e.localizedDescription)")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                        do{
+                            let object = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
+                            guard let jsonObject = object else { return }
+                            
+                            
+                            let status = jsonObject["isSuccess"] as? Bool
+                            let msg = jsonObject["message"] as? String
+                            
+                            
+                            if status! {
+                                print(msg!)
+                                
+                                let Survey = UIStoryboard.init(name: "Survey", bundle: nil)
+                                guard let pvc = self.presentingViewController else { return }
+                                self.dismiss(animated: false) {
+                                    let nextVC = Survey.instantiateViewController(withIdentifier: "Survey1ViewController") as! Survey1ViewController
+                                    let navController = UINavigationController(rootViewController: nextVC)
+                                    navController.modalTransitionStyle = .coverVertical
+                                    navController.modalPresentationStyle = .fullScreen
+                                    pvc.present(navController, animated:true, completion: nil)
+                                }
+                            }
+                            
+                        }catch let e as NSError{
+                            
+                            print("An error has occured while parsing JSONObject: \(e.localizedDescription)")
+                            
+                        }
+                    }
+                }
+        // POST 전송
+        task.resume()
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)

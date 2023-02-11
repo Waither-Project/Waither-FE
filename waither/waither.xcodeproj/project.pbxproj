@@ -49,6 +49,14 @@
 		E731FBB5297FB99E00AAF69A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBB1297FB99E00AAF69A /* SignupViewController.swift */; };
 		E731FBB6297FB99E00AAF69A /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E731FBB2297FB99E00AAF69A /* SigninViewController.swift */; };
 		E79EC64129967F1000B1F284 /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC64029967F1000B1F284 /* LoginInfo.swift */; };
+		E79EC64429979CD000B1F284 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79EC64329979CD000B1F284 /* Survey.storyboard */; };
+		E79EC64629979CD600B1F284 /* SurveyLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79EC64529979CD600B1F284 /* SurveyLaunchScreen.storyboard */; };
+		E79EC64E29979CE200B1F284 /* Survey1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC64729979CE200B1F284 /* Survey1ViewController.swift */; };
+		E79EC64F29979CE200B1F284 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC64829979CE200B1F284 /* SaveViewController.swift */; };
+		E79EC65029979CE200B1F284 /* Survey2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC64929979CE200B1F284 /* Survey2ViewController.swift */; };
+		E79EC65129979CE200B1F284 /* NotiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC64A29979CE200B1F284 /* NotiViewController.swift */; };
+		E79EC65329979CE200B1F284 /* NotiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC64C29979CE200B1F284 /* NotiTableViewCell.swift */; };
+		E79EC65429979CE200B1F284 /* TmpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC64D29979CE200B1F284 /* TmpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +106,14 @@
 		E731FBB1297FB99E00AAF69A /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E731FBB2297FB99E00AAF69A /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		E79EC64029967F1000B1F284 /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
+		E79EC64329979CD000B1F284 /* Survey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
+		E79EC64529979CD600B1F284 /* SurveyLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SurveyLaunchScreen.storyboard; sourceTree = "<group>"; };
+		E79EC64729979CE200B1F284 /* Survey1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey1ViewController.swift; sourceTree = "<group>"; };
+		E79EC64829979CE200B1F284 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		E79EC64929979CE200B1F284 /* Survey2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey2ViewController.swift; sourceTree = "<group>"; };
+		E79EC64A29979CE200B1F284 /* NotiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiViewController.swift; sourceTree = "<group>"; };
+		E79EC64C29979CE200B1F284 /* NotiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiTableViewCell.swift; sourceTree = "<group>"; };
+		E79EC64D29979CE200B1F284 /* TmpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TmpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +158,7 @@
 		10EDD3E82961AED500A93DB3 /* waither */ = {
 			isa = PBXGroup;
 			children = (
+				E79EC64229979CC200B1F284 /* Survey */,
 				E74066DC29866B3A00CECA2C /* LaunchScreenWhite */,
 				E74066DB29866B0C00CECA2C /* Greeting */,
 				E74066DA29866AC900CECA2C /* Login */,
@@ -244,6 +261,21 @@
 			path = LaunchScreenWhite;
 			sourceTree = "<group>";
 		};
+		E79EC64229979CC200B1F284 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				E79EC64C29979CE200B1F284 /* NotiTableViewCell.swift */,
+				E79EC64A29979CE200B1F284 /* NotiViewController.swift */,
+				E79EC64829979CE200B1F284 /* SaveViewController.swift */,
+				E79EC64729979CE200B1F284 /* Survey1ViewController.swift */,
+				E79EC64929979CE200B1F284 /* Survey2ViewController.swift */,
+				E79EC64D29979CE200B1F284 /* TmpViewController.swift */,
+				E79EC64529979CD600B1F284 /* SurveyLaunchScreen.storyboard */,
+				E79EC64329979CD000B1F284 /* Survey.storyboard */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,6 +342,8 @@
 				D0C7AB9A29804FED00D96CB4 /* ForecastCollectionViewCell.xib in Resources */,
 				E731FB9C297FB96200AAF69A /* LaunchScreen.storyboard in Resources */,
 				E731FB9E297FB96C00AAF69A /* Greeting.storyboard in Resources */,
+				E79EC64429979CD000B1F284 /* Survey.storyboard in Resources */,
+				E79EC64629979CD600B1F284 /* SurveyLaunchScreen.storyboard in Resources */,
 				D0C7AB9B29804FED00D96CB4 /* MainPageTableViewCell.xib in Resources */,
 				10EDD3F12961AED500A93DB3 /* Settings.storyboard in Resources */,
 				D0C7AB9129804FC400D96CB4 /* MainPage.storyboard in Resources */,
@@ -368,11 +402,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C1045E2977E3D7008AEE46 /* PasswordModel.swift in Sources */,
+				E79EC65429979CE200B1F284 /* TmpViewController.swift in Sources */,
+				E79EC64F29979CE200B1F284 /* SaveViewController.swift in Sources */,
 				10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */,
 				10F8739B296AD5FE0097C900 /* PasswordViewController.swift in Sources */,
 				E731FBAA297FB98F00AAF69A /* LoginByEmailViewController.swift in Sources */,
 				10EDD4062965783B00A93DB3 /* PrivacyViewController.swift in Sources */,
 				E731FBA2297FB97500AAF69A /* NamingViewController.swift in Sources */,
+				E79EC65029979CE200B1F284 /* Survey2ViewController.swift in Sources */,
 				10C1045729774E11008AEE46 /* UserDataViewController.swift in Sources */,
 				D0C7AB9C29804FED00D96CB4 /* ForecastCollectionViewCell.swift in Sources */,
 				D0C7AB9329804FC400D96CB4 /* MainPageViewController.swift in Sources */,
@@ -383,6 +420,7 @@
 				E731FBAE297FB98F00AAF69A /* LoginViewController.swift in Sources */,
 				E731FBA1297FB97500AAF69A /* GreetingViewController.swift in Sources */,
 				10F8739F296C2DF10097C900 /* PopupViewController.swift in Sources */,
+				E79EC64E29979CE200B1F284 /* Survey1ViewController.swift in Sources */,
 				10F8739D296AFD460097C900 /* AlarmViewController.swift in Sources */,
 				E731FBAD297FB98F00AAF69A /* LoginNavigationController.swift in Sources */,
 				E731FBB4297FB99E00AAF69A /* SplashViewController.swift in Sources */,
@@ -394,8 +432,10 @@
 				D0C7AB9929804FED00D96CB4 /* MainPageTableViewCell.swift in Sources */,
 				E731FBAC297FB98F00AAF69A /* LoginPopupViewController.swift in Sources */,
 				10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */,
+				E79EC65329979CE200B1F284 /* NotiTableViewCell.swift in Sources */,
 				E731FBB5297FB99E00AAF69A /* SignupViewController.swift in Sources */,
 				E731FBB3297FB99E00AAF69A /* TempPasswordViewController.swift in Sources */,
+				E79EC65129979CE200B1F284 /* NotiViewController.swift in Sources */,
 				10EDD4002961B59600A93DB3 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
