@@ -62,10 +62,10 @@
         <!--SettingsViewController-->
         <scene sceneID="rWo-XZ-zv1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UD8-AT-l6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsViewController" id="hkg-e8-kQo" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fp8-1c-mQs"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UD8-AT-l6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1883" y="-272"/>
         </scene>
