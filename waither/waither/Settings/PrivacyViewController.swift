@@ -42,9 +42,10 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
             ChangeButton.isSelected = true
             ChangeButton.setTitle("완료", for: .normal)
             BarView.backgroundColor = .buttonColor
-            //NameTextField.isHidden = false
             NameTextField.isEnabled = true
             NameTextField.tintColor = UIColor.clear
+            // text field에서 이름 가져와서 post 보내주기
+            postName(nickname: self.NameTextField.text!)
             
         } else {
             ChangeButton.isSelected = false
@@ -140,16 +141,53 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
     
         UserDataManager().userDataManager(self)
         
-        //emailLabel.text = "waither@gmail.com"
-        
-        
         hideKeyboardWhenTappedAround()
         NameTextField.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: NameTextField)
         
-        //view.isOpaque = false
         self.navigationController?.navigationBar.tintColor = .black
+    }
+    
+    func postName(nickname: String) {
+        // MARK: 회원 이름 변경 API success
+        let nickname = nickname
+    
+        let body = ["name" : nickname]
+        let bodyData = try! JSONSerialization.data(withJSONObject: body, options: [])
+        
+        let url = URL(string: "https://www.waither.shop/users/settings/user?userIdx=1")
+        
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = bodyData
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
+            if let e = error {
+                print("An error has occured: \(e.localizedDescription)")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                do{
+                    let object = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
+                    guard let jsonObject = object else { return }
+                    
+                    let status = jsonObject["isSuccess"] as? Bool
+                    let msg = jsonObject["message"] as? String
+                    
+                    if status! {
+                        print(msg!)
+                    }
+                    
+                } catch let e as NSError{
+                    print("An error has occured while parsing JSONObject: \(e.localizedDescription)")
+                }
+            }
+        }
+        // POST 전송
+        task.resume()
     }
 }
 
