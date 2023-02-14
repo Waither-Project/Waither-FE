@@ -10,6 +10,7 @@ import UIKit
 class AlarmViewController: UIViewController, SendDataDelegate{
     
     var alarmData : AlarmModel!
+    var nameData : UserModel!
     
     func sendData(data: String) {
         alarmtimeLabel.text = data
@@ -32,7 +33,7 @@ class AlarmViewController: UIViewController, SendDataDelegate{
     @IBOutlet weak var alarmtimeLabel: UILabel!
     var alarm : String = ""
     @IBOutlet weak var userLabel: UILabel!
-    var nickname : String = "웨이더"
+    var nickname : String = ""
     
     @IBAction func TimeButton(_ sender: Any) {
         guard let popUp = self.storyboard?.instantiateViewController(withIdentifier: "timeVC") as? TimeViewController else { return }
@@ -57,6 +58,7 @@ class AlarmViewController: UIViewController, SendDataDelegate{
         super.viewDidLoad()
     
         AlarmDataManager().alarmDataManager(self)
+        AlarmDataManager().nameDataManager(self)
         
         BtnArray.append(SunButton)
         BtnArray.append(MonButton)
@@ -77,8 +79,6 @@ class AlarmViewController: UIViewController, SendDataDelegate{
         switch6.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
         switch7.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
         switch8.transform = CGAffineTransform(scaleX: 0.75, y: 0.75);
-        
-        userLabel.text = nickname + "님의 데이터를 분석한 기상 예보를 받을 수 있어요."
     }
     
     @IBOutlet weak var DayLabel: UILabel!
@@ -168,5 +168,12 @@ extension AlarmViewController {
         if alarmData.sat == "Y" {
             selectOptionBtnAction(SatButton)
         }
+    }
+    
+    // OO님이~ 부분 사용자 이름 데이터 넣어주기
+    func NameSuccessAPI(_ result : UserModel) {
+        self.nameData = result
+        nickname = nameData.name
+        userLabel.text = nickname + "님의 데이터를 분석한 기상 예보를 받을 수 있어요."
     }
 }
