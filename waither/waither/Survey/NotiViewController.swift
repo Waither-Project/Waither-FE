@@ -10,18 +10,23 @@ import UIKit
 class NotiViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var notiTableView: UITableView!
+    
     var noti: [String] = ["14:20부터 10분간 소나기가 와요!", "오늘 오후 6시부터 8시까지 비가 와요!\n우산을 챙겨가세요.", "오늘 바람이 대체로 많이 불 예정이에요.", "새벽에 온도가 많이 떨어져요. 창문을\n닫고 주무세요. (잠)"]
     var time: [String] = ["14:00", "08:20", "08:20", "20:20"]
     var date: [String] = ["오늘", "오늘", "오늘", "오늘"]
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Apple SD Gothic Neo Bold", size: 15)!]
+        self.navigationController?.navigationBar.tintColor = .black
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         notiTableView.delegate = self
         notiTableView.dataSource = self
         notiTableView.separatorStyle = .none
-        
-        
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,13 +61,8 @@ class NotiViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         cell?.contentView.backgroundColor = .white
         //cell?.backgroundColor = .white
-
-     
-
       }
     
-
-
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
             -> UISwipeActionsConfiguration? {
             let deleteAction = UIContextualAction(style: .destructive, title: nil) { (_, _, completionHandler) in
@@ -78,6 +78,7 @@ class NotiViewController: UIViewController, UITableViewDelegate, UITableViewData
             let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
             return configuration
     }
+    
     @IBAction func deleteAllBtnPrsd(_ sender: UIButton) {
         notiTableView.removeFromSuperview()
     }
