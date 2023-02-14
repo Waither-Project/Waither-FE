@@ -18,7 +18,7 @@ class GreetingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        greetingMsg.text = "저는 당신의 가상 비서" + "\n웨이더에요!"
+        greetingMsg.text = "저는 당신의 가상 비서" + "\n웨이더예요!"
         
         helloMsg.addCharacterSpacing()
         greetingMsg.addCharacterSpacing()

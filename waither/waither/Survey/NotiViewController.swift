@@ -10,7 +10,7 @@ import UIKit
 class NotiViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var notiTableView: UITableView!
-    var noti: [String] = ["14:20부터 10분간 소나기가 와요!", "오늘 오후 6시부터 8시까지 비가 와요!\n우산을 챙겨가세요.", "오늘 바람이 대체로 많이 불 예정이예요.", "새벽에 온도가 많이 떨어져요. 창문을\n닫고 주무세요. (잠)"]
+    var noti: [String] = ["14:20부터 10분간 소나기가 와요!", "오늘 오후 6시부터 8시까지 비가 와요!\n우산을 챙겨가세요.", "오늘 바람이 대체로 많이 불 예정이에요.", "새벽에 온도가 많이 떨어져요. 창문을\n닫고 주무세요. (잠)"]
     var time: [String] = ["14:00", "08:20", "08:20", "20:20"]
     var date: [String] = ["오늘", "오늘", "오늘", "오늘"]
     override func viewDidLoad() {

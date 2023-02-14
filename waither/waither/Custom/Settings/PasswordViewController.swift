@@ -63,7 +63,7 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
             imageAttachment.image = UIImage(systemName: "checkmark.circle.fill")?.withTintColor(.buttonColor)
             imageAttachment.bounds = CGRect(x: -1.5, y: -1.5, width: 12, height: 12)
             attributedString.append(NSAttributedString(attachment: imageAttachment))
-            attributedString.append(NSAttributedString(string: " 사용할 수 있는 비밀번호에요."))
+            attributedString.append(NSAttributedString(string: " 사용할 수 있는 비밀번호예요."))
             limitLabel.attributedText = attributedString
             limitLabel.sizeToFit()
             limitLabel.textColor = .buttonColor
@@ -91,7 +91,7 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
             imageAttachment.image = UIImage(systemName: "checkmark.circle.fill")?.withTintColor(.buttonColor)
             imageAttachment.bounds = CGRect(x: -1.5, y: -1.5, width: 12, height: 12)
             attributedString.append(NSAttributedString(attachment: imageAttachment))
-            attributedString.append(NSAttributedString(string: " 사용할 수 있는 비밀번호에요."))
+            attributedString.append(NSAttributedString(string: " 사용할 수 있는 비밀번호예요."))
             warningLabel.attributedText = attributedString
             warningLabel.sizeToFit()
             warningLabel.textColor = .buttonColor
