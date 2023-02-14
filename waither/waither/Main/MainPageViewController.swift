@@ -42,7 +42,7 @@ class MainPageViewController: UIViewController {
         
         // 위치 + 날씨 정보 api
         locationManager.startUpdatingLocation()
-        let latitude = locationManager.location!.coordinate.latitude // 위도
+        let latitude = locationManager.location?.coordinate.latitude // 위도
         let longitude = locationManager.location!.coordinate.longitude // 경도
         let weatherInfoInput = WeatherInfoInput(x: latitude, y: longitude)
         WeatherInfoDataManager().weatherInfoDataManager(weatherInfoInput, self)
