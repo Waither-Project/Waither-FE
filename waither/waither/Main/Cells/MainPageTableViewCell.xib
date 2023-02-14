@@ -148,8 +148,8 @@
                                     <constraint firstAttribute="height" constant="12" id="uFf-OI-GtM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경기도 용인시 기흥구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xar-d8-HzO" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
-                                <rect key="frame" x="39.666666666666657" y="16" width="109" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울특별시 마포구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xar-d8-HzO" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
+                                <rect key="frame" x="39.666666666666664" y="16" width="93.666666666666686" height="16"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -251,7 +251,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bG-vL-ZQh">
                         <rect key="frame" x="0.0" y="404" width="327" height="127"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle_white" translatesAutoresizingMaskIntoConstraints="NO" id="2Ii-cv-iwz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle_white_short" translatesAutoresizingMaskIntoConstraints="NO" id="2Ii-cv-iwz">
                                 <rect key="frame" x="0.0" y="0.0" width="327" height="127"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="풍향/풍속" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUa-An-IjR" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
@@ -511,6 +511,7 @@
         <image name="rectangle_blue" width="343" height="92"/>
         <image name="rectangle_white" width="343" height="156"/>
         <image name="rectangle_white_long" width="359" height="127"/>
+        <image name="rectangle_white_short" width="343" height="127"/>
         <image name="rightArrow" width="11" height="19"/>
         <image name="tem" width="14" height="21"/>
         <image name="weather_rain" width="219" height="221"/>
