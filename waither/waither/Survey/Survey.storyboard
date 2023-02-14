@@ -298,6 +298,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="label1" destination="wJe-Ao-2T0" id="IiB-wz-70w"/>
+                        <outlet property="label2" destination="Qio-vq-6yM" id="R5O-Ff-nDR"/>
                         <outlet property="saveView" destination="a8n-6f-AQf" id="Zfp-iB-MiX"/>
                     </connections>
                 </viewController>
@@ -305,7 +307,7 @@
             </objects>
             <point key="canvasLocation" x="794" y="678"/>
         </scene>
-        <!--알림-->
+        <!--Noti View Controller-->
         <scene sceneID="oiR-sQ-HIX">
             <objects>
                 <viewController storyboardIdentifier="NotiViewController" id="P2Q-PE-hZl" customClass="NotiViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
@@ -435,8 +437,9 @@
                             <constraint firstItem="dyO-Bm-juH" firstAttribute="trailing" secondItem="f0P-oh-gMO" secondAttribute="trailing" id="xf3-sJ-hCH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="알림" style="editor" id="AZw-eP-1xc"/>
+                    <navigationItem key="navigationItem" style="editor" id="AZw-eP-1xc"/>
                     <connections>
+                        <outlet property="naviItem" destination="AZw-eP-1xc" id="fuC-08-gAu"/>
                         <outlet property="notiTableView" destination="dyO-Bm-juH" id="SB2-U7-xmW"/>
                     </connections>
                 </viewController>

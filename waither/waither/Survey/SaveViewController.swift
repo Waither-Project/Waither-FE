@@ -9,10 +9,13 @@ import UIKit
 
 class SaveViewController: UIViewController {
     @IBOutlet weak var saveView: UIView!
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        label1.text = "OO님의\n데이터가 저장되었어요."
+        label2.text = "이제 웨이더가\nOO님에게 꼭 맞는\n기상예보를 보내드릴게요."
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
         
         saveView.addGestureRecognizer(tapGesture)
