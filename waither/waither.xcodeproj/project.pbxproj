@@ -50,6 +50,7 @@
 		1095AC182997FC0900AEDE21 /* LoginPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095AC0E2997FC0900AEDE21 /* LoginPopupViewController.swift */; };
 		1095AC192997FC0900AEDE21 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095AC0F2997FC0900AEDE21 /* SigninViewController.swift */; };
 		1095AC1B2997FD0C00AEDE21 /* Pods_waither.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1095AC1A2997FD0C00AEDE21 /* Pods_waither.framework */; };
+		1095AC23299BF8D500AEDE21 /* SurveyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095AC22299BF8D500AEDE21 /* SurveyDataManager.swift */; };
 		10C104632977F7B3008AEE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C104612977F7B3008AEE46 /* Main.storyboard */; };
 		10EDD3EA2961AED500A93DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3E92961AED500A93DB3 /* AppDelegate.swift */; };
 		10EDD3EC2961AED500A93DB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EDD3EB2961AED500A93DB3 /* SceneDelegate.swift */; };
@@ -120,6 +121,7 @@
 		1095AC0E2997FC0900AEDE21 /* LoginPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPopupViewController.swift; sourceTree = "<group>"; };
 		1095AC0F2997FC0900AEDE21 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		1095AC1A2997FD0C00AEDE21 /* Pods_waither.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_waither.framework; sourceTree = "<group>"; };
+		1095AC22299BF8D500AEDE21 /* SurveyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDataManager.swift; sourceTree = "<group>"; };
 		10C104622977F7B3008AEE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10EDD3E62961AED500A93DB3 /* waither.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waither.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EDD3E92961AED500A93DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			children = (
 				1095ABE62997FB8C00AEDE21 /* SurveyLaunchScreen.storyboard */,
 				1095ABE72997FB8C00AEDE21 /* Survey.storyboard */,
+				1095AC22299BF8D500AEDE21 /* SurveyDataManager.swift */,
 				1095ABE82997FB8C00AEDE21 /* TmpViewController.swift */,
 				1095ABE92997FB8C00AEDE21 /* SaveViewController.swift */,
 				1095ABEA2997FB8C00AEDE21 /* Survey1ViewController.swift */,
@@ -502,6 +505,7 @@
 				D01B50512997979B00F1A470 /* WeatherInfoModel.swift in Sources */,
 				10EDD3EE2961AED500A93DB3 /* ViewController.swift in Sources */,
 				101BEB5D29979D4D0042756D /* TimeViewController.swift in Sources */,
+				1095AC23299BF8D500AEDE21 /* SurveyDataManager.swift in Sources */,
 				1095AC032997FBA400AEDE21 /* NamingViewController.swift in Sources */,
 				D01B5055299797B300F1A470 /* MainPageViewController.swift in Sources */,
 				D01B504F2997979B00F1A470 /* SettingsMainModel.swift in Sources */,
