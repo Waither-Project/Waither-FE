@@ -43,26 +43,26 @@ class PopupViewController: UIViewController {
     @IBOutlet weak var resignLabel: UILabel!
     @IBOutlet weak var logoutLabel: UILabel!
     
-    @IBAction func donebtn(_ sender: Any) {
+    @IBAction func Withdrawalbtn(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "Settings", bundle: nil)
-        let popUp = storyboard.instantiateViewController(withIdentifier: "resignVC")
+        let popUp = storyboard.instantiateViewController(withIdentifier: "resignpopup")
         popUp.modalPresentationStyle = .overFullScreen
         popUp.modalTransitionStyle = .crossDissolve
         
         self.present(popUp, animated: true, completion: nil)
         
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { _ in popUp.dismiss(animated: true, completion: nil)} )
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { _ in popUp.dismiss(animated: true, completion: nil)})
     }
     
-    @IBAction func Donebtn(_ sender: Any) {
+    @IBAction func Logoutbtn(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "Settings", bundle: nil)
-        let popUp = storyboard.instantiateViewController(withIdentifier: "doneVC")
+        let popUp = storyboard.instantiateViewController(withIdentifier: "logoutpopup")
         popUp.modalPresentationStyle = .overFullScreen
         popUp.modalTransitionStyle = .crossDissolve
         
         self.present(popUp, animated: true, completion: nil)
         
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { _ in popUp.dismiss(animated: true, completion: nil)} )
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { _ in popUp.dismiss(animated: true, completion: nil)})
     }
     
     @IBAction func closePopupBtn(_ sender: Any) {

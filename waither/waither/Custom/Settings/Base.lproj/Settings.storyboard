@@ -1157,16 +1157,16 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="UnresiButton:" destination="Sfv-Hu-P1W" eventType="touchUpInside" id="N80-PJ-Pod"/>
+                                    <action selector="WithdrawalButton:" destination="Sfv-Hu-P1W" eventType="touchUpInside" id="9w6-cy-Nce"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fn7-M8-jBl">
-                                <rect key="frame" x="327" y="479" width="30" height="30"/>
+                                <rect key="frame" x="327" y="478" width="30" height="30"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
                                 <connections>
-                                    <action selector="UnresiButton:" destination="Sfv-Hu-P1W" eventType="touchUpInside" id="0IC-VL-aEw"/>
+                                    <action selector="WithdrawalButton:" destination="Sfv-Hu-P1W" eventType="touchUpInside" id="4QT-i0-7U3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원 탈퇴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSx-AP-xFO" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
@@ -1512,7 +1512,7 @@
         <!--Popup View Controller-->
         <scene sceneID="Q5i-dT-g03">
             <objects>
-                <viewController storyboardIdentifier="unresiVC" id="MgG-i6-b3F" customClass="PopupViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="withdrawalVC" id="MgG-i6-b3F" customClass="PopupViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apN-ww-MSP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1557,7 +1557,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="donebtn:" destination="MgG-i6-b3F" eventType="touchUpInside" id="1qd-L3-abR"/>
+                                            <action selector="Withdrawalbtn:" destination="MgG-i6-b3F" eventType="touchUpInside" id="obx-ov-ruk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28T-GV-RL7">
@@ -1641,7 +1641,7 @@
         <!--Popup View Controller-->
         <scene sceneID="p50-w5-V9m">
             <objects>
-                <viewController storyboardIdentifier="resignVC" id="R9J-9g-e8u" customClass="PopupViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resignpopup" id="R9J-9g-e8u" customClass="PopupViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DTj-Ra-or7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1709,7 +1709,7 @@
         <!--Popup View Controller-->
         <scene sceneID="LaA-t0-Bqc">
             <objects>
-                <viewController storyboardIdentifier="doneVC" id="Crs-eO-eZS" customClass="PopupViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logoutpopup" id="Crs-eO-eZS" customClass="PopupViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W4x-8h-NOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1821,7 +1821,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="Donebtn:" destination="2cv-41-Gu8" eventType="touchUpInside" id="52Z-uM-mRp"/>
+                                            <action selector="Logoutbtn:" destination="2cv-41-Gu8" eventType="touchUpInside" id="23T-2b-3hi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSw-Rr-xqq">
