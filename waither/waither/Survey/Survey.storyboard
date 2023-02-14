@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C82-aN-MB1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C82-aN-MB1">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -307,10 +307,10 @@
             </objects>
             <point key="canvasLocation" x="794" y="678"/>
         </scene>
-        <!--Noti View Controller-->
+        <!--알림-->
         <scene sceneID="oiR-sQ-HIX">
             <objects>
-                <viewController storyboardIdentifier="NotiViewController" id="P2Q-PE-hZl" customClass="NotiViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotiViewController" title="알림" id="P2Q-PE-hZl" customClass="NotiViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H1k-K8-N2K">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -418,6 +418,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="refreshBtnPrsd:" destination="P2Q-PE-hZl" eventType="touchUpInside" id="ps0-pj-ZhY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f0P-oh-gMO"/>
@@ -437,15 +440,14 @@
                             <constraint firstItem="dyO-Bm-juH" firstAttribute="trailing" secondItem="f0P-oh-gMO" secondAttribute="trailing" id="xf3-sJ-hCH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" style="editor" id="AZw-eP-1xc"/>
+                    <navigationItem key="navigationItem" title="알림" style="editor" id="AZw-eP-1xc"/>
                     <connections>
-                        <outlet property="naviItem" destination="AZw-eP-1xc" id="fuC-08-gAu"/>
                         <outlet property="notiTableView" destination="dyO-Bm-juH" id="SB2-U7-xmW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hf8-5k-QvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4951" y="4"/>
+            <point key="canvasLocation" x="4950.7692307692305" y="3.5545023696682461"/>
         </scene>
         <!--Tmp View Controller-->
         <scene sceneID="wt6-jl-wei">
@@ -493,7 +495,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="P2Q-PE-hZl" kind="relationship" relationship="rootViewController" id="qY7-L7-due"/>
+                        <segue destination="P2Q-PE-hZl" kind="relationship" relationship="rootViewController" id="1Wn-06-XDv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR2-4g-clC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
