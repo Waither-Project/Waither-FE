@@ -112,9 +112,10 @@ extension AlarmViewController {
     // MARK: 사용자 알람 설정 조회 API success
     func AlarmSuccessAPI(_ result : AlarmModel) {
         self.alarmData = result
-        print("outAlarm: " + alarmData.outAlarm)
-        print("sun: " + alarmData.sun)
+        print(alarmData.outTime)
         
+        alarmtimeLabel.text = alarmData.outTime
+    
         if alarmData.outAlarm == "Y" {
             switch4.isOn = true
         }

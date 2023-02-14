@@ -8,6 +8,6 @@
 import Foundation
 
 struct AlarmModel: Decodable {
-    let sun, mon, tue, wed, thu, fri, sat : String
-    let outAlarm, climateAlarm, customAlarm, rainAlarm, snowAlarm: String
+    let sun, mon, tue, wed, thu, fri, sat: String
+    let outTime, outAlarm, climateAlarm, customAlarm, rainAlarm, snowAlarm: String
 }
