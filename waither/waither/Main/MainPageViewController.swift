@@ -13,9 +13,17 @@ class MainPageViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     @IBOutlet var backgroundView: UIView!
     
-    var locationManager : CLLocationManager!
     var weatherInfoData : WeatherInfoModel!
     var settingsMainData : SettingsMainModel!
+    
+    lazy var locationManager: CLLocationManager = { // 위치 매니저
+            let manager = CLLocationManager()
+            manager.desiredAccuracy = kCLLocationAccuracyBest
+            manager.distanceFilter = kCLHeadingFilterNone
+            manager.requestWhenInUseAuthorization()
+            manager.delegate = self
+            return manager
+        }()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,10 +41,10 @@ class MainPageViewController: UIViewController {
         mainTableView.register(mainPageNib, forCellReuseIdentifier: "MainPageTableViewCell")
         
         // 위치 + 날씨 정보 api
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        self.locationManager.requestWhenInUseAuthorization()
-        let weatherInfoInput = WeatherInfoInput(x: 37.564747, y: 127.029500)
+        locationManager.startUpdatingLocation()
+        let latitude = locationManager.location!.coordinate.latitude // 위도
+        let longitude = locationManager.location!.coordinate.longitude // 경도
+        let weatherInfoInput = WeatherInfoInput(x: latitude, y: longitude)
         WeatherInfoDataManager().weatherInfoDataManager(weatherInfoInput, self)
         
         // 설정 메인화면 조회 api
@@ -88,7 +96,7 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 670
+        return 690
     }
     
 }
@@ -113,11 +121,11 @@ extension MainPageViewController : CLLocationManagerDelegate {
             default:
                 print("GPS: Default")
             }
-        
-//        let location: CLLocation = locations[locations.count - 1]   // 최근 위치
-//        let longtitude: CLLocationDegrees = location.coordinate.longitude   // 경도
-//        let latitude : CLLocationDegrees = location.coordinate.latitude   // 위도
-//        print("경도: \(longtitude), 위도: \(latitude)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // the most recent location update is at the end of the array.
+        let location: CLLocation = locations[locations.count - 1]
     }
 }
 
