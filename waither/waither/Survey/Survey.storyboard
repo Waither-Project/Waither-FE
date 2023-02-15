@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hq-aL-4rM">
-                                <rect key="frame" x="82" y="383" width="227" height="34.333333333333314"/>
+                                <rect key="frame" x="82" y="427" width="227" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="추웠어요" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="buttonColor"/>
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKH-3Z-RIu">
-                                <rect key="frame" x="82" y="429.33333333333331" width="227" height="34.333333333333314"/>
+                                <rect key="frame" x="82" y="473.33333333333331" width="227" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="조금 추웠어요" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="buttonColor"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-lO-w9V">
-                                <rect key="frame" x="82" y="522" width="227" height="34.333333333333371"/>
+                                <rect key="frame" x="82" y="566" width="227" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="조금 더웠어요" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="buttonColor"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlo-gE-VHd">
-                                <rect key="frame" x="82" y="568.33333333333337" width="227" height="34.333333333333371"/>
+                                <rect key="frame" x="82" y="612.33333333333337" width="227" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="더웠어요" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="buttonColor"/>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH9-qA-H42">
-                                <rect key="frame" x="82" y="614.66666666666663" width="227" height="34.333333333333371"/>
+                                <rect key="frame" x="82" y="658.66666666666663" width="227" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="잘 모르겠어요" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="buttonColor"/>
@@ -69,13 +69,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 날씨는                                   어떠셨나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSD-Sg-Q1j">
-                                <rect key="frame" x="93" y="271" width="204" height="60"/>
+                                <rect key="frame" x="93" y="315" width="204" height="60"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyP-7M-MYh">
-                                <rect key="frame" x="82" y="475.66666666666669" width="227" height="34.333333333333314"/>
+                                <rect key="frame" x="82" y="519.66666666666663" width="227" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="딱 좋았어요" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="buttonColor"/>
@@ -111,6 +111,7 @@
                             <constraint firstItem="DSD-Sg-Q1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="z3W-J6-Fk2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zq6-av-6Ja"/>
                     <connections>
                         <outlet property="coldBtn" destination="5hq-aL-4rM" id="KaU-7E-Jtw"/>
                         <outlet property="dontKnowBtn" destination="xH9-qA-H42" id="Bar-Np-Eni"/>
@@ -123,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27.69230769230769" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="956.92307692307691" y="3.5545023696682461"/>
         </scene>
         <!--Survey2 View Controller-->
         <scene sceneID="0ti-rE-tWs">
@@ -239,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4T-mO-0kD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793.84615384615381" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="1723.0769230769231" y="3.5545023696682461"/>
         </scene>
         <!--Save View Controller-->
         <scene sceneID="lQb-pZ-ukX">
@@ -447,7 +448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hf8-5k-QvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4950.7692307692305" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="5880" y="3.5545023696682461"/>
         </scene>
         <!--Tmp View Controller-->
         <scene sceneID="wt6-jl-wei">
@@ -478,7 +479,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFf-az-ljj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646" y="4"/>
+            <point key="canvasLocation" x="3573.8461538461538" y="3.5545023696682461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CTb-Pb-wzU">
@@ -500,7 +501,88 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR2-4g-clC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3974" y="4"/>
+            <point key="canvasLocation" x="4903.0769230769229" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IZY-2a-P97">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lbp-cs-cah" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wkZ-E2-xmH">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WlF-6T-ZY0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXv-u2-NwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.69230769230769" y="3.5545023696682461"/>
+        </scene>
+        <!--Survey3 View Controller-->
+        <scene sceneID="7U5-Fq-sgV">
+            <objects>
+                <viewController storyboardIdentifier="Survey3ViewController" id="l91-LE-pUZ" customClass="Survey3ViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Hq-lz-mGW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마지막 단계에요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-Ub-IQx">
+                                <rect key="frame" x="100" y="216" width="190" height="24"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fj-KY-6Wq">
+                                <rect key="frame" x="50" y="246.99999999999997" width="290" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E46-iP-uer">
+                                <rect key="frame" x="16" y="740" width="358" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="krA-90-yYa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="확인" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" name="buttonColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkBtnPrsd:" destination="l91-LE-pUZ" eventType="touchUpInside" id="DEk-Ap-ICU"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="ck4-6L-0rs">
+                                <rect key="frame" x="0.0" y="424" width="390" height="216"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KYt-3n-AUT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KYt-3n-AUT" firstAttribute="trailing" secondItem="E46-iP-uer" secondAttribute="trailing" constant="16" id="1q2-Om-yDo"/>
+                            <constraint firstItem="KYt-3n-AUT" firstAttribute="trailing" secondItem="r9E-Ub-IQx" secondAttribute="trailing" constant="100" id="5EU-ZR-sJ8"/>
+                            <constraint firstItem="6fj-KY-6Wq" firstAttribute="top" secondItem="KYt-3n-AUT" secondAttribute="top" constant="200" id="7um-ll-xaI"/>
+                            <constraint firstItem="KYt-3n-AUT" firstAttribute="bottom" secondItem="E46-iP-uer" secondAttribute="bottom" constant="18" id="EdQ-xp-lq9"/>
+                            <constraint firstItem="6fj-KY-6Wq" firstAttribute="leading" secondItem="KYt-3n-AUT" secondAttribute="leading" constant="50" id="HSb-7h-Pay"/>
+                            <constraint firstItem="ck4-6L-0rs" firstAttribute="trailing" secondItem="KYt-3n-AUT" secondAttribute="trailing" id="WKi-RZ-J7C"/>
+                            <constraint firstItem="KYt-3n-AUT" firstAttribute="trailing" secondItem="6fj-KY-6Wq" secondAttribute="trailing" constant="50" id="YN3-Ao-hkd"/>
+                            <constraint firstItem="E46-iP-uer" firstAttribute="top" secondItem="ck4-6L-0rs" secondAttribute="bottom" constant="100" id="ZTg-Bp-Ic8"/>
+                            <constraint firstItem="r9E-Ub-IQx" firstAttribute="top" secondItem="KYt-3n-AUT" secondAttribute="top" constant="169" id="cuf-Qd-dO8"/>
+                            <constraint firstItem="r9E-Ub-IQx" firstAttribute="leading" secondItem="KYt-3n-AUT" secondAttribute="leading" constant="100" id="h31-Gq-Y54"/>
+                            <constraint firstItem="E46-iP-uer" firstAttribute="leading" secondItem="KYt-3n-AUT" secondAttribute="leading" constant="16" id="ote-Ax-97b"/>
+                            <constraint firstItem="ck4-6L-0rs" firstAttribute="leading" secondItem="KYt-3n-AUT" secondAttribute="leading" id="y2q-ZF-NCc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="ck4-6L-0rs" id="6Wb-Q5-EFn"/>
+                        <outlet property="label" destination="6fj-KY-6Wq" id="BA1-vP-64H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFA-MP-yEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2469.2307692307691" y="3.5545023696682461"/>
         </scene>
     </scenes>
     <resources>
