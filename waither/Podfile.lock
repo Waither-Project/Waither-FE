@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.6.2)
   - CircularSlider (1.1.2)
+  - SnapKit (5.6.0)
   - VerticalSlider (2.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - CircularSlider
+  - SnapKit
   - VerticalSlider
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CircularSlider
+    - SnapKit
     - VerticalSlider
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   CircularSlider: 448f9f7723b845ccd470dac41981feb192e20c50
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   VerticalSlider: 655f2bc3ed062bac13e21c174f5ff93b8308571d
 
-PODFILE CHECKSUM: 07496bb0ed71c63bc41428b427a4de0e6f0a4a74
+PODFILE CHECKSUM: 8b35e64f196f87e32a80e4b61725379f6f321654
 
 COCOAPODS: 1.11.3

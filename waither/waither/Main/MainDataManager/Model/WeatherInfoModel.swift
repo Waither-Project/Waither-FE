@@ -17,6 +17,8 @@ struct WeatherInfoModel : Decodable {
     let vec : Int?
     let wsd : Double?
     let reh : Double?
+    let sky : String?
+    let daynight : String?
     let pm10_value : Int?
     let pm10_grade : String?
     let expect_tmp1 : Double?
@@ -25,16 +27,22 @@ struct WeatherInfoModel : Decodable {
     let expect_tmp4 : Double?
     let expect_tmp5 : Double?
     let expect_tmp6 : Double?
-    let expect_rn1 : String?
-    let expect_rn2 : String?
-    let expect_rn3 : String?
-    let expect_rn4 : String?
-    let expect_rn5 : String?
-    let expect_rn6 : String?
+    let expect_pty1 : String?
+    let expect_pty2 : String?
+    let expect_pty3 : String?
+    let expect_pty4 : String?
+    let expect_pty5 : String?
+    let expect_pty6 : String?
     let expect_sky1 : String?
     let expect_sky2 : String?
     let expect_sky3 : String?
     let expect_sky4 : String?
     let expect_sky5 : String?
     let expect_sky6 : String?
+    let expect_rn1 : String?
+    let expect_rn2 : String?
+    let expect_rn3 : String?
+    let expect_rn4 : String?
+    let expect_rn5 : String?
+    let expect_rn6 : String?
 }

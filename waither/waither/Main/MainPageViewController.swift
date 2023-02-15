@@ -43,7 +43,7 @@ class MainPageViewController: UIViewController {
         // 위치 + 날씨 정보 api
         locationManager.startUpdatingLocation()
         let latitude = locationManager.location?.coordinate.latitude // 위도
-        let longitude = locationManager.location!.coordinate.longitude // 경도
+        let longitude = locationManager.location?.coordinate.longitude // 경도
         let weatherInfoInput = WeatherInfoInput(x: latitude, y: longitude)
         WeatherInfoDataManager().weatherInfoDataManager(weatherInfoInput, self)
         
@@ -56,10 +56,7 @@ class MainPageViewController: UIViewController {
     func setBackgroundColor() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
-        gradientLayer.colors = [
-            UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 0.7).cgColor,
-            UIColor(red: 0.43, green: 0.515, blue: 0.583, alpha: 0.7).cgColor,
-            UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 0.7).cgColor]
+        gradientLayer.colors = UIColor.cloudyGradientColor
         gradientLayer.shouldRasterize = true
         backgroundView.layer.addSublayer(gradientLayer)
     }
@@ -81,15 +78,14 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         
         // 데이터 전달
-        if let cellData = self.weatherInfoData {
+        if let cellWeatherData = self.weatherInfoData {
             // if data exists
-            cell.setWeatherInfoData(cellData)
-//            ForecastCollectionViewCell.setCellWeatherData(cellData)
+            cell.setWeatherInfoData(cellWeatherData)
             
         }
-        if let cellData = self.settingsMainData {
+        if let cellSettingsData = self.settingsMainData {
             // if data exists
-            cell.setOnoffData(cellData)
+            cell.setOnoffData(cellSettingsData)
         }
         
         return cell
@@ -121,11 +117,6 @@ extension MainPageViewController : CLLocationManagerDelegate {
             default:
                 print("GPS: Default")
             }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // the most recent location update is at the end of the array.
-        let location: CLLocation = locations[locations.count - 1]
     }
 }
 

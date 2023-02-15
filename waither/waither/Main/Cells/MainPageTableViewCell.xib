@@ -99,7 +99,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘은 따뜻하게 입으세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uq-kh-yKj" customClass="CustomLabel" customModule="waither" customModuleProvider="target">
-                                <rect key="frame" x="114" y="46.666666666666657" width="166" height="20"/>
+                                <rect key="frame" x="114.00000000000001" y="46.666666666666657" width="165.33333333333337" height="20"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -176,8 +176,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather_rain" translatesAutoresizingMaskIntoConstraints="NO" id="8TM-04-JKI">
-                                <rect key="frame" x="144" y="23" width="163" height="133"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-weather-cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="8TM-04-JKI">
+                                <rect key="frame" x="164" y="23" width="163" height="133"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="163" id="gBt-xf-ofu"/>
                                 </constraints>
@@ -229,7 +229,7 @@
                             <constraint firstItem="BZm-s6-Lgf" firstAttribute="top" secondItem="qCG-np-Ryu" secondAttribute="top" constant="18" id="AzZ-fx-Jhz"/>
                             <constraint firstItem="BZm-s6-Lgf" firstAttribute="leading" secondItem="qCG-np-Ryu" secondAttribute="leading" constant="20" id="CQc-uG-aZL"/>
                             <constraint firstItem="xar-d8-HzO" firstAttribute="leading" secondItem="BZm-s6-Lgf" secondAttribute="trailing" constant="7" id="EtV-Q1-1We"/>
-                            <constraint firstAttribute="trailing" secondItem="8TM-04-JKI" secondAttribute="trailing" constant="20" id="FRZ-I9-FWS"/>
+                            <constraint firstAttribute="trailing" secondItem="8TM-04-JKI" secondAttribute="trailing" id="FRZ-I9-FWS"/>
                             <constraint firstItem="qvV-k9-9PY" firstAttribute="centerY" secondItem="W3s-hQ-bpN" secondAttribute="centerY" id="HeR-Yo-0is"/>
                             <constraint firstItem="a5x-hw-3mw" firstAttribute="top" secondItem="xar-d8-HzO" secondAttribute="bottom" constant="2" id="IQq-Tt-tnL"/>
                             <constraint firstItem="dTd-qV-o26" firstAttribute="leading" secondItem="qCG-np-Ryu" secondAttribute="leading" constant="30" id="Iat-rF-Jwl"/>
@@ -486,15 +486,23 @@
                 <outlet property="notiSmallLabel" destination="hgO-St-Wmi" id="BcH-Wi-GUe"/>
                 <outlet property="notiView" destination="1oF-U1-4pU" id="d2D-CB-za6"/>
                 <outlet property="notiWeatherImage" destination="fYj-u4-Thn" id="jKX-Oj-jdl"/>
+                <outlet property="onoffDustBar" destination="Ltb-1i-494" id="6vn-9e-LFx"/>
+                <outlet property="onoffDustImage" destination="2z4-mp-0hu" id="V49-9s-oKR"/>
+                <outlet property="onoffDustPm10GradeLabel" destination="iDW-A6-tWz" id="Lt7-KH-mys"/>
+                <outlet property="onoffDustPm10ValueLabel" destination="7gq-7q-1xs" id="auv-LE-Acf"/>
+                <outlet property="onoffDustTitle" destination="kZh-lT-Ymh" id="4SP-Mq-twD"/>
                 <outlet property="onoffDustTitleView" destination="pI0-Ew-SPa" id="Na2-ER-C9h"/>
-                <outlet property="onoffPm10GradeLabel" destination="iDW-A6-tWz" id="wXm-x9-b0D"/>
-                <outlet property="onoffPm10ValueLabel" destination="7gq-7q-1xs" id="OTc-CO-h6b"/>
+                <outlet property="onoffRainImage" destination="69c-Dd-ofJ" id="RlT-5g-Gei"/>
+                <outlet property="onoffRainRn1Label" destination="4SE-X6-Vu5" id="kqU-Y2-l6m"/>
+                <outlet property="onoffRainTitle" destination="A5B-JW-yHG" id="MW2-eN-d4K"/>
                 <outlet property="onoffRainTitleView" destination="8eD-KO-TOV" id="8eu-7K-XRD"/>
-                <outlet property="onoffRn1Label" destination="4SE-X6-Vu5" id="m6r-ZR-5Xz"/>
-                <outlet property="onoffVecLabel" destination="vU9-Q5-SBE" id="FmD-EY-qB2"/>
                 <outlet property="onoffView" destination="1bG-vL-ZQh" id="y7K-eC-nX3"/>
+                <outlet property="onoffWindBar" destination="OSa-TM-YHH" id="Zbz-4P-Dvu"/>
+                <outlet property="onoffWindImage" destination="AeJ-kr-qha" id="FFU-F1-EVp"/>
+                <outlet property="onoffWindTitle" destination="jUa-An-IjR" id="GZ2-9x-YzG"/>
                 <outlet property="onoffWindTitleView" destination="9Ng-gn-ald" id="kS9-Fw-wXU"/>
-                <outlet property="onoffWsdLabel" destination="jlP-IN-K4U" id="TAO-Gy-wii"/>
+                <outlet property="onoffWindVecLabel" destination="vU9-Q5-SBE" id="KWR-yS-Tti"/>
+                <outlet property="onoffWindWsdLabel" destination="jlP-IN-K4U" id="5cr-Rq-HkO"/>
                 <outlet property="personalBigLabel" destination="4Uq-kh-yKj" id="XTY-pb-VEL"/>
                 <outlet property="personalSmallLabel" destination="Ky4-4k-jiU" id="bSb-u5-Xwy"/>
                 <outlet property="personalView" destination="j1Z-xs-dUo" id="zR1-7U-NSh"/>
@@ -507,6 +515,7 @@
         <image name="databox" width="50" height="56"/>
         <image name="dust" width="36" height="32"/>
         <image name="gps" width="13" height="12"/>
+        <image name="ic-weather-cloudy" width="232" height="175"/>
         <image name="rain" width="66" height="44"/>
         <image name="rectangle_blue" width="343" height="92"/>
         <image name="rectangle_white" width="343" height="156"/>
@@ -514,7 +523,6 @@
         <image name="rectangle_white_short" width="343" height="127"/>
         <image name="rightArrow" width="11" height="19"/>
         <image name="tem" width="14" height="21"/>
-        <image name="weather_rain" width="219" height="221"/>
         <image name="wind" width="34" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

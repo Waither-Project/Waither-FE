@@ -25,26 +25,28 @@ extension UIColor {
         green: 0.882,
         blue: 0.894,
         alpha: 1.0)
-}
-
-extension CALayer {
-    func addGradientBorder(colors:[UIColor],width:CGFloat = 1) {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.cornerRadius = 16
-        gradientLayer.frame =  CGRect(origin: CGPointZero, size: self.bounds.size)
-        gradientLayer.startPoint = CGPointMake(0.0, 0.5)
-        gradientLayer.endPoint = CGPointMake(1.0, 0.5)
-        gradientLayer.colors = colors.map({$0.cgColor})
-
-        let shapeLayer = CAShapeLayer()
-        shapeLayer.lineWidth = width
-        shapeLayer.path = UIBezierPath(rect: self.bounds).cgPath
-        shapeLayer.fillColor = nil
-        shapeLayer.strokeColor = UIColor.black.cgColor
-        shapeLayer.cornerRadius = 16
-        gradientLayer.mask = shapeLayer
-
-        self.addSublayer(gradientLayer)
-    }
-
+    
+    static let cloudyGradientColor : [CGColor] = [
+        UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 0.7).cgColor,
+        UIColor(red: 0.43, green: 0.515, blue: 0.583, alpha: 0.7).cgColor,
+        UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 0.7).cgColor
+    ]
+    
+    static let cloudyNightGradientColor = [
+        UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 0.7).cgColor,
+        UIColor(red: 0.032, green: 0.104, blue: 0.162, alpha: 0.7).cgColor,
+        UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 0.7).cgColor
+    ]
+    
+    static let sunnyGradientColor = [
+        UIColor(red: 0.813, green: 0.925, blue: 0.824, alpha: 0.7).cgColor,
+        UIColor(red: 0.238, green: 0.661, blue: 1, alpha: 0.7).cgColor,
+        UIColor(red: 0, green: 0.556, blue: 1, alpha: 0.7).cgColor
+    ]
+    
+    static let sunnyNightGradientColor = [
+        UIColor(red: 0.644, green: 0.655, blue: 0.925, alpha: 0.7).cgColor,
+        UIColor(red: 0.081, green: 0.311, blue: 0.496, alpha: 0.7).cgColor,
+        UIColor(red: 0.014, green: 0.038, blue: 0.058, alpha: 0.7).cgColor
+    ]
 }
