@@ -72,7 +72,7 @@ class Survey2ViewController: UIViewController{
         }
     
     @IBAction func checkBtnPrsd(_ sender: UIButton) {
-        guard let newVC = self.storyboard?.instantiateViewController(withIdentifier: "SaveViewController") as? SaveViewController else {return}
+        guard let newVC = self.storyboard?.instantiateViewController(withIdentifier: "Survey3ViewController") as? Survey3ViewController else {return}
         
         newVC.modalTransitionStyle = .coverVertical
         newVC.modalPresentationStyle = .fullScreen
