@@ -17,6 +17,7 @@
 		0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
 		0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016BBB7708A77D084EC2A164121EF9F /* ConstraintAttributes.swift */; };
 		0F4037DBF307AC8058BD0A3D35C7E7E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
+		1095AC25299D1B4C00AEDE21 /* CircularSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1095AC24299D1B4C00AEDE21 /* CircularSlider.xib */; };
 		183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0361C82007303318900EB6C44388C /* ConstraintMakerRelatable.swift */; };
 		1976BB7D7E26A12E29283E71154B63B3 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F29AC80F86B5EF4944CDE06B282BF8 /* SessionDelegate.swift */; };
 		1EE44196E7BCE57AD96A2C751651EF40 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FC7F9A0D08AE3C23EC7E08B0032E6 /* AlamofireExtended.swift */; };
@@ -144,6 +145,7 @@
 		0DAF2A8CCF69B050BE12ED09044DA4D5 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Sources/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		0E0CDE8C54DC36A2F9C0E2B8AA921406 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		10165B35F4A856A88A728AD0FB3A84E6 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		1095AC24299D1B4C00AEDE21 /* CircularSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircularSlider.xib; sourceTree = "<group>"; };
 		1117AC2074597C3FF84DD9D2607EB918 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		131CF49798D831BCE965EA73094A712E /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Sources/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		13524F98256EDC4ECF7B71FC46BB469C /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
@@ -209,7 +211,7 @@
 		996698781B10ACE32FF2068AD0740F54 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		9982A89CB1594607C1AEAF4B93D65BE5 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Sources/ConstraintItem.swift; sourceTree = "<group>"; };
 		9D620D7233AEA0A0CFB760BC32DFC1A6 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Sources/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A05E38C7AC89061259743F2FE49CD947 /* CircularSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircularSlider-dummy.m"; sourceTree = "<group>"; };
 		A140257E166AA7637E111A68451BDC2E /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		A2A6D95BCF95F55AE326A22B94DF4A0A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
@@ -368,7 +370,6 @@
 				43E3B80F5E5BBB8571A377EEB23C6C26 /* UILayoutSupport+Extensions.swift */,
 				AE69C9A98408BA428CB0CBDABB5BDABC /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -387,10 +388,10 @@
 			children = (
 				891F6677EB2BB30A9A58A8C81C1A84CE /* CircularSlider.swift */,
 				CFFA65DFB01BE54EB4B48C584CFAE768 /* RotationGesture.swift */,
+				1095AC24299D1B4C00AEDE21 /* CircularSlider.xib */,
 				E790BABE4D04B349E7F433B5FFDE3E66 /* Utils.swift */,
 				8A50C6896416EC4BEC30F051346AC33D /* Support Files */,
 			);
-			name = CircularSlider;
 			path = CircularSlider;
 			sourceTree = "<group>";
 		};
@@ -534,7 +535,6 @@
 				81460F71476D0B7A4F59201CDE221B88 /* Validation.swift */,
 				92F4F54316201816D7869F1F9C826E2D /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -552,7 +552,6 @@
 				A8FFEC49D66FC7B0806AC1B54AB2AAC1 /* VerticalSlider.swift */,
 				C64254B4A1E3ED24314E297E08D97F08 /* Support Files */,
 			);
-			name = VerticalSlider;
 			path = VerticalSlider;
 			sourceTree = "<group>";
 		};
@@ -753,6 +752,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1095AC25299D1B4C00AEDE21 /* CircularSlider.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

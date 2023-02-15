@@ -44,5 +44,12 @@ extension SaveViewController {
         
         label1.text = name + "님의\n데이터가 저장되었어요."
         label2.text = "이제 웨이더가\n" + name + "님에게 꼭 맞는\n기상예보를 보내드릴게요."
+        
+        label2.font = UIFont(name: "Apple SD Gothic Neo", size: 20)
+        let font = UIFont.boldSystemFont(ofSize: 20)
+        guard let text = self.label2.text else { return }
+        let attributedStr = NSMutableAttributedString(string: label2.text!)
+        attributedStr.addAttribute(.font, value: font, range: (text as NSString).range(of: "꼭 맞는\n기상예보를 보내드릴게요."))
+        label2.attributedText = attributedStr
     }
 }

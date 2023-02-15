@@ -79,10 +79,10 @@ class NamingViewController: UIViewController{
                             if status! {
                                 print(msg!)
                                 
-                                let Survey = UIStoryboard.init(name: "Survey", bundle: nil)
+                                let Survey = UIStoryboard.init(name: "SurveyLaunchScreen", bundle: nil)
                                 guard let pvc = self.presentingViewController else { return }
                                 self.dismiss(animated: false) {
-                                    let nextVC = Survey.instantiateViewController(withIdentifier: "Survey1ViewController") as! Survey1ViewController
+                                    let nextVC = Survey.instantiateViewController(withIdentifier: "SurveyLaunchScreenViewController") as! SurveyLaunchScreenViewController
                                     let navController = UINavigationController(rootViewController: nextVC)
                                     navController.modalTransitionStyle = .coverVertical
                                     navController.modalPresentationStyle = .fullScreen
