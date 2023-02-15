@@ -34,25 +34,24 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather_bitcloudynrainy" translatesAutoresizingMaskIntoConstraints="NO" id="cXA-Tw-GaT">
-                        <rect key="frame" x="-29" y="29" width="98" height="75"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-weather-abitcloudy" translatesAutoresizingMaskIntoConstraints="NO" id="cXA-Tw-GaT">
+                        <rect key="frame" x="-5" y="29" width="60" height="75"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="75" id="84z-e3-Y7x"/>
-                            <constraint firstAttribute="width" constant="98" id="zLn-fm-OpV"/>
                         </constraints>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="cXA-Tw-GaT" secondAttribute="trailing" constant="-21" id="0Dl-a2-Ixo"/>
+                <constraint firstAttribute="trailing" secondItem="cXA-Tw-GaT" secondAttribute="trailing" constant="-7" id="0Dl-a2-Ixo"/>
                 <constraint firstAttribute="bottom" secondItem="WrY-DE-SY2" secondAttribute="bottom" constant="12" id="5LM-BB-TJz"/>
                 <constraint firstItem="I1t-iL-ABP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="8HS-VR-aJ8"/>
                 <constraint firstItem="cXA-Tw-GaT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="29" id="9wD-4N-wXK"/>
                 <constraint firstAttribute="bottom" secondItem="cXA-Tw-GaT" secondAttribute="bottom" constant="23" id="C4r-de-KzQ"/>
                 <constraint firstItem="WrY-DE-SY2" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="QmN-WZ-zIx"/>
                 <constraint firstItem="I1t-iL-ABP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="17" id="jxe-jU-qX1"/>
-                <constraint firstItem="cXA-Tw-GaT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-29" id="ttG-dA-cPZ"/>
+                <constraint firstItem="cXA-Tw-GaT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-5" id="ttG-dA-cPZ"/>
             </constraints>
             <size key="customSize" width="48" height="127"/>
             <connections>
@@ -64,6 +63,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="weather_bitcloudynrainy" width="219" height="221"/>
+        <image name="ic-weather-abitcloudy" width="175" height="188"/>
     </resources>
 </document>
