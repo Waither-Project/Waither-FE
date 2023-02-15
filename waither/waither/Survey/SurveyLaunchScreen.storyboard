@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,14 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반가워요 OO님!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lp-aY-mXq">
-                                <rect key="frame" x="56" y="439" width="280" height="60"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조금 더 정확한 기상예보를 위해 00님이 느낀 어제 날씨가 궁금해요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGZ-yw-mkH">
-                                <rect key="frame" x="47" y="484" width="298" height="88"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조금 더 정확한 기상예보를 위해 00님이 느낀 어제 날씨가 궁금해요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGZ-yw-mkH">
+                                <rect key="frame" x="47" y="433.33333333333331" width="298" height="48"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,20 +30,24 @@
                                     <constraint firstAttribute="width" constant="113.33" id="avk-if-ZEz"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반가워요 OO님!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lp-aY-mXq">
+                                <rect key="frame" x="56" y="392.33333333333331" width="280" height="24"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" name="buttonColor"/>
+                        <color key="backgroundColor" red="0.31764705882352939" green="0.53725490196078429" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8lp-aY-mXq" secondAttribute="trailing" constant="57" id="2rq-50-MOH"/>
-                            <constraint firstItem="8lp-aY-mXq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="380" id="Eyv-cP-d0A"/>
+                            <constraint firstItem="8lp-aY-mXq" firstAttribute="top" secondItem="1Xg-y1-w08" secondAttribute="bottom" constant="41" id="Ftb-XA-syA"/>
                             <constraint firstItem="CGZ-yw-mkH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="47" id="Mby-Dv-FcL"/>
                             <constraint firstItem="8lp-aY-mXq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="QCy-1j-Fg6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CGZ-yw-mkH" secondAttribute="trailing" constant="48" id="WTb-LD-hCb"/>
                             <constraint firstItem="1Xg-y1-w08" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="131" id="Wd5-On-5zy"/>
                             <constraint firstItem="1Xg-y1-w08" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Xka-VQ-EOD"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="CGZ-yw-mkH" secondAttribute="bottom" constant="246" id="ap1-A8-IaZ"/>
-                            <constraint firstItem="CGZ-yw-mkH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="425" id="nb9-Ew-Cl2"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="8lp-aY-mXq" secondAttribute="bottom" constant="319" id="qcQ-6Z-T4t"/>
+                            <constraint firstItem="CGZ-yw-mkH" firstAttribute="top" secondItem="8lp-aY-mXq" secondAttribute="bottom" constant="17" id="vHB-dV-uuP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -61,14 +58,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="4"/>
+            <point key="canvasLocation" x="93.89312977099236" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
         <image name="launchScreenImage" width="228" height="337"/>
-        <namedColor name="buttonColor">
-            <color red="0.36500000953674316" green="0.55699998140335083" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
