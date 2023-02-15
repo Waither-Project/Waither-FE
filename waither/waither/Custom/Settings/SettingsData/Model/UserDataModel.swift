@@ -9,7 +9,8 @@ import Foundation
 
 // MARK: - UserDataModel
 struct UserDataModel: Decodable {
-    let veryCold, cold, good, hot, veryHot: Int
-    let avgVC, avgC, avgG, avgH, avgVH : Int
+    let veryHot, hot, good, cold, veryCold: Int
+    let veryHotMode, hotMode, goodMode, coldMode, veryColdMode: Int
+    let vh_p, h_p, g_p, c_p, vc_p: Int
 }
 

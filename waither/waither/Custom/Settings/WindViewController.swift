@@ -17,8 +17,9 @@ class WindViewController: UIViewController {
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var alarmLabel: UILabel!
     
-    var nickname : String = "웨이더"
+    var nickname : String = ""
     var windData : WindAlarmModel!
+    var nameData : UserModel!
     
     @objc func sliderChanged() {
         windvaluelabel.text = String(Int(verticalSlider.value))
@@ -28,9 +29,7 @@ class WindViewController: UIViewController {
         super.viewDidLoad()
         
         WindAlarmDataManager().windalarmDataManager(self)
-        
-        alarmLabel.text = nickname + "님이 설정한 바람 세기를 넘으면 알려드릴게요!"
-        userLabel.text = nickname + "님이 설정한 바람 세기"
+        WindAlarmDataManager().nameDataManager(self)
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Apple SD Gothic Neo Bold", size: 15)!, .foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.tintColor = .white
@@ -56,14 +55,21 @@ extension WindViewController {
     // MARK: 사용자 바람 세기 설정 조회 API success
     func WindAlarmSuccessAPI(_ result : WindAlarmModel) {
         self.windData = result
-        print(windData.windValue)
-        
-        guard (windvaluelabel.text = String(windData.windValue)) != nil else {return}
+    
+        windvaluelabel.text = String(windData.windValue)
         verticalSlider.value = Float(windData.windValue)
         
         if windData.windAlarm == "Y" {
             switch9.isOn = true
         }
         else { switch9.isOn = false }
+    }
+    
+    // OO님이~ 부분 사용자 이름 데이터 넣어주기
+    func NameSuccessAPI(_ result : UserModel) {
+        self.nameData = result
+        nickname = nameData.name
+        alarmLabel.text = nickname + "님이 설정한 바람 세기를 넘으면 알려드릴게요!"
+        userLabel.text = nickname + "님이 설정한 바람 세기"
     }
 }

@@ -26,6 +26,8 @@ class UserDataViewController: UIViewController {
     @IBOutlet weak var minusImage: UIImageView!
     
     var useralarmData : UserDataModel!
+    var nameData : UserModel!
+    var nickname: String = ""
     
     @IBAction func clicksaveBtn(_ sender: UIBarButtonItem) {
         print(circularslider.textfield.text! + "℃")
@@ -57,7 +59,6 @@ class UserDataViewController: UIViewController {
                     .regular(string: "' 온도", fontSize: 18)
                 
                 let say: String = "고 느끼는 온도를 나타내요.\n 이 데이터를 기반으로 제가 날씨를 판단해드릴게요."
-                let nickname: String = "웨이더"
                 var percent: Int = 10
                 
                 if vhotbtn == sender {
@@ -122,6 +123,9 @@ class UserDataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        UserdataDataManager().userdataDataManager(self)
+        UserdataDataManager().nameDataManager(self)
+        
         BtnArray.append(vhotbtn)
         BtnArray.append(hotbtn)
         BtnArray.append(goodbtn)
@@ -147,5 +151,11 @@ extension UserDataViewController {
     // MARK: 사용자 설정 데이터 조회 API success
     func UserAlarmSuccessAPI(_ result : UserDataModel) {
         self.useralarmData = result
+    }
+    
+    // OO님이~ 부분 사용자 이름 데이터 넣어주기
+    func NameSuccessAPI(_ result : UserModel) {
+        self.nameData = result
+        nickname = nameData.name
     }
 }

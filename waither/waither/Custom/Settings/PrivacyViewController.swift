@@ -27,9 +27,9 @@ class PrivacyViewController: UIViewController, UITextFieldDelegate {
          
     }
     
-    @IBAction func UnresiButton(_ sender: UIButton) {
+    @IBAction func WithdrawalButton(_ sender: UIButton) {
         let storyboard = UIStoryboard.init(name: "Settings", bundle: nil)
-        let popUp = storyboard.instantiateViewController(withIdentifier: "unresiVC")
+        let popUp = storyboard.instantiateViewController(withIdentifier: "withdrawalVC")
         popUp.modalPresentationStyle = .overFullScreen
         popUp.modalTransitionStyle = .crossDissolve
         
@@ -195,7 +195,7 @@ extension PrivacyViewController {
     // MARK: 회원 정보 조회 API success
     func UserSuccessAPI(_ result : UserModel) {
         self.userData = result
-        guard (emailLabel.text = userData.email) != nil else {return}
-        guard (NameTextField.text = userData.name) != nil else {return}
+        emailLabel.text = userData.email
+        NameTextField.text = userData.name
     }
 }

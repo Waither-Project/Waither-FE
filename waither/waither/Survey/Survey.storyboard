@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C82-aN-MB1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C82-aN-MB1">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -152,9 +152,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1l-AV-oUk">
-                                <rect key="frame" x="82" y="490" width="212" height="41"/>
+                                <rect key="frame" x="82" y="490" width="226" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="212" id="VPW-Ep-Gby"/>
                                     <constraint firstAttribute="height" constant="41" id="eVD-R6-km5"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -166,10 +165,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqI-fB-a5I">
-                                <rect key="frame" x="82" y="547" width="212" height="41"/>
+                                <rect key="frame" x="82" y="547" width="226" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="cGY-XB-PAy"/>
-                                    <constraint firstAttribute="width" constant="212" id="jSQ-48-Nyp"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="잘 모르겠어요" cornerStyle="capsule">
@@ -216,8 +214,9 @@
                             <constraint firstItem="Gv4-AR-fXT" firstAttribute="leading" secondItem="KAJ-qX-bI8" secondAttribute="leading" constant="73" id="3xe-SF-Uvs"/>
                             <constraint firstItem="3yf-FT-eGR" firstAttribute="leading" secondItem="lJd-7X-EEd" secondAttribute="trailing" constant="8" symbolic="YES" id="BJG-At-KXz"/>
                             <constraint firstItem="RlW-TZ-17U" firstAttribute="top" secondItem="KAJ-qX-bI8" secondAttribute="top" constant="374" id="EF4-lB-jXa"/>
+                            <constraint firstItem="KAJ-qX-bI8" firstAttribute="trailing" secondItem="I1l-AV-oUk" secondAttribute="trailing" constant="82" id="Fvx-66-CPm"/>
+                            <constraint firstItem="I1l-AV-oUk" firstAttribute="leading" secondItem="KAJ-qX-bI8" secondAttribute="leading" constant="82" id="J3y-KO-EPu"/>
                             <constraint firstItem="lJd-7X-EEd" firstAttribute="leading" secondItem="aV7-hV-Sjd" secondAttribute="trailing" constant="30" id="KSQ-a1-Twa"/>
-                            <constraint firstItem="I1l-AV-oUk" firstAttribute="leading" secondItem="KAJ-qX-bI8" secondAttribute="leading" constant="82" id="Kgo-nY-czy"/>
                             <constraint firstItem="RlW-TZ-17U" firstAttribute="leading" secondItem="KAJ-qX-bI8" secondAttribute="leading" constant="101" id="OXj-Jb-pRK"/>
                             <constraint firstItem="aV7-hV-Sjd" firstAttribute="top" secondItem="KAJ-qX-bI8" secondAttribute="top" constant="342" id="PO3-IR-yov"/>
                             <constraint firstItem="Gv4-AR-fXT" firstAttribute="top" secondItem="KAJ-qX-bI8" secondAttribute="top" constant="217" id="QYA-Ib-TJq"/>
@@ -228,6 +227,7 @@
                             <constraint firstItem="I1l-AV-oUk" firstAttribute="top" secondItem="KAJ-qX-bI8" secondAttribute="top" constant="443" id="oUg-2d-Wpp"/>
                             <constraint firstItem="lJd-7X-EEd" firstAttribute="top" secondItem="Gv4-AR-fXT" secondAttribute="bottom" constant="25" id="une-0W-fSv"/>
                             <constraint firstItem="aV7-hV-Sjd" firstAttribute="leading" secondItem="KAJ-qX-bI8" secondAttribute="leading" constant="101" id="vL7-Tf-F5E"/>
+                            <constraint firstItem="KAJ-qX-bI8" firstAttribute="trailing" secondItem="iqI-fB-a5I" secondAttribute="trailing" constant="82" id="xga-eY-119"/>
                         </constraints>
                     </view>
                     <connections>
@@ -260,13 +260,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00님의          데이터가 저장되었어요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJe-Ao-2T0">
-                                        <rect key="frame" x="55" y="439" width="280" height="88"/>
+                                        <rect key="frame" x="55" y="439" width="280" height="48"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qio-vq-6yM">
-                                        <rect key="frame" x="55" y="511" width="280" height="144"/>
+                                        <rect key="frame" x="55" y="511" width="280" height="72"/>
                                         <string key="text">이제 웨이더가
 00님에게 꼭 맞는 
 기상예보를 보내드릴게요.</string>
@@ -282,10 +282,8 @@
                                     <constraint firstItem="wJe-Ao-2T0" firstAttribute="top" secondItem="a8n-6f-AQf" secondAttribute="top" constant="439" id="Fql-w0-2ep"/>
                                     <constraint firstItem="Qio-vq-6yM" firstAttribute="top" secondItem="a8n-6f-AQf" secondAttribute="top" constant="511" id="GkD-5Q-ttO"/>
                                     <constraint firstAttribute="trailing" secondItem="Qio-vq-6yM" secondAttribute="trailing" constant="55" id="OZW-rm-fHr"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qio-vq-6yM" secondAttribute="bottom" constant="189" id="P0v-OP-dYe"/>
                                     <constraint firstItem="wyg-9O-Vee" firstAttribute="centerX" secondItem="a8n-6f-AQf" secondAttribute="centerX" id="ZvX-iS-Hj8"/>
                                     <constraint firstItem="wJe-Ao-2T0" firstAttribute="leading" secondItem="a8n-6f-AQf" secondAttribute="leading" constant="55" id="k4F-QK-OJY"/>
-                                    <constraint firstAttribute="bottom" secondItem="wJe-Ao-2T0" secondAttribute="bottom" constant="317" id="sgg-3N-XIS"/>
                                     <constraint firstAttribute="trailing" secondItem="wJe-Ao-2T0" secondAttribute="trailing" constant="55" id="u6k-bw-kgi"/>
                                 </constraints>
                             </view>
@@ -300,6 +298,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="label1" destination="wJe-Ao-2T0" id="IiB-wz-70w"/>
+                        <outlet property="label2" destination="Qio-vq-6yM" id="R5O-Ff-nDR"/>
                         <outlet property="saveView" destination="a8n-6f-AQf" id="Zfp-iB-MiX"/>
                     </connections>
                 </viewController>
@@ -310,7 +310,7 @@
         <!--알림-->
         <scene sceneID="oiR-sQ-HIX">
             <objects>
-                <viewController storyboardIdentifier="NotiViewController" id="P2Q-PE-hZl" customClass="NotiViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotiViewController" title="알림" id="P2Q-PE-hZl" customClass="NotiViewController" customModule="waither" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H1k-K8-N2K">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -418,6 +418,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="refreshBtnPrsd:" destination="P2Q-PE-hZl" eventType="touchUpInside" id="ps0-pj-ZhY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f0P-oh-gMO"/>
@@ -444,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hf8-5k-QvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4951" y="4"/>
+            <point key="canvasLocation" x="4950.7692307692305" y="3.5545023696682461"/>
         </scene>
         <!--Tmp View Controller-->
         <scene sceneID="wt6-jl-wei">
@@ -492,7 +495,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="P2Q-PE-hZl" kind="relationship" relationship="rootViewController" id="qY7-L7-due"/>
+                        <segue destination="P2Q-PE-hZl" kind="relationship" relationship="rootViewController" id="1Wn-06-XDv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR2-4g-clC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -508,7 +511,7 @@
             <color red="0.36500000953674316" green="0.55699998140335083" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="dateColor">
-            <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.4779999852180481" green="0.4779999852180481" blue="0.4779999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="deleteAllColor">
             <color red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

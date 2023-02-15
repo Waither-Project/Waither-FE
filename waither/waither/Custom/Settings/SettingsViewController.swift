@@ -37,9 +37,6 @@ extension SettingsViewController {
     // MARK: 설정 메인화면 조회 API success
     func SettingsSuccessAPI(_ result : SettingsModel) {
         self.settingData = result
-        print("rainFall: " + settingData.rainFall)
-        print("wind: " + settingData.wind)
-        print("dust: " + settingData.dust)
         
         if settingData.rainFall == "Y" {
             switch1.isOn = true
