@@ -21,15 +21,15 @@ class Survey1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        label.text = "오늘 날씨는 \n어떠셨나요?"
+        
+        label.text = "어제 날씨는 \n어떠셨나요?"
         label.font = UIFont(name: "Apple SD Gothic Neo", size: 25)
         let font = UIFont.boldSystemFont(ofSize: 25)
 
         guard let text = self.label.text else { return }
         let attributedStr = NSMutableAttributedString(string: label.text!)
 
-        attributedStr.addAttribute(.font, value: font, range: (text as NSString).range(of: "오늘 날씨"))
+        attributedStr.addAttribute(.font, value: font, range: (text as NSString).range(of: "어제 날씨"))
         label.attributedText = attributedStr
         
         coldBtn.titleLabel?.font =  UIFont(name: "Apple SD Gothic Neo", size: 15)
@@ -39,7 +39,6 @@ class Survey1ViewController: UIViewController {
         hotBtn.titleLabel?.font =  UIFont(name: "Apple SD Gothic Neo", size: 15)
         dontKnowBtn.titleLabel?.font =  UIFont(name: "Apple SD Gothic Neo", size: 15)
     }
-    
 
     @IBAction func coldBtnPrsd(_ sender: UIButton) {
         guard let newVC = self.storyboard?.instantiateViewController(withIdentifier: "Survey2ViewController") as? Survey2ViewController else {return}
@@ -68,6 +67,7 @@ class Survey1ViewController: UIViewController {
         newVC.modalPresentationStyle = .fullScreen
         self.present(newVC, animated: true, completion: nil)
     }
+    
     @IBAction func littleHotBtnPrsd(_ sender: UIButton) {
         guard let newVC = self.storyboard?.instantiateViewController(withIdentifier: "Survey2ViewController") as? Survey2ViewController else {return}
         newVC.str = "조금 더웠다고 느낀 시간대가 언제인가요?"
@@ -76,6 +76,7 @@ class Survey1ViewController: UIViewController {
         newVC.modalPresentationStyle = .fullScreen
         self.present(newVC, animated: true, completion: nil)
     }
+    
     @IBAction func hotBtnPrsd(_ sender: UIButton) {
         guard let newVC = self.storyboard?.instantiateViewController(withIdentifier: "Survey2ViewController") as? Survey2ViewController else {return}
         newVC.str = "더웠다고 느낀 시간대가 언제인가요?"

@@ -22,13 +22,13 @@ class Survey3ViewController: UIViewController {
         let attributedStr = NSMutableAttributedString(string: label.text!)
 
         attributedStr.addAttribute(.font, value: font, range: (text as NSString).range(of: "날씨 알림"))
-
+        attributedStr.addAttribute(.font, value: font, range: (text as NSString).range(of: "시간대"))
+        
         label.attributedText = attributedStr
         
         datePicker.subviews[0].subviews[1].backgroundColor = UIColor(named: "pickerColor")
     }
     
-
     @IBAction func checkBtnPrsd(_ sender: UIButton) {
         guard let newVC = self.storyboard?.instantiateViewController(withIdentifier: "SaveViewController") as? SaveViewController else {return}
         
@@ -37,5 +37,4 @@ class Survey3ViewController: UIViewController {
         self.present(newVC, animated: true, completion: nil)
         //self.presentingViewController?.dismiss(animated: true)
     }
-    
 }

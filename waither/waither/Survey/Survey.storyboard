@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C82-aN-MB1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C82-aN-MB1">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -68,7 +68,7 @@
                                     <action selector="dontKnowBtnPrsd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUB-IY-eOf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 날씨는                                   어떠셨나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSD-Sg-Q1j">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어제 날씨는                                   어떠셨나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSD-Sg-Q1j">
                                 <rect key="frame" x="93" y="315" width="204" height="60"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kpW-wJ-hCM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="678"/>
+            <point key="canvasLocation" x="957" y="700"/>
         </scene>
         <!--알림-->
         <scene sceneID="oiR-sQ-HIX">
@@ -351,7 +351,7 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="U83-Y2-sxa" firstAttribute="top" secondItem="8rS-Cx-4np" secondAttribute="top" constant="57" id="5Jy-cj-JtC"/>
-                                                        <constraint firstItem="U83-Y2-sxa" firstAttribute="leading" secondItem="8rS-Cx-4np" secondAttribute="leading" constant="318" id="Fze-zs-zGa"/>
+                                                        <constraint firstAttribute="trailing" secondItem="U83-Y2-sxa" secondAttribute="trailing" constant="45" id="L7i-Db-KOG"/>
                                                         <constraint firstItem="T4K-LT-ndn" firstAttribute="leading" secondItem="8rS-Cx-4np" secondAttribute="leading" constant="75" id="LPQ-zX-9dX"/>
                                                         <constraint firstItem="spn-Vk-fkm" firstAttribute="leading" secondItem="8rS-Cx-4np" secondAttribute="leading" constant="18" id="WTh-Qf-tiU"/>
                                                         <constraint firstItem="T4K-LT-ndn" firstAttribute="top" secondItem="8rS-Cx-4np" secondAttribute="top" constant="13" id="hCl-Mc-GXL"/>
