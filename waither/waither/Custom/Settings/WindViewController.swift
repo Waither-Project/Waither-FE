@@ -23,11 +23,17 @@ class WindViewController: UIViewController {
     
     @objc func sliderChanged() {
         windvaluelabel.text = String(Int(verticalSlider.value))
+        //UserDefaults.standard.set(windvaluelabel.text, forKey: "wind")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
+        if let wind = UserDefaults.standard.string(forKey: "wind") {
+            windvaluelabel.text = wind
+            verticalSlider.value = Float(wind)!
+           }
+        */
         WindAlarmDataManager().windalarmDataManager(self)
         WindAlarmDataManager().nameDataManager(self)
         

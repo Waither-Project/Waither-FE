@@ -14,6 +14,7 @@ class AlarmViewController: UIViewController, SendDataDelegate{
     
     func sendData(data: String) {
         alarmtimeLabel.text = data
+        //UserDefaults.standard.set(data, forKey: "alarm")
     }
 
     @IBOutlet weak var SunButton: UIButton!
@@ -56,7 +57,11 @@ class AlarmViewController: UIViewController, SendDataDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        /*
+        if let text = UserDefaults.standard.string(forKey: "alarm") {
+            alarmtimeLabel.text = text
+        }
+        */
         AlarmDataManager().alarmDataManager(self)
         AlarmDataManager().nameDataManager(self)
         
