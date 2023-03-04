@@ -93,7 +93,6 @@
 		DD902FE8D6824681C929D028655AE121 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22882FC9623043E87296BF93067B2C9F /* RequestInterceptor.swift */; };
 		E4D0C079579D4AFB647AE484AF29C6D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EABD36049BE9D07F798AE9543EF734 /* UIKit.framework */; };
 		E54654D504A42C24F284A68F87F7671D /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD14A0B71140F7F2CCEC73F5983A85 /* OperationQueue+Alamofire.swift */; };
-		E7F56ECC29B394BD00C43B0A /* CircularSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F56ECB29B394BD00C43B0A /* CircularSlider.xib */; };
 		E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC65C3797DC3B13E630F29A6D0B00FB /* ConstraintDirectionalInsets.swift */; };
 		E9B4C89E7EB3B27D46AFCA452C3D426F /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1C701A05B85E728DEA2126AC663B41 /* MultipartUpload.swift */; };
 		EEC150B66BCCD6C80FDA7E4D1975166B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A6D95BCF95F55AE326A22B94DF4A0A /* DispatchQueue+Alamofire.swift */; };
@@ -250,7 +249,6 @@
 		E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E788440D6D7BBF8FCABE7B9143358A3A /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		E790BABE4D04B349E7F433B5FFDE3E66 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = CircularSlider/Classes/Utils.swift; sourceTree = "<group>"; };
-		E7F56ECB29B394BD00C43B0A /* CircularSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircularSlider.xib; sourceTree = "<group>"; };
 		EA715C5D8589AE7F53F3C48C59280DB8 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Sources/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		EF30C6F217251D2B01294915B2E991B0 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Sources/ConstraintConfig.swift; sourceTree = "<group>"; };
 		EFE3454346EBA3FB5C3D0D4D36D67C26 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
@@ -386,7 +384,6 @@
 		77C5342C088B0C966E92D6010CCE9FA3 /* CircularSlider */ = {
 			isa = PBXGroup;
 			children = (
-				E7F56ECB29B394BD00C43B0A /* CircularSlider.xib */,
 				891F6677EB2BB30A9A58A8C81C1A84CE /* CircularSlider.swift */,
 				CFFA65DFB01BE54EB4B48C584CFAE768 /* RotationGesture.swift */,
 				E790BABE4D04B349E7F433B5FFDE3E66 /* Utils.swift */,
@@ -752,7 +749,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7F56ECC29B394BD00C43B0A /* CircularSlider.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
