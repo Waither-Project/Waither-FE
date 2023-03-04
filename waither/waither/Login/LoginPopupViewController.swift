@@ -47,6 +47,7 @@ class LoginPopupViewController: UIViewController {
         
     }
     @IBAction func okButtonClicked(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "isLogin")
         
         let Greeting = UIStoryboard.init(name: "Greeting", bundle: nil)
         guard let pvc = self.presentingViewController else { return }

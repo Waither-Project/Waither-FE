@@ -32,9 +32,14 @@ class NamingViewController: UIViewController{
         
     }
     @IBAction func okButtonClicked(_ sender: Any) {
+        UserDefaults.standard.set(self.nameTextField.text!, forKey: "nickname")
         //text field에서 이름 가져와서 post 보내주기
         if(okBtn.configuration?.background.backgroundColor == UIColor.main_blue){
-            postName(nickname: self.nameTextField.text!)
+            if(UserDefaults.standard.bool(forKey: "isLogin") == false){
+                self.goNext()
+            }else {
+                postName(nickname: self.nameTextField.text!)
+            }
         }
         
     }
@@ -56,6 +61,7 @@ class NamingViewController: UIViewController{
         
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
+        request.headers.add(name: "accesstoken", value: UserDefaults.standard.string(forKey: "token")!)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = bodyData
 
@@ -79,15 +85,7 @@ class NamingViewController: UIViewController{
                             if status! {
                                 print(msg!)
                                 
-                                let Survey = UIStoryboard.init(name: "SurveyLaunchScreen", bundle: nil)
-                                guard let pvc = self.presentingViewController else { return }
-                                self.dismiss(animated: false) {
-                                    let nextVC = Survey.instantiateViewController(withIdentifier: "SurveyLaunchScreenViewController") as! SurveyLaunchScreenViewController
-                                    let navController = UINavigationController(rootViewController: nextVC)
-                                    navController.modalTransitionStyle = .coverVertical
-                                    navController.modalPresentationStyle = .fullScreen
-                                    pvc.present(navController, animated:true, completion: nil)
-                                }
+                                self.goNext()
                             }
                             
                         }catch let e as NSError{
@@ -99,6 +97,19 @@ class NamingViewController: UIViewController{
                 }
         // POST 전송
         task.resume()
+    }
+    
+    func goNext(){
+
+        let Survey = UIStoryboard.init(name: "SurveyLaunchScreen", bundle: nil)
+        guard let pvc = self.presentingViewController else { return }
+        self.dismiss(animated: false) {
+            let nextVC = Survey.instantiateViewController(withIdentifier: "SurveyLaunchScreenViewController") as! SurveyLaunchScreenViewController
+            let navController = UINavigationController(rootViewController: nextVC)
+            navController.modalTransitionStyle = .coverVertical
+            navController.modalPresentationStyle = .fullScreen
+            pvc.present(navController, animated:true, completion: nil)
+        }
     }
     
     

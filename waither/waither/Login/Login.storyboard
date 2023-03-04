@@ -47,6 +47,9 @@
                                 <state key="normal" title="Kakao로 계속하기" image="ic-kakao">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginByKakaoBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Xtp-LL-xAp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utS-hX-RMX">
                                 <rect key="frame" x="57" y="443" width="300" height="44"/>
@@ -735,19 +738,19 @@
             <color red="0.31764705882352939" green="0.53725490196078429" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color-kakao">
-            <color red="0.99607843137254903" green="0.89803921568627454" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.99599999189376831" green="0.89800000190734863" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color-waither.blue">
-            <color red="0.31764705882352939" green="0.53725490196078429" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.31799998879432678" green="0.53700000047683716" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color-waither.gray">
-            <color red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.59200000762939453" green="0.59200000762939453" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color-waither.lightgray">
-            <color red="0.8784313725490196" green="0.88235294117647056" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.87800002098083496" green="0.88200002908706665" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color-waither.red">
-            <color red="1" green="0.30588235294117649" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.3059999942779541" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

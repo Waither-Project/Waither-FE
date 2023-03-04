@@ -12,4 +12,8 @@ target 'waither' do
 
   # Pods for waither
 
+  pod 'KakaoSDKCommon'
+  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKUser'
+
 end
