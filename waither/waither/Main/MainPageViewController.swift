@@ -13,10 +13,23 @@ class MainPageViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     @IBOutlet var backgroundView: UIView!
     
-    var locationManager : CLLocationManager!
     var weatherInfoData : WeatherInfoModel!
     var settingsMainData : SettingsMainModel!
-
+    
+    lazy var locationManager: CLLocationManager = { // 위치 매니저
+            let manager = CLLocationManager()
+            manager.desiredAccuracy = kCLLocationAccuracyBest
+            manager.distanceFilter = kCLHeadingFilterNone
+            manager.requestWhenInUseAuthorization()
+            manager.delegate = self
+            return manager
+        }()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "SF Pro Black", size: 15)!, .foregroundColor: UIColor.white]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,10 +41,10 @@ class MainPageViewController: UIViewController {
         mainTableView.register(mainPageNib, forCellReuseIdentifier: "MainPageTableViewCell")
         
         // 위치 + 날씨 정보 api
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        self.locationManager.requestWhenInUseAuthorization()
-        let weatherInfoInput = WeatherInfoInput(x: 37.564747, y: 127.029500)
+        locationManager.startUpdatingLocation()
+        let latitude = locationManager.location?.coordinate.latitude // 위도
+        let longitude = locationManager.location?.coordinate.longitude // 경도
+        let weatherInfoInput = WeatherInfoInput(x: 37.54535029510736, y: 126.9524566286246)
         WeatherInfoDataManager().weatherInfoDataManager(weatherInfoInput, self)
         
         // 설정 메인화면 조회 api
@@ -43,10 +56,7 @@ class MainPageViewController: UIViewController {
     func setBackgroundColor() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
-        gradientLayer.colors = [
-            UIColor(red: 0.7, green: 0.65, blue: 0.61, alpha: 0.7).cgColor,
-            UIColor(red: 0.43, green: 0.515, blue: 0.583, alpha: 0.7).cgColor,
-            UIColor(red: 0.463, green: 0.482, blue: 0.498, alpha: 0.7).cgColor]
+        gradientLayer.colors = UIColor.cloudyGradientColor
         gradientLayer.shouldRasterize = true
         backgroundView.layer.addSublayer(gradientLayer)
     }
@@ -68,22 +78,21 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         
         // 데이터 전달
-        if let cellData = self.weatherInfoData {
+        if let cellWeatherData = self.weatherInfoData {
             // if data exists
-            cell.setWeatherInfoData(cellData)
-//            ForecastCollectionViewCell.setCellWeatherData(cellData)
+            cell.setWeatherInfoData(cellWeatherData)
             
         }
-        if let cellData = self.settingsMainData {
+        if let cellSettingsData = self.settingsMainData {
             // if data exists
-            cell.setOnoffData(cellData)
+            cell.setOnoffData(cellSettingsData)
         }
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 670
+        return 690
     }
     
 }
@@ -108,11 +117,6 @@ extension MainPageViewController : CLLocationManagerDelegate {
             default:
                 print("GPS: Default")
             }
-        
-//        let location: CLLocation = locations[locations.count - 1]   // 최근 위치
-//        let longtitude: CLLocationDegrees = location.coordinate.longitude   // 경도
-//        let latitude : CLLocationDegrees = location.coordinate.latitude   // 위도
-//        print("경도: \(longtitude), 위도: \(latitude)")
     }
 }
 

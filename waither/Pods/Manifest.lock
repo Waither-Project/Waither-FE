@@ -1,24 +1,48 @@
 PODS:
   - Alamofire (5.6.2)
   - CircularSlider (1.1.2)
+  - KakaoSDKAuth (2.11.3):
+    - KakaoSDKCommon (= 2.11.3)
+  - KakaoSDKCommon (2.11.3):
+    - KakaoSDKCommon/Common (= 2.11.3)
+    - KakaoSDKCommon/Network (= 2.11.3)
+  - KakaoSDKCommon/Common (2.11.3)
+  - KakaoSDKCommon/Network (2.11.3):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.11.3)
+  - KakaoSDKUser (2.11.3):
+    - KakaoSDKAuth (= 2.11.3)
+  - SnapKit (5.6.0)
   - VerticalSlider (2.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - CircularSlider
+  - KakaoSDKAuth
+  - KakaoSDKCommon
+  - KakaoSDKUser
+  - SnapKit
   - VerticalSlider
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CircularSlider
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
+    - SnapKit
     - VerticalSlider
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   CircularSlider: 448f9f7723b845ccd470dac41981feb192e20c50
+  KakaoSDKAuth: a64dde90516e18fdfc35b83bbad2677c3675c329
+  KakaoSDKCommon: b4235203f67a5b6ee2df75eaf9bbc863c6d92e09
+  KakaoSDKUser: 9a42e9b74855ce876b071c841418aa6726534010
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   VerticalSlider: 655f2bc3ed062bac13e21c174f5ff93b8308571d
 
-PODFILE CHECKSUM: 07496bb0ed71c63bc41428b427a4de0e6f0a4a74
+PODFILE CHECKSUM: b0266dfeead71c85095503f160464acd55f68283
 
 COCOAPODS: 1.11.3

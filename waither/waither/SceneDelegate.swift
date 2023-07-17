@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KakaoSDKAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,8 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
+        /*
         let storyboard = UIStoryboard(name: "MainPage", bundle: nil)
-                let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainPageViewController")
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainPageViewController")*/
+        let storyboard = UIStoryboard(name: "LaunchScreen_white", bundle: nil)
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "SplashViewController")
                 // rootViewController 설정하기
                 self.window?.rootViewController = initialViewController
                 self.window?.makeKeyAndVisible()
@@ -52,6 +56,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                _ = AuthController.handleOpenUrl(url: url)
+                }
+        }
     }
 
 
